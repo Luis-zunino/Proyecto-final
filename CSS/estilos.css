@@ -1,7 +1,8 @@
 /* -----------GENERALES----------------- */
 html {
     box-sizing: border-box;
-    font-size: 62.5%;/** Reset para REMS - 62.5% = 10px de 16px **/
+    font-size: 62.5%;
+    /** Reset para REMS - 62.5% = 10px de 16px **/
 }
 
 *,
@@ -12,38 +13,15 @@ html {
 
 body {
     font-family: 'Overpass', sans-serif;
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efefef+37,1e69de+100 */
-        background: rgb(239, 239, 239);
-        /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(239, 239, 239, 1) 37%, rgba(30, 105, 222, 1) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(239, 239, 239, 1) 37%, rgba(30, 105, 222, 1) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(239, 239, 239, 1) 37%, rgba(30, 105, 222, 1) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#1e69de', GradientType=0);
-        /* IE6-9 */
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
 }
 
 img {
     max-width: 100%;
 }
 
-
-header {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efefef+0,1e69de+100 */
-    background: rgb(239, 239, 239);
-    /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(239, 239, 239, 1) 0%, rgba(30, 105, 222, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(239, 239, 239, 1) 0%, rgba(30, 105, 222, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(239, 239, 239, 1) 0%, rgba(30, 105, 222, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#1e69de', GradientType=1);
-    /* IE6-9 */
-
-}
 
 h1 {
     font-family: 'Lobster', cursive;
@@ -62,24 +40,69 @@ p {
     font-size: 2.5rem;
 }
 
-div a img {
+
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    color: #35373a;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+
+}
+
+/*----------------------- HEADER ----------------------- */
+nav a {
+    display: inline-block;
+}
+
+.btn-caja a {
+    padding-top: 37rem;
+
+}
+
+.icono {
     border-radius: 50%;
     width: 6rem;
 }
 
-.contenedor {
-    width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;
+.btn {
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-/*----------------------- HEADER ----------------------- */
-header {
-    /* margin-bottom: 8rem; */
+.btn:hover {
+    max-width: 120%;
 }
 
+.btn-galeria {
+    background-image: url(../IMG/Torres-Garcia-Obra.jpg);
+
+}
+
+.btn-turismo {
+    background-image: url(../IMG/puente_garzon.jpg);
+
+}
+
+.btn-blog {
+    background-image: url(../IMG/21743788_516310348714767_7506098463759688400_o.jpg);
+}
+
+.btn-historia {
+    background-image: url(../IMG/grito-de-asencio-indepenendencia-uruguay.jpg);
+}
+header{
+    margin-bottom: 5rem;
+}
 header div nav {
-    /* padding: 0 2rem 1rem 2rem; */
     text-align: center;
     width: 100%;
 }
@@ -96,12 +119,80 @@ header a {
     font-size: 3rem;
     padding: 0 1.5rem;
 }
+
 /* -----------------------  MAIN ----------------------- */
-.imagen{
+.imagen {
     max-width: 40rem;
 }
+
 /* ----------------------- FOOTER ----------------------- */
 footer {
     background-color: white;
     margin: auto auto 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+} */
