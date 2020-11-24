@@ -1,0 +1,107 @@
+/* -----------GENERALES----------------- */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/** Reset para REMS - 62.5% = 10px de 16px **/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efefef+37,1e69de+100 */
+        background: rgb(239, 239, 239);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(239, 239, 239, 1) 37%, rgba(30, 105, 222, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(239, 239, 239, 1) 37%, rgba(30, 105, 222, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(239, 239, 239, 1) 37%, rgba(30, 105, 222, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#1e69de', GradientType=0);
+        /* IE6-9 */
+}
+
+img {
+    max-width: 100%;
+}
+
+
+header {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efefef+0,1e69de+100 */
+    background: rgb(239, 239, 239);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(239, 239, 239, 1) 0%, rgba(30, 105, 222, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(239, 239, 239, 1) 0%, rgba(30, 105, 222, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(239, 239, 239, 1) 0%, rgba(30, 105, 222, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#1e69de', GradientType=1);
+    /* IE6-9 */
+
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2.5rem;
+}
+
+div a img {
+    border-radius: 50%;
+    width: 6rem;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/*----------------------- HEADER ----------------------- */
+header {
+    /* margin-bottom: 8rem; */
+}
+
+header div nav {
+    /* padding: 0 2rem 1rem 2rem; */
+    text-align: center;
+    width: 100%;
+}
+
+div nav a {
+    width: calc(20% - 1rem);
+    color: yellow;
+
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 0 1.5rem;
+}
+/* -----------------------  MAIN ----------------------- */
+.imagen{
+    max-width: 40rem;
+}
+/* ----------------------- FOOTER ----------------------- */
+footer {
+    background-color: white;
+    margin: auto auto 0 auto;
+}
