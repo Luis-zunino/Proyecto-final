@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Overpass:wght@300&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="CSS/estilos.css">
 </head>
@@ -18,13 +18,8 @@
     <!-- Navegacion-->
     <header>
         <div>
-            <nav>
-                <div class="encabezado">
-                    <img src="IMG/cropped-campo-verde-1.jpg" alt="Portada">
-                    <div>
-                        <h1>U<span class="color">r</span>u<span class="color">g</span>u<span class="color">a</span>y
-                        </h1>
-                    </div>
+            <nav class="encabezado">
+                <div >
                     <div class="buscar">
                         <i class="fas fa-search"></i>
                         <!--<input type="text" placeholder="Buscar..."> hacerlo aparecer con javascript-->
@@ -36,9 +31,9 @@
                     </div>
                 </div>
                 <div class="btn-caja">
+                    <a class="btn btn-inicio" href="index.html" title="Ir a Inicio"><i class="fas fa-home"></i></a>
                     <a class="btn btn-galeria" href="galeria.html" title="Ir a Galería">Galería</a>
                     <a class="btn btn-turismo" href="turismo.html" title="Ir a Turismo">Turismo </a>
-                    <a class="btn btn-inicio" href="index.html" title="Ir a Inicio">Inicio</a>
                     <a class="btn btn-blog" href="blog.html" title="Ir a Blog">Blog</a>
                     <a class="btn btn-historia" href="historia.html" title="Ir a Historia">Historia</a>
                 </div>
@@ -49,20 +44,35 @@
     <!-- Contenido Principal-->
 
     <main class="contenedor">
-        <div>
+        <div class="cont-main">
             <h1>Tradiciones del Uruguay</h1>
-            <img class="imagen" src="IMG/Uruguay_location_map.svg" title="Mapa de Uruguay"
-                alt="Imagen del mapa de Uruguay">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui repellendus officia eveniet quibusdam
-                placeat, vel debitis pariatur dicta veniam odit corrupti officiis adipisci nulla? Minima voluptas quae
-                recusandae optio doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloremque
-                impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
-                repellat, earum necessitatibus nisi placeat, nesciunt aut?
-            </p>
+            <div class="izquierda">
+                <img class="imagen" src="IMG/Uruguay_location_map.svg" title="Mapa de Uruguay"
+                    alt="Imagen del mapa de Uruguay">
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui repellendus officia eveniet quibusdam
+                    placeat, vel debitis pariatur dicta veniam odit corrupti officiis adipisci nulla? Minima voluptas
+                    quae
+                    recusandae optio doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                    doloremque
+                    impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
+                    repellat, earum necessitatibus nisi placeat, nesciunt aut?
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, esse voluptas beatae eveniet</p>
+                <p> recusandae optio doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                    doloremque
+                    impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
+                    repellat, earum necessitatibus nisi placeat, nesciunt aut?</p>
+            </div>
+            <div class="clear"></div>
+        </div>
     </main>
     <section class="contenedor">
-        <h2 id="galeria">Galería <a href="blog.html" title="Expandir"> + </a></h2>
+        <a href="blog.html" title="Expandir">
+            <h2 id="galeria">Galería</h2>
+        </a>
 
         <img src="" alt="Imagen 1">
         <img src="" alt="Imagen 2">
@@ -72,7 +82,9 @@
         <img src="" alt="Imagen 6">
     </section>
     <section class="contenedor">
-        <h2 id="blog">Blog <a href="blog.html" title="Expandir">+</a></h2>
+        <a href="turismo.html" title="Expandir">
+            <h2 id="turismo">Turismo</h2>
+        </a>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui repellendus officia eveniet quibusdam
             placeat, vel debitis pariatur dicta veniam odit corrupti officiis adipisci nulla? Minima voluptas quae
@@ -82,7 +94,23 @@
         </p>
     </section>
     <section class="contenedor">
-        <h2 id="historia">Historia <a href="historia.html" title="Expandir">+</a></h2>
+        <a href="blog.html" title="Expandir">
+            <h2 id="blog">Blog</h2>
+        </a>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui repellendus officia eveniet quibusdam
+            placeat, vel debitis pariatur dicta veniam odit corrupti officiis adipisci nulla? Minima voluptas quae
+            recusandae optio doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloremque
+            impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
+            repellat, earum necessitatibus nisi placeat, nesciunt aut?
+        </p>
+    </section>
+    <section class="contenedor">
+        <a href="historia.html" title="Expandir">
+            <div>
+                <h2 id="historia">Historia</h2>
+            </div>
+        </a>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui repellendus officia eveniet quibusdam
             placeat, vel debitis pariatur dicta veniam odit corrupti officiis adipisci nulla? Minima voluptas quae
@@ -94,7 +122,6 @@
     </div>
     <!-- Fin del Contenido Principal-->
     <!-- Pie de Página-->
-
     <footer>
         <div class="footer">
             <div class="conte-footer">
@@ -103,21 +130,32 @@
                     laborum facere? Non, consequatur eveniet cum iusto magni ut possimus quia alias illum
                     ipsa expedita soluta placeat voluptas quos.
                 </h4>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto necessitatibus velit
+                    laborum facere? Non, consequatur eveniet cum iusto magni ut possimus quia alias illum
+                    ipsa expedita soluta placeat voluptas quos.
+                </h4>
             </div>
             <div class="conte-footer">
                 <h3>Contacto</h3>
-                <p>
-                    Teléfono:
-                    <a href="tel:12345678">12345678</a>
-                    Correo Electrónico:
-                    <a href="email">correo@correo.co</a>
-                    Dirección: Calle Falsa 123
+                <h4>
+                    <p class="contactos">
+                        Teléfono:
+                        <a href="tel:12345678">12345678</a>
+                    </p>
+                    <p class="contactos">
+                        Correo Electrónico:
+                        <a href="email">correo@correo.co</a>
+                    </p>
+                    <p class="contactos">
+                        Dirección: Calle Falsa 123
+                    </p>
 
-                </p>
+
+                </h4>
             </div>
             <div class="conte-footer">
                 <h3>Redes Sociales</h3>
-                <h4>
+                <h4 class="redes-sociales">
                     <a href="" title=""><i class="fab fa-facebook-square"></i></a>
                     <a href="" title=""><i class="fab fa-twitter-square"></i></a>
                     <a href="" title=""><i class="fab fa-instagram-square"></i></a>
