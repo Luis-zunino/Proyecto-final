@@ -17,32 +17,29 @@
 <body>
     <!-- Navegacion-->
     <header>
-        <div>
-            <nav class="encabezado">
-                <div >
-                    <div class="buscar">
-                        <i class="fas fa-search"></i>
-                        <!--<input type="text" placeholder="Buscar..."> hacerlo aparecer con javascript-->
-                    </div>
-                    <div class="mapa">
-                        <a href="https://goo.gl/maps/nCMiDfxxWDSrqzsR9" title="Encuéntrame" target="_blanck"><i
-                                class="fas fa-map-marked-alt"></i>
-                        </a>
-                    </div>
+        <div class="encabezado">
+            <div>
+                <div class="buscar">
+                    <i class="fas fa-search"></i>
+                    <!--<input type="text" placeholder="Buscar..."> hacerlo aparecer con javascript-->
                 </div>
-                <div class="btn-caja">
-                    <a class="btn btn-inicio" href="index.html" title="Ir a Inicio"><i class="fas fa-home"></i></a>
-                    <a class="btn btn-galeria" href="galeria.html" title="Ir a Galería">Galería</a>
-                    <a class="btn btn-turismo" href="turismo.html" title="Ir a Turismo">Turismo </a>
-                    <a class="btn btn-blog" href="blog.html" title="Ir a Blog">Blog</a>
-                    <a class="btn btn-historia" href="historia.html" title="Ir a Historia">Historia</a>
+                <div class="mapa">
+                    <a href="https://goo.gl/maps/nCMiDfxxWDSrqzsR9" title="Encuéntrame" target="_blanck"><i
+                            class="fas fa-map-marked-alt"></i>
+                    </a>
                 </div>
+            </div>
+            <nav class="btn-caja">
+                <a class="btn" href="index.html" title="Ir a Inicio"><i class="fas fa-home"></i></a>
+                <a class="btn" href="galeria.html" title="Ir a Galería">Galería</a>
+                <a class="btn" href="turismo.html" title="Ir a Turismo">Turismo </a>
+                <a class="btn" href="blog.html" title="Ir a Blog">Blog</a>
+                <a class="btn" href="historia.html" title="Ir a Historia">Historia</a>
             </nav>
         </div>
     </header>
     <!-- Fin de Navegacion-->
     <!-- Contenido Principal-->
-
     <main class="contenedor">
         <div class="cont-main">
             <h1>Tradiciones del Uruguay</h1>
@@ -70,7 +67,7 @@
         </div>
     </main>
     <section class="contenedor">
-        <a href="blog.html" title="Expandir">
+        <a href="galeria.html" title="Expandir">
             <h2 id="galeria">Galería</h2>
         </a>
 
@@ -82,7 +79,7 @@
         <img src="" alt="Imagen 6">
     </section>
     <section class="contenedor">
-        <a href="turismo.html" title="Expandir">
+        <a href="turismo.html#turismo" title="Expandir">
             <h2 id="turismo">Turismo</h2>
         </a>
         <p>
@@ -94,8 +91,8 @@
         </p>
     </section>
     <section class="contenedor">
-        <a href="blog.html" title="Expandir">
-            <h2 id="blog">Blog</h2>
+        <a href="blog.html#blog" title="Expandir">
+            <h2>Blog</h2>
         </a>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui repellendus officia eveniet quibusdam
@@ -106,9 +103,9 @@
         </p>
     </section>
     <section class="contenedor">
-        <a href="historia.html" title="Expandir">
+        <a href="historia.html#historia" title="Expandir">
             <div>
-                <h2 id="historia">Historia</h2>
+                <h2>Historia</h2>
             </div>
         </a>
         <p>
@@ -123,7 +120,32 @@
     <!-- Fin del Contenido Principal-->
     <!-- Pie de Página-->
     <footer>
+        <nav>
+            <div class="navFooter">
+                <a class="btnPie" href="index.html" title="Ir a Inicio"><i class="fas fa-home color"></i></a>
+                <a class="btnPie" href="galeria.html" title="Ir a Galería">Galería</a>
+                <a class="btnPie" href="turismo.html" title="Ir a Turismo">Turismo </a>
+                <a class="btnPie" href="blog.html" title="Ir a Blog">Blog</a>
+                <a class="btnPie" href="historia.html" title="Ir a Historia">Historia</a>
+            </div>
+        </nav>
         <div class="footer">
+            <div class="conte-footer">
+                <h3>Contacto</h3>
+
+                <p class="contactos">
+                    Teléfono:
+                    <a href="tel:12345678">12345678</a>
+                </p>
+                <p class="contactos">
+                    Correo Electrónico:
+                    <a href="email">correo@correo.co</a>
+                </p>
+                <p class="contactos">
+                    Dirección: Calle Falsa 123
+                </p>
+
+            </div>
             <div class="conte-footer">
                 <h3>Sobre Nosotros</h3>
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto necessitatibus velit
@@ -133,24 +155,6 @@
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto necessitatibus velit
                     laborum facere? Non, consequatur eveniet cum iusto magni ut possimus quia alias illum
                     ipsa expedita soluta placeat voluptas quos.
-                </h4>
-            </div>
-            <div class="conte-footer">
-                <h3>Contacto</h3>
-                <h4>
-                    <p class="contactos">
-                        Teléfono:
-                        <a href="tel:12345678">12345678</a>
-                    </p>
-                    <p class="contactos">
-                        Correo Electrónico:
-                        <a href="email">correo@correo.co</a>
-                    </p>
-                    <p class="contactos">
-                        Dirección: Calle Falsa 123
-                    </p>
-
-
                 </h4>
             </div>
             <div class="conte-footer">

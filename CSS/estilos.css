@@ -60,7 +60,7 @@ a {
 /*----------------------- HEADER ----------------------- */
 /*-------------- PORTADA -------------- */
 .encabezado {
-    height: 50rem;
+    height: 15rem;
 }
 
 .fas {
@@ -88,18 +88,23 @@ a {
 
 .btn-caja {
     display: flex;
-    margin: 13rem;
+    margin: 13rem auto;
     width: 80%;
     background-color: black;
     justify-content: space-around;
 }
-
 .btn {
     display: inline-block;
     width: 20%;
     padding: 12px 0;
     transition: 0.5s ease-in-out;
-    background-color: black;
+}
+
+.fa-home:hover {
+    color: white;
+    border: solid 1px #141414;
+    border-radius: 16%;
+    background-color: #0f0f0f;
 }
 
 .btn:hover {
@@ -119,8 +124,9 @@ header div nav {
     width: 100%;
 }
 
+.fa-home,
 header a {
-    color: #545752;
+    color: #c1c5bf;
     text-decoration: none;
     font-size: 3rem;
     padding: 0 1.5rem;
@@ -131,29 +137,50 @@ header a {
 /* ----------------------- FOOTER ----------------------- */
 .footer {
     max-width: 100%;
-    margin-top: 3rem;
     padding: 1rem 3rem;
     display: flex;
     background-color: #404040;
-
 }
-
+.footer h3, .redes-sociales{
+    text-align: center;
+    font-size: 1.8rem;
+}
 .conte-footer {
     flex-basis: calc(33.3% - 1rem);
 
+}
+
+.navFooter {
+    display: flex;
+    width: 100%;
+    margin: 13rem auto auto 0;
+    background-color: #4d4d4d;
+    align-items: center;
+}
+
+.btnPie {
+    color: black;
+    padding: 1rem;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.color {
+    color: black;
+}
+
+.btnPie:hover {
+    color: white;
+}
+
+.color:hover {
+    color: white;
 }
 
 .contactos {
     font-size: 1.2rem;
     display: block;
 }
-
-h3 {
-    padding: 2rem;
-    font-size: 1.8rem;
-
-}
-
 .fab {
     font-size: 3rem;
     color: white;
@@ -171,11 +198,17 @@ h3 {
     padding: 2rem;
     text-transform: capitalize;
 }
-
 .color-copy {
     text-transform: uppercase;
 }
+.redes-sociales a{
+    padding: 0 1rem;
+    margin: 0;
+}
+.redes-sociales a i{
+    font-size: 4rem;
 
+}
 /*  ----------------------- FIN GENERALES ----------------------- */
 /*  ----------------------- INDEX ----------------------- */
 /* -----------------------  MAIN ----------------------- */
@@ -203,9 +236,5 @@ section a h2 {
     color: black;
 }
 
-section a h2:hover {
-    color: rgba(255, 255, 255, 0.8);
-    border-radius: 10%;
-    display: inline-block;
-    /*Preguntar porque se va para un lado*/
-}
+/* -----------------------FIN MAIN ----------------------- */
+/*  -----------------------FIN INDEX ----------------------- */
