@@ -258,18 +258,17 @@ header a {
 section a h2 {
     color: black;
 }
-.btn-ver{
-    display: flex;
-    justify-content: flex-end ;
-}
+
 .btn-vermas {
     background-color: rgba(221, 218, 218, 0.5);
-    padding: 1.5rem;
+    padding: 2rem;
+    margin: 1rem 0;
     border-radius: 25%;
+    display: flex;
+    justify-items: flex-end;
 }
 .btn-vermas a{
     color: black;
-    font-size: 1.5rem;
 }
 /* -----------------------SECCION DE TURISMO DEL INDEX-----------------------*/
 .contenedor-turismo {

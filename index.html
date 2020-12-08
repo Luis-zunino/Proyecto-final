@@ -16,7 +16,7 @@
 
 <body>
     <!-- Navegacion-->
-    <header>
+    <header id="arriba">
         <div class="encabezado">
             <div>
                 <div class="buscar">
@@ -29,10 +29,11 @@
                     </a>
                 </div>
             </div>
+            <a href="#arriba"><i class="fas fa-chevron-circle-up"></i></a>
             <nav class="btn-caja">
-                <a class="btn" href="index.html" title="Ir a Inicio"><i class="fas fa-home"></i></a>
                 <a class="btn" href="galeria.html" title="Ir a Galería">Galería</a>
                 <a class="btn" href="turismo.html" title="Ir a Turismo">Turismo </a>
+                <a class="btn" href="index.html" title="Ir a Inicio"><i class="fas fa-home"></i></a>
                 <a class="btn" href="blog.html" title="Ir a Blog">Blog</a>
                 <a class="btn" href="historia.html" title="Ir a Historia">Historia</a>
             </nav>
@@ -47,49 +48,106 @@
                 <img class="imagen" src="IMG/Uruguay_location_map.svg" title="Mapa de Uruguay"
                     alt="Imagen del mapa de Uruguay">
             </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui repellendus officia eveniet quibusdam
-                    placeat, vel debitis pariatur dicta veniam odit corrupti officiis adipisci nulla? Minima voluptas
-                    quae
-                    recusandae optio doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                    doloremque
-                    impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
-                    repellat, earum necessitatibus nisi placeat, nesciunt aut?
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, esse voluptas beatae eveniet</p>
-                <p> recusandae optio doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                    doloremque
-                    impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
-                    repellat, earum necessitatibus nisi placeat, nesciunt aut?</p>
-            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui repellendus officia eveniet quibusdam
+                placeat, vel debitis pariatur dicta veniam odit corrupti officiis adipisci nulla? Minima voluptas
+                quae
+                recusandae optio doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                doloremque
+                impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
+                repellat, earum necessitatibus nisi placeat, nesciunt aut?
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, esse voluptas beatae eveniet</p>
+            <p> recusandae optio doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                doloremque
+                impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
+                repellat, earum necessitatibus nisi placeat, nesciunt aut?</p>
             <div class="clear"></div>
         </div>
     </main>
+    <!--Galeria-->
     <section class="contenedor">
-        <a href="galeria.html" title="Expandir">
-            <h2 id="galeria">Galería</h2>
-        </a>
+        <h2 id="galeria">Galería</h2>
 
-        <img src="" alt="Imagen 1">
-        <img src="" alt="Imagen 2">
-        <img src="" alt="Imagen 3">
-        <img src="" alt="Imagen 4">
-        <img src="" alt="Imagen 5">
-        <img src="" alt="Imagen 6">
+        <div class="galeria">
+            <div class="imagenGal">
+                <a href="galeria.html">
+                    <img
+                        src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Montevideo1.jpg">
+                    <p>Ciudad de Montevideo</p>
+                </a>
+            </div>
+            <div class="imagenGal">
+                <a href="galeria.html">
+                    <img
+                        src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Sacramento.jpg">
+                </a>
+                <p>Colonia del Sacramento</p>
+            </div>
+            <div class="imagenGal">
+                <a href="galeria.html">
+                    <img
+                        src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Punta-del-Este.jpg">
+                </a>
+                <p>Punta del Este</p>
+            </div>
+            <div class="imagenGal">
+                <a href="galeria.html">
+                    <img src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Paloma1.jpg">
+                </a>
+                <p>La Paloma</p>
+
+            </div>
+            <div class="imagenGal">
+                <a href="galeria.html">
+                    <img
+                        src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Paysandu.jpg">
+                </a>
+                <p>Paysandú</p>
+            </div>
+            <div class="imagenGal">
+                <a href="galeria.html">
+                    <img src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Salto.jpg">
+                </a>
+                <p>Costas de Salto</p>
+            </div>
+        </div>
+        <div class="btn-ver">
+            <button class="btn-vermas"><a href="galeria.html" title="Ver más"> Ver más </a></button>
+        </div>
     </section>
+    <!--Termina Galeria-->
+    <!--Turismo-->
     <section class="contenedor">
-        <a href="turismo.html#turismo" title="Expandir">
-            <h2 id="turismo">Turismo</h2>
-        </a>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui repellendus officia eveniet quibusdam
-            placeat, vel debitis pariatur dicta veniam odit corrupti officiis adipisci nulla? Minima voluptas quae
-            recusandae optio doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloremque
-            impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
-            repellat, earum necessitatibus nisi placeat, nesciunt aut?
-        </p>
+        <h2 id="turismo">Elige tu destino</h2>
+        <div class="contenedor-turismo">
+            <div class="tipo-lugar">
+                <a href="turismo.html#playa">
+                    <img src="IMG/playa-icono.jpg" title="Más información sobre las Playas" alt="Foto de una Playa"></a>
+                <p class="turismoParrafo"> Playas </p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ratione nesciunt!</p>
+            </div>
+            <div class="tipo-lugar">
+                <a href="turismo.html#camping">
+                    <img src="IMG/acampar.icono.jpg" title="Más información sobre los Campings"
+                        alt="Foto de un Camping"></a>
+                <p class="turismoParrafo">Campings </p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ratione nesciunt!</p>
+            </div>
+            <div class="tipo-lugar">
+                <a href="turismo.html#ciudad">
+                    <img class="img" src="IMG/ciudad-icono.jpg" title="Más información sobre las Ciudades"
+                        alt="Foto de una Ciudad"></a>
+                <p class="turismoParrafo">Ciudades</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ratione nesciunt!</p>
+            </div>
+        </div>
+        <div class="btn-ver">
+            <button class="btn-vermas"><a href="turismo.html" title="Ver más"> Ver más </a></button>
+        </div>
     </section>
+    <!-- Termina Turismo-->
+
     <section class="contenedor">
         <a href="blog.html#blog" title="Expandir">
             <h2>Blog</h2>
@@ -101,6 +159,9 @@
             impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
             repellat, earum necessitatibus nisi placeat, nesciunt aut?
         </p>
+        <div class="btn-ver">
+            <button class="btn-vermas"><a href="blog.html" title="Ver más"> Ver más </a></button>
+        </div>
     </section>
     <section class="contenedor">
         <a href="historia.html#historia" title="Expandir">
@@ -115,6 +176,9 @@
             impedit suscipit blanditiis harum molestiae consequatur omnis iure ad reiciendis vitae error ut
             repellat, earum necessitatibus nisi placeat, nesciunt aut?
         </p>
+        <div class="btn-ver">
+            <button class="btn-vermas"><a href="historia.html" title="Ver más"> Ver más </a></button>
+        </div>
     </section>
     </div>
     <!-- Fin del Contenido Principal-->
@@ -122,9 +186,9 @@
     <footer>
         <nav>
             <div class="navFooter">
-                <a class="btnPie" href="index.html" title="Ir a Inicio"><i class="fas fa-home color"></i></a>
                 <a class="btnPie" href="galeria.html" title="Ir a Galería">Galería</a>
                 <a class="btnPie" href="turismo.html" title="Ir a Turismo">Turismo </a>
+                <a class="btnPie" href="index.html" title="Ir a Inicio"><i class="fas fa-home color"></i></a>
                 <a class="btnPie" href="blog.html" title="Ir a Blog">Blog</a>
                 <a class="btnPie" href="historia.html" title="Ir a Historia">Historia</a>
             </div>
@@ -160,9 +224,12 @@
             <div class="conte-footer">
                 <h3>Redes Sociales</h3>
                 <h4 class="redes-sociales">
-                    <a href="" title=""><i class="fab fa-facebook-square"></i></a>
-                    <a href="" title=""><i class="fab fa-twitter-square"></i></a>
-                    <a href="" title=""><i class="fab fa-instagram-square"></i></a>
+                    <a target="_blanck" href="https://www.facebook.com/" title="Ir a Facebook"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a target="_blanck" href="https://twitter.com/" title="Ir a Twitter"><i
+                            class="fab fa-twitter-square"></i></a>
+                    <a target="_blanck" href="https://www.instagram.com/?hl=es-la" title="Ir a Instagram"><i
+                            class="fab fa-instagram-square"></i></a>
                 </h4>
             </div>
         </div>
