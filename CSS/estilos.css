@@ -75,8 +75,8 @@ a {
 
 .buscar {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
 }
 
 .mapa {
@@ -258,6 +258,12 @@ header a {
 section a h2 {
     color: black;
 }
+.resalte{
+    font-weight: 800;
+}
+/* -----------------------FIN DE MAIN ----------------------- */
+/* -----------------------  BOTON DE VER MAS ----------------------- */
+
 .btn-ver{
     display: flex;
     justify-content: flex-end ;
@@ -271,6 +277,7 @@ section a h2 {
     color: black;
     font-size: 1.5rem;
 }
+/* ----------------------- FIN BOTON DE VER MAS ----------------------- */
 /* -----------------------SECCION DE TURISMO DEL INDEX-----------------------*/
 .contenedor-turismo {
     display: grid;
