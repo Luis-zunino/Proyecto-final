@@ -67,16 +67,13 @@ a {
 
 .fas {
     color: white;
-}
-
-.fas {
     font-size: 2.5rem;
 }
 
 .buscar {
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
 }
 
 .mapa {
@@ -90,43 +87,92 @@ a {
 /*-------------- MENU -------------- */
 .btn-caja,
 .btn-caja-resto {
-    display: flex;
     margin: 13rem auto 41rem auto;
     /*arreglar para que funcione segun el tamaño de pantalla */
     width: 70%;
     background-color: rgba(0, 0, 0, 0.6);
-    text-align: center;
+    list-style: none;
+    align-items: center;
 }
 
-.btn-caja-resto {
-    margin: 13rem auto;
-}
-
-.btn {
+.navBtn {
+    /*Ancho de los botones  */
     display: inline-block;
     width: 20%;
-    padding: 12px 0;
-    transition: 0.5s ease-in-out;
-    border-radius: 8%;
+    padding: 1rem;
 
+}
 
+.botones,
+.listaBtnExpan,
+.enlaceLista,
+.listaInterna {
+    position: relative;
+}
+
+.listaBtnExpan:hover,
+.listaBtnExpan:hover>.enlaceLista,
+.listaInterna:hover,
+.listaInterna:hover>.enlaceLista {
+    color: white;
+    z-index: 10;
+}
+
+.enlaceLista {
+    text-decoration: none;
+    width: 20%;
+    display: block;
+    padding: .6rem;
+}
+
+/*-------------- SUBMENU -------------- */
+.listaBtnExpan:hover .cajaListaInterna {
+    display: block;
+    animation: 300ms ease desplegar 1;
+}
+
+/* Animaciones */
+@keyframes desplegar {
+    from {
+        transform: scaleY(0.5);
+        /* La propiedad transform: scaleY(0.5) junto a la propiedad transform-origin: left top;
+        permitirá crear un efecto visual de un submenú que se desenrrolla. */
+    }
+}
+
+.listaInterna {
+    list-style: none;
+    width: 20%;
+
+}
+
+.cajaListaInterna {
+    display: none;
+    position: absolute;
+    /* Esto adyudará a dar el efecto de despliegue del submenú */
+    transform-origin: left top;
+    top: 100%;
+    padding: 0;
+    max-width: 250px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 0;
+
+}
+
+.cajaListaInterna .enlaceLista {
+    font-size: 1.8rem;
+    width: 20%;
+
+}
+
+/*-------------- FIN SUBMENU -------------- */
+.btn-caja-resto {
+    margin: 13rem auto;
 }
 
 .fa-home:hover {
     color: white;
     border-radius: 16%;
-}
-
-.btn:hover {
-    color: white;
-    border: solid 1px #141414;
-    border-radius: 16%;
-    background-color: #0f0f0f;
-}
-
-.btn a {
-    width: 100%;
-    height: 100%;
 }
 
 .fa-home,
@@ -143,7 +189,172 @@ header a {
     bottom: 1rem;
 }
 
-/*-------------- FIN MENU -------------- */
+/*-------------- MENU Responsive-------------- */
+@media (max-width: 599px) {
+    .cont-main h1 {
+        font-size: 1.5rem;
+    }
+    .imagen{
+        display: none;
+    }
+}
+
+@media (min-width: 600px) and (max-width:719px) {
+
+    .botones,
+    .cajaListaInterna .enlaceLista {
+        font-size: 1.1rem;
+    }
+
+    .btn-caja {
+        margin: 0 auto 2rem auto;
+    }
+
+}
+
+@media (min-width: 720px) {
+    .botones {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1048px) {
+    .botones {
+        font-size: 3rem;
+    }
+}
+
+/*--------------  MENU Hamburgesa-------------- */
+.menuHamburgesa {
+    display: none;
+}
+
+@media (max-width: 599px) {
+    .menuHamburgesa {
+        display: block;
+    }
+
+    .menuDesktop,
+    .mapa {
+        display: none;
+    }
+
+    .hamburger {
+        position: fixed;
+        background-color: transparent;
+        left: 0;
+        top: 0;
+        height: 30px;
+        width: 30px;
+        padding: 20px 20px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        z-index: 1002;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    .hamburger.is-active {
+        background-color: none;
+    }
+
+    ._layer {
+        background: white;
+        margin-bottom: 4px;
+        border-radius: 2px;
+        width: 28px;
+        height: 4px;
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    }
+
+    .hamburger:hover .-top {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    .hamburger:hover .-bottom {
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+
+    .hamburger.is-active .-top {
+        -webkit-transform: translateY(200%) rotate(45deg) !important;
+        -ms-transform: translateY(200%) rotate(45deg) !important;
+        transform: translateY(200%) rotate(45deg) !important;
+    }
+
+    .hamburger.is-active .-mid {
+        opacity: 0;
+    }
+
+    .hamburger.is-active .-bottom {
+        -webkit-transform: translateY(-200%) rotate(135deg) !important;
+        -ms-transform: translateY(-200%) rotate(135deg) !important;
+        transform: translateY(-200%) rotate(135deg) !important;
+    }
+
+    .menuppal.is_active {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    .menuppal {
+        background-color: rgba(51, 50, 50, 0.95);
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        overflow-y: scroll;
+        position: fixed;
+        top: 0;
+        transform: translate3d(0px, -100%, 0px);
+        transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+        width: 100%;
+        z-index: 1001;
+    }
+
+    .menuppal ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menuppal ul li {
+        list-style: none;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 3em;
+        height: 3em;
+        color: #369;
+        text-transform: none;
+        font-weight: bold;
+    }
+
+    .menuppal ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .menuppal ul li a:hover {
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10%;
+    }
+}
+
+/*-------------- Fin MENU Hamburgesa-------------- */
+
+/*-------------- Fin MENU Responsive-------------- */
+/*----------------------- FIN MENU ----------------------- */
 
 /* ----------------------- FOOTER ----------------------- */
 .footer {
@@ -258,30 +469,31 @@ header a {
 section a h2 {
     color: black;
 }
-.resalte{
-    font-weight: 800;
-}
+
 /* -----------------------FIN DE MAIN ----------------------- */
 /* -----------------------  BOTON DE VER MAS ----------------------- */
 
-.btn-ver{
+.btn-ver {
     display: flex;
-    justify-content: flex-end ;
+    justify-content: flex-end;
 }
+
 .btn-vermas {
     background-color: rgba(221, 218, 218, 0.5);
     padding: 1.5rem;
     border-radius: 25%;
 }
-.btn-vermas a{
+
+.btn-vermas a {
     color: black;
     font-size: 1.5rem;
 }
+
 /* ----------------------- FIN BOTON DE VER MAS ----------------------- */
 /* -----------------------SECCION DE TURISMO DEL INDEX-----------------------*/
 .contenedor-turismo {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     padding: 3rem;
 }
 
@@ -297,7 +509,7 @@ section a h2 {
 .tipo-lugar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: 1fr 1fr 1fr;
+    grid-template-rows: 1fr .3fr 2fr;
 }
 
 .turismoParrafo {

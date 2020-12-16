@@ -11,7 +11,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Lobster&family=Overpass:wght@300&display=swap">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/estilos.css">
 </head>
 
 <body>
@@ -31,13 +31,38 @@
                     </div>
                 </div>
                 <a href="#arriba"><i class="fas fa-chevron-circle-up"></i></a>
-                <div class="btn-caja-resto">
-                    <a class="btn" href="galeria.html" title="Ir a Galería">Galería</a>
-                    <a class="btn" href="turismo.html" title="Ir a Turismo">Turismo </a>
-                    <a class="btn" href="../index.html" title="Ir a Inicio"><i class="fas fa-home"></i></a>
-                    <a class="btn" href="blog.html" title="Ir a Blog">Blog</a>
-                    <a class="btn" href="historia.html" title="Ir a Historia">Historia</a>
-                </div>
+                <!-- Menu de navegacion con lista desplegable-->
+                <ul class="btn-caja nav nav-justified">
+                    <li class="navBtn listaBtnExpan"><a class="botones enlaceLista"
+                            href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="navBtn listaBtnExpan"><a class="botones enlaceLista"
+                            href="turismo.html">Turismo</a>
+                        <ul class="cajaListaInterna">
+                            <li class="listaInterna"><a class="botones enlaceLista"
+                                    href="turismo.html#playas">Playas</a></li>
+                            <li class="listaInterna"><a class="botones enlaceLista"
+                                    href="turismo.html#camping">Camping</a></li>
+                            <li class="listaInterna"><a class="botones enlaceLista"
+                                    href="turismo.html#ciudad">Ciudad</a></li>
+                        </ul>
+                    </li>
+                    <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="../index.html"><i
+                                class="fas fa-home"></i></a>
+                    </li>
+                    <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="blog.html">Blog</a>
+                        <ul class="cajaListaInterna">
+                            <li class="listaInterna"><a class="botones enlaceLista" href="blog.html">Noticias</a>
+                            </li>
+                            <li class="listaInterna"><a class="botones enlaceLista" href="blog.html">Datos de
+                                    interes</a></li>
+                        </ul>
+                    </li>
+                    <li class="navBtn listaBtnExpan"><a class="botones enlaceLista"
+                            href="historia.html">Historia</a>
+                    </li>
+                </ul>
+                <!-- fin del menu de navegacion -->
             </nav>
         </div>
     </header>
