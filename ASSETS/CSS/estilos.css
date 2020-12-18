@@ -30,7 +30,7 @@ h1,
 h2 {
     font-family: 'Lobster', cursive;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 4rem;
 }
 
@@ -39,9 +39,8 @@ h2 {
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding: 1rem 2rem;
-    text-align: justify
 }
 
 a {
@@ -93,12 +92,13 @@ a {
     background-color: rgba(0, 0, 0, 0.6);
     list-style: none;
     align-items: center;
+    width: fit-content;
 }
 
 .navBtn {
     /*Ancho de los botones  */
     display: inline-block;
-    width: 20%;
+    width: max-content;
     padding: 1rem;
 
 }
@@ -120,7 +120,6 @@ a {
 
 .enlaceLista {
     text-decoration: none;
-    width: 20%;
     display: block;
     padding: .6rem;
 }
@@ -143,7 +142,6 @@ a {
 .listaInterna {
     list-style: none;
     width: 20%;
-
 }
 
 .cajaListaInterna {
@@ -152,16 +150,16 @@ a {
     /* Esto adyudará a dar el efecto de despliegue del submenú */
     transform-origin: left top;
     top: 100%;
-    padding: 0;
+    padding: 0 1rem;
     max-width: 250px;
     background-color: rgba(0, 0, 0, 0.6);
-    margin-top: 0;
+    margin-top: 0 auto;
 
 }
 
 .cajaListaInterna .enlaceLista {
     font-size: 1.8rem;
-    width: 20%;
+    width: max-content;
 
 }
 
@@ -190,15 +188,6 @@ header a {
 }
 
 /*-------------- MENU Responsive-------------- */
-@media (max-width: 599px) {
-    .cont-main h1 {
-        font-size: 1.5rem;
-    }
-    .imagen{
-        display: none;
-    }
-}
-
 @media (min-width: 600px) and (max-width:719px) {
 
     .botones,
@@ -209,18 +198,19 @@ header a {
     .btn-caja {
         margin: 0 auto 2rem auto;
     }
-
 }
 
 @media (min-width: 720px) {
     .botones {
         font-size: 1.8rem;
     }
+
 }
 
 @media (min-width: 1048px) {
     .botones {
         font-size: 3rem;
+        width: 100%;
     }
 }
 
@@ -372,11 +362,9 @@ header a {
 
 .conte-footer {
     color: white;
-}
-
-.conte-footer {
     flex-basis: calc(33.3% - 1rem);
     text-align: justify;
+    margin: 0 auto;
 }
 
 .navFooter {
@@ -443,14 +431,50 @@ header a {
 
 }
 
+/* Footer responsivo */
+@media (max-width: 720px) {
+    .footer {
+        max-width: 100%;
+        padding: 1rem 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        background-color: #404040;
+    }
+
+    .footerContacto {
+        grid-row: 2;
+        grid-column: 1 / 2;
+    }
+
+    .footerNosotros {
+        grid-row: 1;
+        grid-column: 1 / 3;
+    }
+
+    .footerRedes {
+        grid-row: 2;
+        grid-column: 2 / 3;
+    }
+}
+
+/* Footer responsivo */
+
 /*  ----------------------- FIN GENERALES ----------------------- */
 /*  ----------------------- INDEX ----------------------- */
 /* -----------------------  MAIN ----------------------- */
+/* GENERAL DEL INDEX */
+#container-main {
+    display: none;
+}
+
+/* FIN GENERAL DEL INDEX */
+
 .clear {
     clear: both
 }
 
-.imagen {
+.imagenMapa {
     max-width: 35rem;
     float: left;
     margin-right: 2rem;
@@ -469,6 +493,67 @@ header a {
 section a h2 {
     color: black;
 }
+
+.estiloTitulo {
+    font-size: 5rem;
+    padding: 1.5rem;
+    margin: 0 0 5rem 0;
+    /*revisar*/
+    background-color: rgba(238, 237, 236, 0.671);
+    border-radius: 10%;
+    width: 100%;
+}
+
+/*-------------------INDEX RESPONSIVE-------------------*/
+@media (max-width: 599px) {
+    .indexDesktopOff {
+        display: none;
+    }
+    .contenedor {
+        max-width: 100%;
+        margin: 2rem auto;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 0.9);
+        border-radius: 20px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.9);
+    }
+
+    .imagenMapa {
+        display: none;
+    }
+}
+
+@media (max-width:719px) {
+    .estiloTitulo {
+        font-size: 1.8rem;
+    }
+
+    .imagenMapa {
+        max-width: 30%;
+    }
+
+    .estilo-parrafo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1048px) {
+    .imagenMapa {
+        max-width: 50%;
+    }
+
+    .estiloTitulo {
+        font-size: 2.2rem;
+    }
+
+    .estilo-parrafo {
+        max-height: max-content;
+    }
+
+}
+
+/* -------------------FIN INDEX RESPONSIVE------------------- */
 
 /* -----------------------FIN DE MAIN ----------------------- */
 /* -----------------------  BOTON DE VER MAS ----------------------- */
@@ -495,21 +580,31 @@ section a h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 3rem;
+    grid-column-gap: 10px;
 }
 
 /*---------EFECTO--------------*/
 .contenedor-turismo img {
-    max-width: 200px;
-    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
     display: block;
-    position: relative;
     border-radius: 5%;
 }
 
 .tipo-lugar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr .3fr 2fr;
+    grid-template-rows: .5fr 1fr;
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(221, 218, 218, 1);
+    border: 1px solid black;
+}
+
+.tipo-lugar a {
+    margin: auto;
+
 }
 
 .turismoParrafo {
@@ -517,20 +612,41 @@ section a h2 {
     color: black;
     text-align: center;
     display: block;
-    margin: 2rem auto 0 auto;
-    width: 50%;
+    margin: 0 auto;
     border-radius: 30%;
 }
 
-.contenedor-turismo img:hover {
+.contenedor-turismo .tipo-lugar:hover {
     transform: scale(1.2);
     transition: 0.5s ease-in-out;
     position: relative;
-    border-radius: 10%;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 3;
+
 
 }
 
-/* -----------------------SECCION DE GALERIA DEL INDEX-----------------------*/
+/*   TURISMO DEL INDEX RESPONSIVE*/
+@media (max-width: 900px) {
+    .contenedor-turismo {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+
+    }
+
+    .tipo-lugar {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .tipo-lugar a img {
+        margin: auto;
+    }
+}
+
+/*  FIN TURISMO DEL INDEX RESPONSIVE*/
+/* SECCION DE GALERIA DEL INDEX*/
 .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -575,5 +691,35 @@ section a h2 {
     transform: scale(1.07);
 }
 
-/* -----------------------FIN MAIN ----------------------- */
+/*   GALERIA DEL INDEX RESPONSIVE*/
+@media (max-width: 800px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+/*  FIN GALERIA DEL INDEX RESPONSIVE*/
+/*  FIN SECCION DE GALERIA DEL INDEX*/
+/*  SECCION DE BLOG DEL INDEX*/
+.contidoBlog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+/*  FIN SECCION DE BLOG DEL INDEX*/
+
+
 /*  -----------------------FIN INDEX ----------------------- */
+
+
+
+/*-----------------------------BLOG--------------------------*/
+.contenidoBlogIndex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+/*-----------------------------FIN BLOG--------------------------*/
