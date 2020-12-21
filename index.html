@@ -5,42 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderHouse: Proyecto Final</title>
+
+    <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+
+    <!-- ICONOS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <!-- NORMALIZE -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="ASSETS/CSS/estilos.css">
 </head>
 
 <body>
     <!-- Navegacion-->
     <header id="arriba">
-        <div class="encabezado">
-            <div class="buscar btn-group dropleft">
-                <div type="button" class=" btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="dropdown-menu" x-placement="right-start"
-                    style="position: absolute; transform: translate3d(111px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
-                    <a class="dropdown-item" href="#"><input type="text"></a>
-                </div>
-                <!--Terminar -->
-            </div>
-            <div class="mapa">
-                <a href="https://goo.gl/maps/nCMiDfxxWDSrqzsR9" title="Encuéntrame" target="_blanck"><i
-                        class="fas fa-map-marked-alt"></i>
-                </a>
-            </div>
-        </div>
-        <a href="#arriba"><i class="fas fa-chevron-circle-up"></i></a>
         <!-- Menu de navegacion con lista desplegable-->
         <nav class="menuDesktop">
-            <ul class="btn-caja nav nav-justified">
+            <a class="logo" href="index.html">
+                Uruguay <br>Natural</br>
+            </a>
+            <ul class="btnCaja">
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="VIEWS/galeria.html">Galeria</a>
                 </li>
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="VIEWS/turismo.html">Turismo</a>
@@ -52,9 +42,6 @@
                         <li class="listaInterna"><a class="botones enlaceLista"
                                 href="VIEWS/turismo.html#ciudad">Ciudad</a></li>
                     </ul>
-                </li>
-                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="index.html"><i
-                            class="fas fa-home"></i></a>
                 </li>
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="VIEWS/blog.html">Blog</a>
                     <ul class="cajaListaInterna">
@@ -68,6 +55,13 @@
                 </li>
             </ul>
         </nav>
+        <!-- Fin del menu de navegacion con lista desplegable-->
+
+
+
+
+
+
         <!--Menu de hamburgesa-->
         <nav class="menuHamburgesa">
             <div class="hamburger">
@@ -88,9 +82,20 @@
         </nav>
         <!--Fin de Menu de hamburgesa-->
 
-        <!-- fin del menu de navegacion con lista desplegable-->
     </header>
     <!-- Fin de Navegacion-->
+    <!-------------------------DECORACION DE SALTO DE HEADER A MAIN------------------------------>
+
+    <section>
+        <h1 class="estiloTituloEncabezado">
+            <--------------Uruguay Natural -------------->
+        </h1>
+    </section>
+
+    <!------------------------- FIN DECORACION DE SALTO DE HEADER A MAIN------------------------------>
+
+
+
     <!-- Contenido Principal-->
     <div class="indexDesktop contenedor">
         <main class="contenedor">
