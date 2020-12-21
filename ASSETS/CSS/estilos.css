@@ -3,6 +3,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     /** Reset para REMS - 62.5% = 10px de 16px **/
+
 }
 
 *,
@@ -11,43 +12,16 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-image: url(../IMG/la_paloma2.jpg);
-    background-repeat: none;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 img {
     max-width: 100%;
 }
 
-h1,
-h2 {
-    font-family: 'Lobster', cursive;
-    text-align: center;
-    /* text-transform: uppercase; */
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-p {
-    font-size: 1.4rem;
-    padding: 1rem 2rem;
-}
-
-a {
+li,
+ul {
     text-decoration: none;
 }
 
-.contenedor {
+/* .contenedor {
     max-width: 90%;
     margin: 4rem auto;
     padding: 2rem;
@@ -56,12 +30,39 @@ a {
     border-radius: 20px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.9);
 
-}
+} */
 
 /*----------------------- HEADER ----------------------- */
 /*-------------- PORTADA -------------- */
-.encabezado {
-    height: 100%;
+header {
+    margin-bottom: 61rem;
+    background-image: url(../IMG/la_paloma2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 61rem;
+}
+
+
+.logo {
+    width: 140px;
+    height: 140px;
+    font-family: 'Homemade Apple', cursive;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 4rem;
+    border-radius: 10%;
+    font-size: 2.6rem;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+
 }
 
 .fas {
@@ -75,24 +76,18 @@ a {
     right: 1rem;
 }
 
-.mapa {
-    position: relative;
-    top: 1rem;
-    left: 1rem;
-}
-
 /*-------------- FIN PORTADA -------------- */
 
 /*-------------- MENU -------------- */
-.btn-caja,
-.btn-caja-resto {
-    margin: 13rem auto 41rem auto;
-    /*arreglar para que funcione segun el tamaño de pantalla */
-    width: 70%;
-    background-color: rgba(0, 0, 0, 0.6);
+.btnCaja {
+    margin: 0 auto;
+    width: 100%;
+    height: 9rem;
+    background-color: rgba(0, 0, 0, 0.2);
     list-style: none;
-    align-items: center;
-    width: fit-content;
+    position: fixed;
+    top: 0;
+    text-align: center;
 }
 
 .navBtn {
@@ -224,8 +219,7 @@ header a {
         display: block;
     }
 
-    .menuDesktop,
-    .mapa {
+    .menuDesktop {
         display: none;
     }
 
@@ -463,6 +457,17 @@ header a {
 /*  ----------------------- FIN GENERALES ----------------------- */
 /*  ----------------------- INDEX ----------------------- */
 /* -----------------------  MAIN ----------------------- */
+/*-------------------------DECORACION DE SALTO DE HEADER A MAIN-------------------------------*/
+.estiloTituloEncabezado {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 4rem;
+    color: white;
+    background-color: black;
+    padding: 3rem;
+}
+
+/*-------------------------FIN DECORACION DE SALTO DE HEADER A MAIN-------------------------------*/
+
 /* GENERAL DEL INDEX */
 #container-main {
     display: none;
@@ -509,6 +514,7 @@ section a h2 {
     .indexDesktopOff {
         display: none;
     }
+
     .contenedor {
         max-width: 100%;
         margin: 2rem auto;
