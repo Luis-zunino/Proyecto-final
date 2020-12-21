@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** Reset para REMS - 62.5% = 10px de 16px **/
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+li,
+ul {
+    text-decoration: none;
+}
+
+/*----------------------- HEADER ----------------------- */
+/*-------------- PORTADA -------------- */
+header {
+    margin-bottom: 61rem;
+    background-image: url(../IMG/la_paloma2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 61rem;
+}
+
+
+.logo {
+    width: 140px;
+    height: 140px;
+    font-family: 'Homemade Apple', cursive;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 4rem;
+    border-radius: 10%;
+    font-size: 2.6rem;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+
+}
+
+.fas {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.buscar {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+/*-------------- FIN PORTADA -------------- */
