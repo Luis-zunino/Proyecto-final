@@ -21,48 +21,76 @@ ul {
     text-decoration: none;
 }
 
-/* .contenedor {
-    max-width: 90%;
-    margin: 4rem auto;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: rgba(0, 0, 0, 0.9);
-    border-radius: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.9);
-
-} */
 
 /*----------------------- HEADER ----------------------- */
 /*-------------- PORTADA -------------- */
 header {
-    margin-bottom: 61rem;
-    background-image: url(../IMG/la_paloma2.jpg);
-    background-repeat: none;
-    background-size: cover;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    height: 61rem;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    margin-left: 4rem;
+    position: fixed;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+    top: 0;
+    z-index: 17;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+.anchoFraseEslogan {
+    width: 100%;
+}
+
+.la,
+.aventura,
+.vale {
+    font-family: 'Permanent Marker', cursive;
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 0;
+}
+
+.la {
+    font-size: 13rem;
+    top: 25%;
+    bottom: 75%;
+    left: 20rem;
+}
+
+.aventura {
+    font-size: 19rem;
+    top: 35%;
+    bottom: 65%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*
+    Explicación: Si se agrega la top/left del 50% mueve el borde superior/izquierdo
+    del elemento al centro del elemento principal, y la función translate() con el
+    valor (negativo) de -50% mueve el elemento a la mitad de su tamaño. Por lo tanto,
+    el elemento se colocará en el medio. Esto se debe a que un valor porcentual en
+    top propiedades top / left es relativo al alto / ancho del elemento padre (que
+    está creando un bloque contenedor).Mientras que un valor porcentual en la función
+    de transformación translate() es relativo al ancho / alto del elemento en sí (en
+    realidad se refiere al tamaño del cuadro delimitador ) . Para la alineación
+    unidireccional, ve con translateX(-50%) o translateY(-50%) lugar.
+    https://html.dokry.com/28
+    */
 }
 
 
-.logo {
-    width: 140px;
-    height: 140px;
-    font-family: 'Homemade Apple', cursive;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 4rem;
-    border-radius: 10%;
-    font-size: 2.6rem;
-    position: fixed;
-    top: 0;
-    z-index: 7;
 
+.vale {
+    font-size: 16rem;
+    top: 39rem;
+    left: 54rem;
 }
 
 .fas {
@@ -76,25 +104,43 @@ header {
     right: 1rem;
 }
 
+.estilosCarruselHeader {
+    z-index: -5;
+    height: 65rem;
+    background-size: cover;
+    overflow: hidden;
+
+
+}
+
+.carousel-item img {
+    background-size: cover;
+    height: 65rem;
+    width: 100%;
+}
+
 /*-------------- FIN PORTADA -------------- */
 
 /*-------------- MENU -------------- */
 .btnCaja {
     margin: 0 auto;
     width: 100%;
-    height: 9rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    height: 5rem;
+    background-color: rgba(255, 255, 255, 0.7);
     list-style: none;
     position: fixed;
-    top: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 10;
 }
 
 .navBtn {
     /*Ancho de los botones  */
     display: inline-block;
-    width: max-content;
-    padding: 1rem;
+    width: 15%;
+    padding: .5rem;
+    height: 100%;
+    text-align: center;
 
 }
 
@@ -109,14 +155,16 @@ header {
 .listaBtnExpan:hover>.enlaceLista,
 .listaInterna:hover,
 .listaInterna:hover>.enlaceLista {
-    color: white;
-    z-index: 10;
+    color: black;
+    z-index: 10000;
 }
 
 .enlaceLista {
     text-decoration: none;
     display: block;
     padding: .6rem;
+    height: 100%;
+
 }
 
 /*-------------- SUBMENU -------------- */
@@ -140,21 +188,23 @@ header {
 }
 
 .cajaListaInterna {
+    /*Para que aparezca solo cuando se le hace hover*/
     display: none;
     position: absolute;
     /* Esto adyudará a dar el efecto de despliegue del submenú */
     transform-origin: left top;
     top: 100%;
     padding: 0 1rem;
-    max-width: 250px;
-    background-color: rgba(0, 0, 0, 0.6);
-    margin-top: 0 auto;
-
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
 }
 
 .cajaListaInterna .enlaceLista {
     font-size: 1.8rem;
-    width: max-content;
+    width: 100%;
+    display: block;
+
 
 }
 
@@ -170,9 +220,10 @@ header {
 
 .fa-home,
 header a {
-    color: #c1c5bf;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 1rem;
     padding: 0 1.5rem;
 }
 
@@ -202,14 +253,7 @@ header a {
 
 }
 
-@media (min-width: 1048px) {
-    .botones {
-        font-size: 3rem;
-        width: 100%;
-    }
-}
-
-/*--------------  MENU Hamburgesa-------------- */
+/*--------------  MENU HAMBURGESA-------------- */
 .menuHamburgesa {
     display: none;
 }
@@ -457,16 +501,59 @@ header a {
 /*  ----------------------- FIN GENERALES ----------------------- */
 /*  ----------------------- INDEX ----------------------- */
 /* -----------------------  MAIN ----------------------- */
-/*-------------------------DECORACION DE SALTO DE HEADER A MAIN-------------------------------*/
-.estiloTituloEncabezado {
+/*-------------------------DECORACION DE SALTOS-------------------------------*/
+.estiloTituloDecorado {
+    /*Decorado de <--------uruguay natural------->*/
     font-family: 'Homemade Apple', cursive;
     font-size: 4rem;
     color: white;
     background-color: black;
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*-------------------------FIN DECORACION DE SALTO DE HEADER A MAIN-------------------------------*/
+.estiloImagenDecorado {
+    /*Decorado imagen del flamenco*/
+    margin: 0;
+    background-image: url(../IMG/flamenco_decorado.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.infoFlamenco {
+    margin: 1rem 0 0 1rem;
+    /*Da la info del flamenco*/
+}
+
+
+.estiloFraseDecorado {
+    /*Decorado de frase con imagen decorada abajo*/
+    height: 400px;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 5rem;
+    background-color: cornflowerblue;
+    text-align: end;
+    padding: 2rem;
+
+}
+
+.estiloFraseDecorado blockquote {
+    z-index: 3;
+    height: 60px;
+    margin-top: 3rem;
+}
+
+.estiloFraseDecorado img {
+    position: relative;
+    top: 210px;
+    width: 100%;
+
+}
+
+/*-------------------------FIN DECORACION DE SALTOS-------------------------------*/
 
 /* GENERAL DEL INDEX */
 #container-main {
@@ -486,12 +573,16 @@ header a {
     border-radius: 10%;
 }
 
-.cont-main {
-    padding: 3rem 3rem 6rem 3rem;
-    margin: 0;
+.contMain {
+    padding: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    height: 600px;
+
 }
 
-.cont-main div p {
+.contMain div p {
     font-size: 1.6rem;
 }
 
@@ -499,15 +590,163 @@ section a h2 {
     color: black;
 }
 
-.estiloTitulo {
-    font-size: 5rem;
+/*----------------------------------Efecto Bienvenida-----------------------------------------*/
+.efectoEstiloTitulo h1:before {
+    content: '';
+    animation: Bienvenidas 20s linear infinite;
+}
+
+.estiloTituloPrincipal {
+    font-size: 14rem;
     padding: 1.5rem;
-    margin: 0 0 5rem 0;
-    /*revisar*/
-    background-color: rgba(238, 237, 236, 0.671);
-    border-radius: 10%;
+    margin: 5rem auto;
     width: 100%;
 }
+
+/* https://github.com/tbcodes/animation_css_text_rotation */
+@keyframes Bienvenidas {
+    0% {
+        content: '¡Bienvenido!';
+    }
+
+    20% {
+        content: 'Welcome!';
+    }
+
+    40% {
+        content: '¡Bem-vinda!';
+    }
+
+    60% {
+        content: '¡Benvingut!';
+    }
+
+    80% {
+        content: '¡ようこそ!';
+    }
+
+    100% {
+        content: '¡Bienvenido!';
+
+    }
+}
+
+/*---------------------------------MEDIOS CIRCULOS CON INFORMACION------------------------------------*/
+.fa-arrow-left, .fa-arrow-right, .fa-arrow-down{
+    color: black;
+    position: absolute;
+    font-size: 3rem;
+}
+.fa-arrow-left{
+    left: 2rem;
+    bottom: 50%;
+    top: 50%;
+    z-index: -3;
+}
+.fa-arrow-right{
+    right: 2rem;
+    bottom:50%;
+    top:50%;
+    z-index: -3;
+
+}
+.fa-arrow-down{
+    bottom: 2rem;
+    z-index: -3;
+
+}
+.zonaIzquierda, .zonaDerecha {
+    position: absolute;
+    height: 600px;
+    width: 300px;
+    bottom: 0;
+    top: 0;
+}
+.zonaCentro {
+    position: absolute;
+    min-width: 1048px;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.zonaIzquierda {
+    left: 0;
+}
+
+.zonaDerecha {
+    right: -0%;
+}
+
+.medioCirculoIzquierdo,
+.medioCirculoDerecho,
+.medioCirculoCentro {
+    display: none;
+    position: absolute;
+}
+
+.zonaIzquierda:hover .medioCirculoIzquierdo {
+    height: 600px;
+    width: 200px;
+    margin: 150px auto 150px 40px;
+    z-index: 4;
+    display: block;
+}
+
+.zonaIzquierda:hover {
+    height: 600px;
+    width: 300px;
+    left: 0;
+    top: 0;
+    color: white;
+    background-color: red;
+    -moz-border-radius: 0 600px 600px 0;
+    -webkit-border-radius: 0 600px 600px 0;
+    border-radius: 0 600px 600px 0;
+}
+
+.zonaDerecha:hover .medioCirculoDerecho {
+    height: 600px;
+    width: 200px;
+    margin: 150px auto 150px 40px;
+    z-index: 4;
+    display: block;
+}
+
+.zonaDerecha:hover {
+    height: 600px;
+    width: 300px;
+    right: -0;
+    top: 0;
+    color: white;
+    background-color: blue;
+    -moz-border-radius: 600px 0 0 600px;
+    -webkit-border-radius: 600px 0 0 600px;
+    border-radius: 600px 0 0 600px;
+}
+.zonaCentro:hover .medioCirculoCentro{
+    height: 200px;
+    width: 600px;
+    z-index: 4;
+    display: block;
+}
+.zonaCentro:hover, .medioCirculoCentro:hover{
+    height: 200px;
+    width: 1048px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: green;
+    -moz-border-radius: 600px 600px 0 0;
+    -webkit-border-radius: 600px 600px 0 0;
+    border-radius: 600px 600px 0 0;
+}
+
+
+
 
 /*-------------------INDEX RESPONSIVE-------------------*/
 @media (max-width: 599px) {
@@ -539,7 +778,7 @@ section a h2 {
         max-width: 30%;
     }
 
-    .estilo-parrafo {
+    .estiloParrafo {
         font-size: 1.3rem;
     }
 }
@@ -553,7 +792,7 @@ section a h2 {
         font-size: 2.2rem;
     }
 
-    .estilo-parrafo {
+    .estiloParrafo {
         max-height: max-content;
     }
 

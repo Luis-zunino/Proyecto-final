@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderHouse: Proyecto Final</title>
 
-    <!-- FUENTES -->
+    <!------------------------- FUENTES -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
     <!-- ICONOS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -23,17 +24,18 @@
 </head>
 
 <body>
-    <!-- Navegacion-->
+    <!-------------------------PORTADA------------------------------>
+
+    <!-------------------------Navegacion------------------------------>
     <header id="arriba">
-        <!-- Menu de navegacion con lista desplegable-->
+        <!-------------------------Menu de navegacion con lista desplegable------------------------------>
         <nav class="menuDesktop">
             <a class="logo" href="index.html">
-                Uruguay <br>Natural</br>
-            </a>
+                <img src="assets/IMG/futuroicono.gif" alt=""> </a>
             <ul class="btnCaja">
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="VIEWS/galeria.html">Galeria</a>
                 </li>
-                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="VIEWS/turismo.html">Turismo</a>
+                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="VIEWS/turismo.html">Destinos</a>
                     <ul class="cajaListaInterna">
                         <li class="listaInterna"><a class="botones enlaceLista"
                                 href="VIEWS/turismo.html#playas">Playas</a></li>
@@ -45,7 +47,8 @@
                 </li>
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="VIEWS/blog.html">Blog</a>
                     <ul class="cajaListaInterna">
-                        <li class="listaInterna"><a class="botones enlaceLista" href="VIEWS/blog.html">Noticias</a></li>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="VIEWS/blog.html">Noticias</a>
+                        </li>
                         <li class="listaInterna"><a class="botones enlaceLista" href="VIEWS/blog.html">Datos de
                                 interes</a></li>
                     </ul>
@@ -55,14 +58,13 @@
                 </li>
             </ul>
         </nav>
-        <!-- Fin del menu de navegacion con lista desplegable-->
+        <!-------------------------Fin del menu de navegacion con lista desplegable------------------------------>
 
 
 
 
 
-
-        <!--Menu de hamburgesa-->
+        <!-------------------------MENU HAMBURGESA------------------------------>
         <nav class="menuHamburgesa">
             <div class="hamburger">
                 <div class="_layer -top"></div>
@@ -80,60 +82,106 @@
             </nav>
 
         </nav>
-        <!--Fin de Menu de hamburgesa-->
+        <!-------------------------FIN DE MENU HAMBURGESA------------------------------>
 
     </header>
-    <!-- Fin de Navegacion-->
-    <!-------------------------DECORACION DE SALTO DE HEADER A MAIN------------------------------>
+    <!-------------------------Fin de Navegacion------------------------------>
 
     <section>
-        <h1 class="estiloTituloEncabezado">
+        <div class="anchoFraseEslogan">
+            <h1> <span class="la">La</span> <span class="aventura">aventura</span> <span class="vale">vale</span></h1>
+        </div>
+
+        <!-------------------------CARRUSEL------------------------------>
+        <div id="carouselExampleSlidesOnly" class="estilosCarruselHeader carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="ASSETS/IMG/casapueblo.jpg" alt="Casa Pueblo">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="ASSETS/IMG/ernesto-velazquez-.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="ASSETS/IMG/la_paloma2.jpg" alt="">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="ASSETS/IMG/Uruguay-1440x720.jpg" alt=" ">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="ASSETS/IMG/portada2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------FIN DEL CARRUSEL------------------------------>
+
+    <!-------------------------FIN DE PORTADA------------------------------>
+    <section>
+        <h1 class="estiloTituloDecorado">
             <--------------Uruguay Natural -------------->
         </h1>
     </section>
+    <!-------------------------FIN DECORACION DE SALTO DE HEADER A MAIN------------------------------>
 
-    <!------------------------- FIN DECORACION DE SALTO DE HEADER A MAIN------------------------------>
-
-
-
-    <!-- Contenido Principal-->
-    <div class="indexDesktop contenedor">
-        <main class="contenedor">
-            <div class="cont-main">
-                <h1 class="estiloTitulo">Información general</h1>
-                <div class=" izquierda">
+    <!-------------------------Contenido Principal-->
+    <div class="indexDesktop">
+        <main>
+            <div class="contMain">
+                <div class="efectoEstiloTitulo animacionTexto">
+                    <h1 class="estiloTituloPrincipal "></h1>
+                </div>
+                <!-- <div class=" izquierda">
                     <img class="imagenMapa" src="ASSETS/IMG/Uruguay_location_map.svg" title="Mapa de Uruguay"
                         alt="Imagen del mapa de Uruguay">
+                </div> -->
+                <div class="estiloParrafo">
+                    <div class="zonaIzquierda">
+                        <p class="medioCirculoIzquierdo ">
+                            Uruguay es un país de América del Sur, situado en la parte oriental del Cono Sur.
+                            Limita al noreste con Brasil, al oeste y suroeste con Argentina y tiene costas en
+                            el océano Atlántico por el sur. <br> Es miembro fundador de las Naciones Unidas, del
+                            Mercosur, de
+                            la OEA, de la UNASUR y del G77, y forma parte de otros organismos internacionales. </br>
+                        </p>
+                    </div>
+                    <i class="fas fa-arrow-left"></i>
+                    <div class="zonaDerecha">
+                        <p class="medioCirculoDerecho">
+                            Tiene clima templado con una temperatura media de 17,5 ºC, siendo enero el mes más cálido,
+                            con un media de 22,6 ºC, y julio el mes más frío, con una media de 10,6 ºC. Los principales
+                            recursos económicos son la agricultura, la forestación y la ganadería.
+                        </p>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                    <div class="zonaCentro">
+                        <p class="medioCirculoCentro">
+                            Según las Naciones Unidas, es el país de América Latina con el nivel de alfabetización más
+                            alto.​ <br> De
+                            acuerdo al estudio de la organización Transparencia Internacional, es el país de
+                            Latinoamérica
+                            con
+                            menor
+                            Índice de Percepción de Corrupción y el 23° en el mundo. </br>
+                        </p>
+                    </div>
+                    <i class="fas fa-arrow-down"></i>
                 </div>
-                <p class="estilo-parrafo">
-                    Uruguay es un país de América del Sur, situado en la parte oriental del
-                    Cono Sur.
-                    Limita al noreste con Brasil, al oeste y suroeste con Argentina y tiene costas en
-                    el océano Atlántico por el sur. Es miembro fundador de las Naciones Unidas, del Mercosur, de la OEA,
-                    de
-                    la UNASUR y del G77, y forma parte de otros organismos internacionales.
-                </p>
-                <p class="estilo-parrafo">
-                    Tiene clima templado con una temperatura media de 17,5 ºC, siendo enero el mes más cálido, con una
-                    media
-                    de 22,6 ºC, y julio el mes más frío, con una media de 10,6 ºC. Los principales recursos económicos
-                    son
-                    la agricultura, la forestación y la ganadería.
-                </p>
-                <p class="estilo-parrafo">
-                    Según las Naciones Unidas, es el país de América Latina con el nivel de alfabetización más alto.​ De
-                    acuerdo al estudio de la organización Transparencia Internacional, es el país de Latinoamérica con
-                    menor
-                    Índice de Percepción de Corrupción y el 23° en el mundo.
-                </p>
-
                 <div class="clear"></div>
             </div>
         </main>
-        <!--Galeria-->
+        <!-- -------------------------DECORACION DE SALTOS-------------------------------->
+        <div class="estiloImagenDecorado">
+            <p>
+                <i title="Sobre el arroyo de Maldonado, se encuentra uno de los lugares hogar de los flamencos australes. La cual se encuentra en peligro de extinción.
+
+                " class=" infoFlamenco fas fa-eye"></i>
+            </p>
+        </div>
+        <!-- -------------------------FIN DECORACION DE SALTOS-------------------------------->
+
+        <!-------------------------GALERIA-------------------------------->
         <div class="indexDesktopOff">
-            <section class="contenedor">
-                <h2 id="galeria" class="estiloTitulo">Galería</h2>
+            <section>
                 <div class=" galeria">
                     <div class="imagenGal">
                         <a href="VIEWS/galeria.html">
@@ -183,17 +231,27 @@
                     <button class="btn-vermas"><a href="VIEWS/galeria.html" title="Ver más"> Ver más </a></button>
                 </div>
             </section>
-            <!--Termina Galeria-->
+            <!-------------------------Termina GALERIA-->
+            <!-- ------------------------- DECORACION DE SALTOS-------------------------------->
+            <div class="estiloFraseDecorado">
+                <blockquote>
+                    “Nuestro destino de viaje nunca es un lugar, sino una nueva forma de ver las cosas”.
 
-            <!--Turismo-->
-            <section class="contenedor">
+                    <br>Henry Miller</br>
+                </blockquote>
+                <img src="ASSETS/IMG/estilo.gif" alt="Decorado">
+            </div>
+            <!-- -------------------------FIN DECORACION DE SALTOS-------------------------------->
+
+            <!-------------------------Turismo-->
+            <section>
                 <h2 class="estiloTitulo" id="turismo">Elige tu destino</h2>
                 <div class="  contenedor-turismo">
                     <div class="tipo-lugar">
                         <a href="turismo.html#playa">
                             <img src="ASSETS/IMG/word-image.jpeg" title="Más información sobre las Playas"
                                 alt="Foto de una Playa"></a>
-                        <p class="estilo-parrafo">Pequeñas playas solitarias rodeadas de naturaleza o en agitadas costas
+                        <p class="estiloParrafo">Pequeñas playas solitarias rodeadas de naturaleza o en agitadas costas
                             ideales para la práctica
                             de
                             deportes acuáticos, los paladares más diversos encuentran aquello que vinieron a buscar y
@@ -204,7 +262,7 @@
                         <a href="turismo.html#camping">
                             <img src="ASSETS/IMG/Campin.jpg" title="Más información sobre los Campings"
                                 alt="Foto de un Camping"></a>
-                        <p class="estilo-parrafo"> Las áreas protegidas son un pilar fundamental para la conservación y
+                        <p class="estiloParrafo"> Las áreas protegidas son un pilar fundamental para la conservación y
                             el
                             uso sostenible de la diversidad biológica. </p>
                     </div>
@@ -212,7 +270,7 @@
                         <a href="turismo.html#ciudad">
                             <img class="img" src="ASSETS/IMG/ciudad-icono.jpg"
                                 title="Más información sobre las Ciudades" alt="Foto de una Ciudad"></a>
-                        <p class="estilo-parrafo">Calmas, seductoras, amenas, auténticas... así son las ciudades
+                        <p class="estiloParrafo">Calmas, seductoras, amenas, auténticas... así son las ciudades
                             uruguayas.
                             Montevideo, capital del
                             Uruguay, es centro de negocios, eventos y cultura.</p>
@@ -222,10 +280,10 @@
                     <button class="btn-vermas"><a href="VIEWS/turismo.html" title="Ver más"> Ver más </a></button>
                 </div>
             </section>
-            <!-- Termina Turismo-->
+            <!------------------------- Termina Turismo-->
 
-            <!-- BLOG-->
-            <section class="contenedor">
+            <!------------------------- BLOG-->
+            <section>
                 <h2 class="estiloTitulo">En Uruguay se puede</h2>
                 <div class="">
                     <div class="contenidoBlogIndex">
@@ -281,10 +339,10 @@
                     </div>
                 </div>
             </section>
-            <!--FIN BLOG-->
+            <!-------------------------FIN BLOG-->
 
-            <!-- informacion-->
-            <section class="contenedor">
+            <!------------------------- informacion-->
+            <section>
                 <h1 id="informacion" title="informacion"> ¿Cómo llegar a Uruguay?</h1>
                 <h2 class="estiloTitulo">Vía aérea</h2>
                 <p>
@@ -329,10 +387,10 @@
         </div>
     </div>
     </section>
-    <!--FIN informacion-->
+    <!-------------------------FIN informacion-->
     </div>
-    <!-- Fin del Contenido Principal-->
-    <!-- Pie de Página-->
+    <!------------------------- Fin del Contenido Principal-->
+    <!------------------------- Pie de Página-->
     <footer>
         <nav>
             <div class="navFooter">
@@ -362,7 +420,7 @@
             </div>
             <div class="conte-footer footerNosotros">
                 <h3>Sobre Nosotros</h3>
-                <p class="estilo-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto necessitatibus
+                <p class="estiloParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto necessitatibus
                     velit
                     laborum facere? Non, consequatur eveniet cum iusto magni ut possimus quia alias illum
                     ipsa expedita soluta placeat voluptas quos.
@@ -383,9 +441,15 @@
         </div>
         <p class="copy"><span class="color-copy"> CoderHouse:</span> Proyecto final</p>
     </footer>
-    <!--Fin del Pie de Página-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    <!-------------------------Fin del Pie de Página-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 
     <script src="ASSETS/JS/index.js"></script>
