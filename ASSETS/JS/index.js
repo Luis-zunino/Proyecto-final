@@ -1,5 +1,3 @@
-//carrusel
-
 //menu de hamburgesa
 // selector
 var menu = document.querySelector('.hamburger');

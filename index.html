@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderHouse: Proyecto Final</title>
-
     <!------------------------- FUENTES -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
@@ -25,16 +24,18 @@
 
 <body>
     <!-------------------------PORTADA------------------------------>
-
-    <!-------------------------Navegacion------------------------------>
+    <section>
+        <a href="#arriba">
+            <h1 class="estiloTituloDecorado">
+                <--------------Uruguay Natural -------------->
+            </h1>
+        </a>
+    </section>
+    <!--=======NAVEGACIÓN=======-->
     <header id="arriba">
         <!-------------------------Menu de navegacion con lista desplegable------------------------------>
         <nav class="menuDesktop">
-            <a class="logo" href="index.html">
-                <img src="assets/IMG/futuroicono.gif" alt=""> </a>
             <ul class="btnCaja">
-                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="VIEWS/galeria.html">Galeria</a>
-                </li>
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="VIEWS/turismo.html">Destinos</a>
                     <ul class="cajaListaInterna">
                         <li class="listaInterna"><a class="botones enlaceLista"
@@ -43,6 +44,16 @@
                                 href="VIEWS/turismo.html#camping">Camping</a></li>
                         <li class="listaInterna"><a class="botones enlaceLista"
                                 href="VIEWS/turismo.html#ciudad">Ciudad</a></li>
+                    </ul>
+                </li>
+                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista">Galeria</a>
+                    <ul class="cajaListaInterna">
+                        <li class="listaInterna"><a class="botones enlaceLista" href="VIEWS/galeria.html">2 Columnas</a>
+                        </li>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="VIEWS/galeria.html">3 Columnas</a>
+                        </li>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="VIEWS/galeria.html">4 Columnas</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="VIEWS/blog.html">Blog</a>
@@ -54,17 +65,12 @@
                     </ul>
                 </li>
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista"
-                        href="VIEWS/informacion.html">Información</a>
+                        href="VIEWS/informacion.html">Actividades</a>
                 </li>
             </ul>
         </nav>
         <!-------------------------Fin del menu de navegacion con lista desplegable------------------------------>
-
-
-
-
-
-        <!-------------------------MENU HAMBURGESA------------------------------>
+        <!--================MENU HAMBURGESA================-->
         <nav class="menuHamburgesa">
             <div class="hamburger">
                 <div class="_layer -top"></div>
@@ -83,16 +89,82 @@
 
         </nav>
         <!-------------------------FIN DE MENU HAMBURGESA------------------------------>
-
     </header>
-    <!-------------------------Fin de Navegacion------------------------------>
-
+    <!--=======FIN DE NAVEGACIÓN=======-->
     <section>
-        <div class="anchoFraseEslogan">
-            <h1> <span class="la">La</span> <span class="aventura">aventura</span> <span class="vale">vale</span></h1>
+        <div class="contMain">
+            <div class="efectoEstiloTitulo animacionTexto">
+                <h1 class="estiloTituloPrincipal "></h1>
+            </div>
+        </div>
+    </section>
+    <section class="imagenPortada">
+    </section>
+    <section class="seccionExperiencias">
+        <h1>Disfrute de experiencias maravillosas en Uruguay</h1>
+        <div class="contenedoExperiencia">
+            <div class="experiencia">
+                <img data-src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/fc1da7257992fc36032e11db3df7a664_XL.jpg"
+                    src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/fc1da7257992fc36032e11db3df7a664_XL.jpg"
+                    alt="Aventura y deporte">
+                <div class="contenidoExperiencia">
+
+                    <p> Aventura y deporte</p>
+                    <p> A pocos kilómetros de distancia, Uruguay regala diversos y atractivos paisajes
+                        donde es posible disfrutar de cabalgatas, vuelo libre, paseos en camiones a todo
+                        terreno,… </p>
+                </div>
+            </div>
+
+            <div class="experiencia">
+                <img data-src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/0b13665ae00972807ddb09f249d0abcb_XL.jpg"
+                    src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/0b13665ae00972807ddb09f249d0abcb_XL.jpg"
+                    alt="Áreas protegidas">
+                <div class="contenidoExperiencia">
+
+                    <p> Áreas protegidas</p>
+                    <p>
+                        A pesar de su pequeña superficie, Uruguay tiene infinidad de rincones naturales para quienes
+                        disfrutan de practicar ecoturismo. Diesisiete de ellos, integran el Sistema Nacional…
+                    </p>
+                </div>
+            </div>
+
+            <div class="experiencia">
+                <img data-src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/c9b002fe1bb0320831a8ae78670fdb6f_XL.jpg"
+                    src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/c9b002fe1bb0320831a8ae78670fdb6f_XL.jpg"
+                    alt="Campo y Naturaleza">
+                <div class="contenidoExperiencia">
+                    <p> Campo y Naturaleza</p>
+                    <p>
+                        A pocos kilómetros de distancia, Uruguay regala diversos y atractivos paisajes donde es posible
+                        disfrutar de cabalgatas, vuelo libre, paseos en camiones a todo terreno,…
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <!-------------------------CARRUSEL------------------------------>
+        <div class="btnVer">
+            <button class="btnVerMas">
+                <a href="VIEWS/galeria.html" title="Ver más"> Ver más </a>
+            </button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------------------------CARRUSEL------------------------------>
+    <section>
+        <!-- 
         <div id="carouselExampleSlidesOnly" class="estilosCarruselHeader carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -111,64 +183,16 @@
                     <img class="d-block w-100" src="ASSETS/IMG/portada2.jpg" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
     <!-------------------------FIN DEL CARRUSEL------------------------------>
 
     <!-------------------------FIN DE PORTADA------------------------------>
-    <section>
-        <h1 class="estiloTituloDecorado">
-            <--------------Uruguay Natural -------------->
-        </h1>
-    </section>
-    <!-------------------------FIN DECORACION DE SALTO DE HEADER A MAIN------------------------------>
 
     <!-------------------------Contenido Principal-->
     <div class="indexDesktop">
-        <main>
-            <div class="contMain">
-                <div class="efectoEstiloTitulo animacionTexto">
-                    <h1 class="estiloTituloPrincipal "></h1>
-                </div>
-                <!-- <div class=" izquierda">
-                    <img class="imagenMapa" src="ASSETS/IMG/Uruguay_location_map.svg" title="Mapa de Uruguay"
-                        alt="Imagen del mapa de Uruguay">
-                </div> -->
-                <div class="estiloParrafo">
-                    <div class="zonaIzquierda">
-                        <p class="medioCirculoIzquierdo ">
-                            Uruguay es un país de América del Sur, situado en la parte oriental del Cono Sur.
-                            Limita al noreste con Brasil, al oeste y suroeste con Argentina y tiene costas en
-                            el océano Atlántico por el sur. <br> Es miembro fundador de las Naciones Unidas, del
-                            Mercosur, de
-                            la OEA, de la UNASUR y del G77, y forma parte de otros organismos internacionales. </br>
-                        </p>
-                    </div>
-                    <i class="fas fa-arrow-left"></i>
-                    <div class="zonaDerecha">
-                        <p class="medioCirculoDerecho">
-                            Tiene clima templado con una temperatura media de 17,5 ºC, siendo enero el mes más cálido,
-                            con un media de 22,6 ºC, y julio el mes más frío, con una media de 10,6 ºC. Los principales
-                            recursos económicos son la agricultura, la forestación y la ganadería.
-                        </p>
-                    </div>
-                    <i class="fas fa-arrow-right"></i>
-                    <div class="zonaCentro">
-                        <p class="medioCirculoCentro">
-                            Según las Naciones Unidas, es el país de América Latina con el nivel de alfabetización más
-                            alto.​ <br> De
-                            acuerdo al estudio de la organización Transparencia Internacional, es el país de
-                            Latinoamérica
-                            con
-                            menor
-                            Índice de Percepción de Corrupción y el 23° en el mundo. </br>
-                        </p>
-                    </div>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </main>
+
+
         <!-- -------------------------DECORACION DE SALTOS-------------------------------->
         <div class="estiloImagenDecorado">
             <p>
@@ -183,28 +207,28 @@
         <div class="indexDesktopOff">
             <section>
                 <div class=" galeria">
-                    <div class="imagenGal">
+                    <div class="imagenGal imgGaleriaUno">
                         <a href="VIEWS/galeria.html">
                             <img
                                 src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Montevideo1.jpg">
                             <p>Ciudad de Montevideo</p>
                         </a>
                     </div>
-                    <div class="imagenGal">
+                    <div class="imagenGal imgGaleriaDos">
                         <a href="VIEWS/galeria.html">
                             <img
                                 src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Sacramento.jpg">
                         </a>
                         <p>Colonia del Sacramento</p>
                     </div>
-                    <div class="imagenGal">
+                    <div class="imagenGal imgGaleriaTres">
                         <a href="VIEWS/galeria.html">
                             <img
                                 src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Punta-del-Este.jpg">
                         </a>
                         <p>Punta del Este</p>
                     </div>
-                    <div class="imagenGal">
+                    <div class="imagenGal imgGaleriaCuatro">
                         <a href="VIEWS/galeria.html">
                             <img
                                 src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Paloma1.jpg">
@@ -212,14 +236,14 @@
                         <p>La Paloma</p>
 
                     </div>
-                    <div class="imagenGal">
+                    <div class="imagenGal imgGaleriaCinco">
                         <a href="VIEWS/galeria.html">
                             <img
                                 src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Paysandu.jpg">
                         </a>
                         <p>Paysandú</p>
                     </div>
-                    <div class="imagenGal">
+                    <div class="imagenGal imgGaleriaSeis">
                         <a href="VIEWS/galeria.html">
                             <img
                                 src="https://enviajes.cl/wp-content/uploads/2014/08/Lugares-turisticos-de-Uruguay-Salto.jpg">
@@ -227,8 +251,8 @@
                         <p>Costas de Salto</p>
                     </div>
                 </div>
-                <div class="btn-ver">
-                    <button class="btn-vermas"><a href="VIEWS/galeria.html" title="Ver más"> Ver más </a></button>
+                <div class="btnVer">
+                    <button class="btnVerMas"><a href="VIEWS/galeria.html" title="Ver más"> Ver más </a></button>
                 </div>
             </section>
             <!-------------------------Termina GALERIA-->
@@ -276,70 +300,12 @@
                             Uruguay, es centro de negocios, eventos y cultura.</p>
                     </div>
                 </div>
-                <div class="btn-ver">
-                    <button class="btn-vermas"><a href="VIEWS/turismo.html" title="Ver más"> Ver más </a></button>
+                <div class="btnVer">
+                    <button class="btnVerMas"><a href="VIEWS/turismo.html" title="Ver más"> Ver más </a></button>
                 </div>
             </section>
             <!------------------------- Termina Turismo-->
 
-            <!------------------------- BLOG-->
-            <section>
-                <h2 class="estiloTitulo">En Uruguay se puede</h2>
-                <div class="">
-                    <div class="contenidoBlogIndex">
-                        <div>
-                            <img data-src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/fc1da7257992fc36032e11db3df7a664_XL.jpg"
-                                src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/fc1da7257992fc36032e11db3df7a664_XL.jpg"
-                                alt="Aventura y deporte">
-                            <p> Aventura y deporte</p>
-                            <p> A pocos kilómetros de distancia, Uruguay regala diversos y atractivos paisajes
-                                donde es posible disfrutar de cabalgatas, vuelo libre, paseos en camiones a todo
-                                terreno,… </p>
-                        </div>
-                        <div>
-                            <img data-src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/0b13665ae00972807ddb09f249d0abcb_XL.jpg"
-                                src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/0b13665ae00972807ddb09f249d0abcb_XL.jpg"
-                                alt="Áreas protegidas">
-                            <p>
-                                Áreas
-                                protegidas
-                                A
-                                pesar de su pequeña
-                                superficie, Uruguay
-                                tiene infinidad de
-                                rincones naturales para
-                                quienes disfrutan de
-                                practicar ecoturismo.
-                                Diesisiete de ellos,
-                                integran el Sistema
-                                Nacional…
-                            </p>
-                        </div>
-                        <div>
-                            <img data-src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/c9b002fe1bb0320831a8ae78670fdb6f_XL.jpg"
-                                src="http://www.uruguaynatural.com/images/regridk2/283x167/media/k2/items/cache/c9b002fe1bb0320831a8ae78670fdb6f_XL.jpg"
-                                alt="Campo y Naturaleza">
-                            <p>
-                                Campo
-                                y Naturaleza A
-                                pocos kilómetros de
-                                distancia, Uruguay
-                                regala diversos y
-                                atractivos paisajes
-                                donde es posible
-                                disfrutar de cabalgatas,
-                                vuelo libre, paseos en
-                                camiones a &nbsp;todo
-                                terreno,…
-                            </p>
-                        </div>
-                    </div>
-                    <div class="btn-ver">
-                        <button class="btn-vermas"><a href="VIEWS/blog.html" title="Ver más"> Ver más </a></button>
-                    </div>
-                </div>
-            </section>
-            <!-------------------------FIN BLOG-->
 
             <!------------------------- informacion-->
             <section>
@@ -381,8 +347,8 @@
                     completan el
                     tramo Buenos Aires-Montevideo por tierra.
                 </p>
-                <div class="btn-ver">
-                    <button class="btn-vermas"><a href="VIEWS/informacion.html" title="Ver más"> Ver más </a></button>
+                <div class="btnVer">
+                    <button class="btnVerMas"><a href="VIEWS/informacion.html" title="Ver más"> Ver más </a></button>
                 </div>
         </div>
     </div>
@@ -451,8 +417,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-
     <script src="ASSETS/JS/index.js"></script>
+
+
+
+    <!--Script de la pagina que le saque el menu-->
+    <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <!-- Isotope - Portfolio Sorting -->
+    <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+    <!-- Mobile Menu - Slicknav -->
+    <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+    <!-- Animate on Scroll-->
+    <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+    <!-- Sticky Div -->
+    <script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
+    <!-- Slimbox2-->
+    <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+    <!-- Modernizr -->
+    <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+    <!-- fin de los Script de la pagina que le saque el menu-->
 
 </body>
 
