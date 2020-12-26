@@ -5,26 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderHouse: Proyecto Final</title>
+    <!------------------------- FUENTES -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- ICONOS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <!-- NORMALIZE -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../ASSETS/CSS/estilos.css">
 </head>
 
 <body>
-    <!-- Navegacion-->
+    <!-------------------------PORTADA------------------------------>
+    <section>
+        <a href="#arriba">
+            <h1 class="estiloTituloDecorado estitloTituloDecoradoDesktop">
+                <--------------Uruguay Natural -------------->
+            </h1>
+            <h1 class="estiloTituloDecorado estitloTituloDecoradoMobil">
+                <--Uruguay Natural-->
+            </h1>
+        </a>
+    </section>
+    <!--=======NAVEGACIÓN=======-->
     <header id="arriba">
-        <div class="encabezado">
-            <a href="#arriba"><i class="fas fa-chevron-circle-up"></i></a>
-            <nav class="btn-caja-resto">
-                <a class="btn" href="../index.html" title="Ir a Inicio"><i class="fas fa-home"></i></a>
+        <!-------------------------Menu de navegacion con lista desplegable------------------------------>
+        <nav class="menuDesktop">
+            <ul class="btnCaja">
+                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="../index.html">Inicio</a>
+                </li>
+                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="turismo.html">Destinos</a>
+                    <ul class="cajaListaInterna">
+                        <li class="listaInterna"><a class="botones enlaceLista"
+                                href="turismo.html#playas">Playas</a></li>
+                        <li class="listaInterna"><a class="botones enlaceLista"
+                                href="turismo.html#camping">Camping</a></li>
+                        <li class="listaInterna"><a class="botones enlaceLista"
+                                href="turismo.html#ciudad">Ciudad</a></li>
+                    </ul>
+                </li>
+                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista">Galeria</a>
+                    <ul class="cajaListaInterna">
+                        <li class="listaInterna"><a class="botones enlaceLista" href="galeria.html">2 Columnas</a>
+                        </li>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="galeria.html">3 Columnas</a>
+                        </li>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="galeria.html">4 Columnas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="blog.html">Blog</a>
+                    <ul class="cajaListaInterna">
+                        <li class="listaInterna"><a class="botones enlaceLista" href="blog.html">Noticias</a>
+                        </li>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="blog.html">Datos de
+                                interes</a></li>
+                    </ul>
+                </li>
+                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista"
+                        href="informacion.html">Actividades</a>
+                </li>
+            </ul>
+        </nav>
+        <!-------------------------Fin del menu de navegacion con lista desplegable------------------------------>
+        <!--================MENU HAMBURGESA================-->
+        <nav class="menuHamburgesa">
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+            <nav class="menuppal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="turismo.html">Turismo</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="informacion.html">Información</a></li>
+                </ul>
             </nav>
-        </div>
+
+        </nav>
+        <!-------------------------FIN DE MENU HAMBURGESA------------------------------>
     </header>
-    <!-- Fin de Navegacion-->
+    <!--=======FIN DE NAVEGACIÓN=======-->
+    <section>
+        <div class="contMain">
+            <!--Saludos en distintos idiomas-->
+            <div class="efectoEstiloTitulo animacionTexto">
+                <h1 class="estiloTituloPrincipal "></h1>
+            </div>
+        </div>
+    </section>
+    <section class="imagenPortada">
+        <!--Imagen de fondo de los saludos, foto de colonia-->
+    </section>
+
+    
 <body>
     <main>
         <form action="">
@@ -50,11 +134,11 @@
 <footer>
     <nav>
         <div class="navFooter">
-            <a class="btnPie" href="VIEWS/galeria.html" title="Ir a Galería">Galería</a>
-            <a class="btnPie" href="VIEWS/turismo.html" title="Ir a Turismo">Turismo </a>
+            <a class="btnPie" href="galeria.html" title="Ir a Galería">Galería</a>
+            <a class="btnPie" href="turismo.html" title="Ir a Turismo">Turismo </a>
             <a class="btnPie" href="../index.html" title="Ir a Inicio"><i class="fas fa-home color"></i></a>
-            <a class="btnPie" href="VIEWS/blog.html" title="Ir a Blog">Blog</a>
-            <a class="btnPie" href="VIEWS/informacion.html" title="Ir a informacion">informacion</a>
+            <a class="btnPie" href="blog.html" title="Ir a Blog">Blog</a>
+            <a class="btnPie" href="informacion.html" title="Ir a informacion">informacion</a>
         </div>
     </nav>
 
