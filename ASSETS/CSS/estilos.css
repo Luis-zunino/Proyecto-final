@@ -385,7 +385,7 @@ header a {
     align-items: center;
 }
 
-.btnPie, 
+.btnPie,
 .fa-home {
     color: black;
     padding: 1rem;
@@ -470,6 +470,7 @@ header a {
         grid-column: 2 / 3;
     }
 }
+
 @media (max-width: 430px) {
     .footer {
         grid-template-columns: 1fr;
@@ -477,6 +478,7 @@ header a {
         background-color: #404040;
     }
 }
+
 /* Footer responsivo */
 
 /*  ----------------------- FIN GENERALES ----------------------- */
@@ -1081,6 +1083,7 @@ section a h2 {
     .omnibus {
         grid-column: 1/1;
     }
+
     .omnibus iframe {
         width: 100%;
         margin: auto;
@@ -1089,3 +1092,17 @@ section a h2 {
 }
 
 /*-----------------------------FIN INFORMACION--------------------------*/
+/*-------------------------HTML GALERIA------------------------------------*/
+.contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.imagenGal{
+    padding: 1rem;
+}
