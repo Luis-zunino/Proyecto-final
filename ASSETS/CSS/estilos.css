@@ -329,7 +329,7 @@ header a {
     .menuppal ul li {
         list-style: none;
         text-align: center;
-        font-size: 3.5vw;
+        font-size: 2rem;
         line-height: 3em;
         height: 3em;
         color: #369;
@@ -340,6 +340,7 @@ header a {
     .menuppal ul li a {
         text-decoration: none;
         color: white;
+        font-size: 2rem;
     }
 
     .menuppal ul li a:hover {
