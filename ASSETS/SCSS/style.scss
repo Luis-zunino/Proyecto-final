@@ -1,6 +1,7 @@
 @import "PARTES/navDesktop";
 @import "PARTES/navMobile";
 @import "PARTES/footer";
+@import "HTMLS/index";
 
 html {
     box-sizing: border-box;
@@ -42,28 +43,28 @@ header {
     margin: 4rem auto;
     background-size: cover;
     overflow: hidden;
+
+    @media (max-width: 968px) {
+        max-width: 100%;
+        margin: 4rem auto;
+        background-size: cover;
+        overflow: hidden;
+    }
 }
 
 .carousel-item img {
     height: 400px;
     overflow: hidden;
 
-}
-
-@media (max-width: 968px) {
-    .estilosCarrusel {
-        max-width: 100%;
-        margin: 4rem auto;
-        background-size: cover;
-        overflow: hidden;
-    }
-
-    .carousel-item img {
+    @media (max-width: 968px) {
         height: 400px;
         overflow: hidden;
 
+
     }
 }
+
+
 
 .imagenPortada {
     position: relative;
@@ -92,3 +93,4 @@ header {
 }
 
 /*-------------- FIN PORTADA -------------- */
+/*  ----------------------- FIN GENERALES ----------------------- */
