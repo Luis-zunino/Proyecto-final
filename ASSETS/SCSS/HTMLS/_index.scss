@@ -347,7 +347,6 @@ section a h2 {
 
 }
 
-/*-------------------INDEX RESPONSIVE-------------------*/
 @media (max-width: 599px) {
     .indexDesktopOff {
         display: none;
@@ -359,8 +358,6 @@ section a h2 {
         max-height: max-content;
     }
 }
-
-/* -------------------FIN INDEX RESPONSIVE------------------- */
 
 /* -----------------------  BOTON DE VER MAS ----------------------- */
 
@@ -391,93 +388,6 @@ section a h2 {
     /*boton ver mas para mobile*/
     display: none;
 }
-
 /* ----------------------- FIN BOTON DE VER MAS ----------------------- */
 
-
-/*------------------------------FIN POSICION DE LAS IMAGENES DE LA GALERIA---------------------------*/
-
 /*  -----------------------FIN INDEX ----------------------- */
-
-
-
-/*-----------------------------INFORMACION--------------------------*/
-
-.contenedorInformacion {
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.estiloTituloTransporte {
-    font-size: 2.2vw;
-    text-decoration: coral;
-    margin-bottom: 2rem;
-    text-align: center;
-
-}
-
-.barco,
-.omnibus,
-.avion {
-    padding: 2rem;
-    font-size: 1.8vw;
-}
-
-.omnibus {
-    grid-column: 1/3;
-}
-
-.omnibus iframe {
-    width: 100%;
-    margin: auto;
-    min-height: 400px;
-}
-
-@media (max-width: 720px) {
-    .contenedorInformacion {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .estiloTituloTransporte {
-        font-size: 2.2rem;
-    }
-
-    .barco,
-    .omnibus,
-    .avion {
-        padding: 2rem;
-        font-size: 1.8rem;
-
-    }
-
-    .omnibus {
-        grid-column: 1/1;
-    }
-
-    .omnibus iframe {
-        width: 100%;
-        margin: auto;
-        max-height: 400px;
-    }
-}
-
-/*-----------------------------FIN INFORMACION--------------------------*/
-/*-------------------------HTML GALERIA------------------------------------*/
-.contenedor {
-    width: 80%;
-    margin: auto;
-}
-
-.galeria {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.imagenGal {
-    padding: 1rem;
-}

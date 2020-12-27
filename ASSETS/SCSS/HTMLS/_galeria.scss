@@ -1,0 +1,27 @@
+/*-------------------------HTML GALERIA------------------------------------*/
+.contenedor {
+    width: 80%;
+    margin: auto;
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 1000px;
+
+        .imagenGal {
+            padding: 1rem;
+            width: 100%;
+            margin: auto;
+
+        }
+    }
+    .galeria2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+/*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
+/*-------------------------HTML GALERIA TRES COLUMNAS------------------------------------*/
+/*-------------------------HTML GALERIA CUATRO COLUMNAS------------------------------------*/
+
+/*-------------------------FIN HTML GALERIA------------------------------------*/
