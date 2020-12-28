@@ -9,9 +9,18 @@
 
     .actividad {
         margin: .5rem;
-        display: grid;
-        grid-template-rows: min-content max-content min-content;
         background-color: skyblue;
+        display: block;
+        flex-direction: column;
+        transition: 1s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            -webkit-box-shadow: 3px 6px 5px 0px rgba(85, 81, 219, 0.79);
+            -moz-box-shadow: 3px 6px 5px 0px rgba(85, 81, 219, 0.79);
+            box-shadow: 3px 6px 5px 0px rgba(85, 81, 219, 0.79);
+
+        }
 
         img {
             display: block;
@@ -35,6 +44,16 @@
             align-items: flex-end;
             margin: 0 1rem 1rem 0;
             text-decoration: none;
+
+            border-radius: 14%;
+
+            button {
+                color: black;
+                background-color: rgb(29, 145, 190);
+                border: none;
+            }
         }
+
+
     }
 }

@@ -655,9 +655,15 @@ section a h2 {
       grid-template-columns: repeat(2, 1fr); } }
   .contenedorActividades .actividad {
     margin: .5rem;
-    display: grid;
-    grid-template-rows: min-content max-content min-content;
-    background-color: skyblue; }
+    background-color: skyblue;
+    display: block;
+    flex-direction: column;
+    transition: 1s ease-in-out; }
+    .contenedorActividades .actividad:hover {
+      transform: scale(1.1);
+      -webkit-box-shadow: 3px 6px 5px 0px rgba(85, 81, 219, 0.79);
+      -moz-box-shadow: 3px 6px 5px 0px rgba(85, 81, 219, 0.79);
+      box-shadow: 3px 6px 5px 0px rgba(85, 81, 219, 0.79); }
     .contenedorActividades .actividad img {
       display: block;
       width: 100%; }
@@ -673,7 +679,12 @@ section a h2 {
       flex-direction: column;
       align-items: flex-end;
       margin: 0 1rem 1rem 0;
-      text-decoration: none; }
+      text-decoration: none;
+      border-radius: 14%; }
+      .contenedorActividades .actividad a button {
+        color: black;
+        background-color: #1d91be;
+        border: none; }
 
 /* -----------------------SECCION DE TURISMO DEL INDEX-----------------------*/
 .contenedorTurismo {
@@ -786,7 +797,7 @@ header {
 
 .contenedor {
   width: 80%;
-  margin: auto; }
+  margin: 8rem auto; }
 
 .titulosDeSecciones {
   font-size: 3vw;
