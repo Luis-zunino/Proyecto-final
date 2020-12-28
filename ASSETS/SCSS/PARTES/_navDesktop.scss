@@ -1,147 +1,105 @@
 /*-------------- MENU Desktop-------------- */
-.btnCaja {
-    text-align: center;
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    width: 70%;
-    height: max-content;
-    background-color: rgba(0, 0, 0, 0.746);
-    list-style: none;
-    top: 7vw;
-    position: relative;
-    padding: 1.5rem 0 0 0;
-}
-
-.navBtn {
-    /*Ancho de los botones  */
-    display: inline-block;
-    width: 15%;
-    padding: .5rem;
-    height: 100%;
-    text-align: center;
-    /* z-index: 10; */
-
-}
-
-.listaBtnExpan {
-    display: inline-block;
-    position: relative;
-
-    &:hover {
-        color: white;
-        z-index: 10000;
-    }
-
-    &:hover>.enlaceLista {
-        color: white;
-        z-index: 10000;
-    }
-
-    &:hover .cajaListaInterna {
-        display: block;
-        animation: 300ms ease desplegar 1;
-    }
-}
-
-.listaInterna {
-    position: relative;
-    list-style: none;
-    width: max-content;
-
-    &:hover {
-        color: white;
-        z-index: 10000;
-    }
-
-    &:hover>.enlaceLista {
-        color: white;
-        z-index: 10000;
-    }
-}
-
-.botones {
-    position: relative;
-}
-.enlaceLista {
-    text-decoration: none;
-    position: relative;
-    display: block;
-    padding: .6rem;
-    height: 100%;
-    display: inline-flex;
-}
-
-/* Animaciones */
-@keyframes desplegar {
-    from {
-        transform: scaleY(0.5);
-        /* La propiedad transform: scaleY(0.5) junto a la propiedad transform-origin: left top;
-        permitirá crear un efecto visual de un submenú que se desenrrolla. */
-    }
-}
-
-
-/*-------------- SUBMENU -------------- */
-.cajaListaInterna {
-    /*Para que aparezca solo cuando se le hace hover*/
-    display: none;
-    position: absolute;
-    /* Esto adyudará a dar el efecto de despliegue del submenú */
-    transform-origin: left top;
-    top: 100%;
-    padding: 0 1rem;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.753);
-    margin: 0 auto;
-
-    &.enlaceLista {
-        font-size: .8vw;
-        width: 100%;
-        display: block;
-
-
-    }
-}
-
-/*-------------- FIN SUBMENU -------------- */
-
-.fa-home {
-    color: white;
-    text-decoration: none;
-    font-size: 1vw;
-    padding: 0 1.5rem;
-
-    &:hover {
-        border-radius: 16%;
-    }
-
-    @media (max-width: 720px) {
-        font-size: 1.5vw;
-    }
-
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-    font-size: 1vw;
-    padding: 0 1.5rem;
-
-    @media (max-width: 720px) {
-        font-size: 1.5vw;
-    }
-}
-
-.fa-chevron-circle-up {
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-}
-
-
 .menuDesktop {
     @media (max-width: 599px) {
         display: none;
     }
+
+    .btnCaja {
+        text-align: center;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 70%;
+        height: max-content;
+        background-color: rgba(0, 0, 0, 0.746);
+        list-style: none;
+        top: 7vw;
+        position: relative;
+        padding: 1.5rem 0 0 0;
+
+        .navBtn {
+            /*Ancho de los botones  */
+            display: inline-block;
+            width: 15%;
+            padding: .5rem;
+            height: 100%;
+            text-align: center;
+
+            .botones {
+                position: relative;
+                color: white;
+            }
+        }
+
+        .listaBtnExpan {
+            display: inline-block;
+            position: relative;
+
+            &:hover {
+                color: white;
+                z-index: 10000;
+            }
+
+            &:hover>.enlaceLista {
+                color: white;
+                z-index: 10000;
+            }
+
+            &:hover .cajaListaInterna {
+                display: block;
+                animation: 300ms ease desplegar 1;
+            }
+
+            /* Animaciones */
+            @keyframes desplegar {
+                from {
+                    transform: scaleY(0.5);
+                    /* La propiedad transform: scaleY(0.5) junto a la propiedad transform-origin: left top;
+permitirá crear un efecto visual de un submenú que se desenrrolla. */
+                }
+            }
+
+            .cajaListaInterna {
+                /*Para que aparezca solo cuando se le hace hover*/
+                display: none;
+                position: absolute;
+                /* Esto adyudará a dar el efecto de despliegue del submenú */
+                transform-origin: left top;
+                top: 100%;
+                padding: 0 1rem;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.753);
+                margin: 0 auto;
+
+                .listaInterna {
+                    position: relative;
+                    list-style: none;
+                    width: max-content;
+
+                    &:hover {
+                        color: white;
+                        z-index: 10000;
+                    }
+
+                    &:hover>.enlaceLista {
+                        color: white;
+                        z-index: 10000;
+                    }
+                }
+            }
+
+            .enlaceLista {
+                text-decoration: none;
+                position: relative;
+                display: block;
+                padding: .6rem;
+                height: 100%;
+                display: inline-flex;
+                font-size: .8vw;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
 }
+/*--------------FIN MENU Desktop-------------- */

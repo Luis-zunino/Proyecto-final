@@ -50,7 +50,6 @@
     background-size: cover;
 
     @media (max-width:720px) {
-
         margin: 0;
         height: 300px;
         background-attachment: fixed;
@@ -62,6 +61,7 @@
         bottom: -46rem;
         left: 2rem;
         font-size: 2rem;
+        color: white;
 
         /*Da la info del flamenco*/
         @media (max-width:720px) {

@@ -1,27 +1,103 @@
 /*-------------------------HTML GALERIA------------------------------------*/
+@mixin contorno {
+    padding: 1rem;
+    width: 100%;
+    margin: auto;
+}
+
+@mixin cambioUnaColumna {
+    @media (max-width: 720px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+
+    }
+}
+
+@mixin cambioDosColumnas {
+    @media (max-width: 968px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+}
+
 .contenedor {
     width: 80%;
     margin: auto;
 
+    /*-------------------------HTML GALERIA UNA COLUMNAS------------------------------------*/
+    p {
+        text-align: center;
+        color: white;
+        padding: 1rem;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.582);
+    }
+
     .galeria {
         display: grid;
-        grid-template-columns: 1000px;
+        @include cambioUnaColumna;
 
         .imagenGal {
             padding: 1rem;
-            width: 100%;
             margin: auto;
 
+            img {
+                width: 800px;
+                transition: 1s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
+
+    /*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
+
     .galeria2 {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        @include cambioUnaColumna;
+
+        .imagenGal {
+            @include contorno;
+
+            img {
+                transition: 1s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+
+    }
+
+    /*-------------------------HTML GALERIA TRES COLUMNAS------------------------------------*/
+
+    .galeria3 {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        @include cambioDosColumnas;
+        @include cambioUnaColumna;
+
+        .imagenGal {
+            @include contorno;
+
+            img {
+                transition: 1s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
 }
-/*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
-/*-------------------------HTML GALERIA TRES COLUMNAS------------------------------------*/
-/*-------------------------HTML GALERIA CUATRO COLUMNAS------------------------------------*/
+
 
 /*-------------------------FIN HTML GALERIA------------------------------------*/

@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /*-------------- MENU Desktop-------------- */
-.btnCaja {
+@media (max-width: 599px) {
+  .menuDesktop {
+    display: none; } }
+
+.menuDesktop .btnCaja {
   text-align: center;
   display: block;
   position: relative;
@@ -12,200 +16,186 @@
   top: 7vw;
   position: relative;
   padding: 1.5rem 0 0 0; }
+  .menuDesktop .btnCaja .navBtn {
+    /*Ancho de los botones  */
+    display: inline-block;
+    width: 15%;
+    padding: .5rem;
+    height: 100%;
+    text-align: center; }
+    .menuDesktop .btnCaja .navBtn .botones {
+      position: relative;
+      color: white; }
+  .menuDesktop .btnCaja .listaBtnExpan {
+    display: inline-block;
+    position: relative;
+    /* Animaciones */ }
+    .menuDesktop .btnCaja .listaBtnExpan:hover {
+      color: white;
+      z-index: 10000; }
+    .menuDesktop .btnCaja .listaBtnExpan:hover > .enlaceLista {
+      color: white;
+      z-index: 10000; }
+    .menuDesktop .btnCaja .listaBtnExpan:hover .cajaListaInterna {
+      display: block;
+      animation: 300ms ease desplegar 1; }
 
-.navBtn {
-  /*Ancho de los botones  */
-  display: inline-block;
-  width: 15%;
-  padding: .5rem;
-  height: 100%;
-  text-align: center;
-  /* z-index: 10; */ }
-
-.listaBtnExpan {
-  display: inline-block;
-  position: relative; }
-  .listaBtnExpan:hover {
-    color: white;
-    z-index: 10000; }
-  .listaBtnExpan:hover > .enlaceLista {
-    color: white;
-    z-index: 10000; }
-  .listaBtnExpan:hover .cajaListaInterna {
-    display: block;
-    animation: 300ms ease desplegar 1; }
-
-.listaInterna {
-  position: relative;
-  list-style: none;
-  width: max-content; }
-  .listaInterna:hover {
-    color: white;
-    z-index: 10000; }
-  .listaInterna:hover > .enlaceLista {
-    color: white;
-    z-index: 10000; }
-
-.botones {
-  position: relative; }
-
-.enlaceLista {
-  text-decoration: none;
-  position: relative;
-  display: block;
-  padding: .6rem;
-  height: 100%;
-  display: inline-flex; }
-
-/* Animaciones */
 @keyframes desplegar {
   from {
     transform: scaleY(0.5);
     /* La propiedad transform: scaleY(0.5) junto a la propiedad transform-origin: left top;
-        permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
+permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
+    .menuDesktop .btnCaja .listaBtnExpan .cajaListaInterna {
+      /*Para que aparezca solo cuando se le hace hover*/
+      display: none;
+      position: absolute;
+      /* Esto adyudará a dar el efecto de despliegue del submenú */
+      transform-origin: left top;
+      top: 100%;
+      padding: 0 1rem;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.753);
+      margin: 0 auto; }
+      .menuDesktop .btnCaja .listaBtnExpan .cajaListaInterna .listaInterna {
+        position: relative;
+        list-style: none;
+        width: max-content; }
+        .menuDesktop .btnCaja .listaBtnExpan .cajaListaInterna .listaInterna:hover {
+          color: white;
+          z-index: 10000; }
+        .menuDesktop .btnCaja .listaBtnExpan .cajaListaInterna .listaInterna:hover > .enlaceLista {
+          color: white;
+          z-index: 10000; }
+    .menuDesktop .btnCaja .listaBtnExpan .enlaceLista {
+      text-decoration: none;
+      position: relative;
+      display: block;
+      padding: .6rem;
+      height: 100%;
+      display: inline-flex;
+      font-size: .8vw;
+      width: 100%;
+      display: block; }
 
-/*-------------- SUBMENU -------------- */
-.cajaListaInterna {
-  /*Para que aparezca solo cuando se le hace hover*/
-  display: none;
-  position: absolute;
-  /* Esto adyudará a dar el efecto de despliegue del submenú */
-  transform-origin: left top;
-  top: 100%;
-  padding: 0 1rem;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.753);
-  margin: 0 auto; }
-  .cajaListaInterna.enlaceLista {
-    font-size: .8vw;
-    width: 100%;
-    display: block; }
-
-/*-------------- FIN SUBMENU -------------- */
-.fa-home {
-  color: white;
-  text-decoration: none;
-  font-size: 1vw;
-  padding: 0 1.5rem; }
-  .fa-home:hover {
-    border-radius: 16%; }
-  @media (max-width: 720px) {
-    .fa-home {
-      font-size: 1.5vw; } }
-
-header a {
-  color: white;
-  text-decoration: none;
-  font-size: 1vw;
-  padding: 0 1.5rem; }
-  @media (max-width: 720px) {
-    header a {
-      font-size: 1.5vw; } }
-
-.fa-chevron-circle-up {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem; }
-
-@media (max-width: 599px) {
-  .menuDesktop {
-    display: none; } }
-
+/*--------------FIN MENU Desktop-------------- */
 /*--------------  MENU HAMBURGESA-------------- */
 .menuHamburgesa {
   display: none; }
   @media (max-width: 599px) {
     .menuHamburgesa {
       display: block; } }
-
-.hamburger {
-  position: fixed;
-  background-color: transparent;
-  left: 0;
-  top: 0;
-  height: 30px;
-  width: 30px;
-  padding: 20px 20px;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-  transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-  z-index: 1002;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-  .hamburger.is-active {
-    background-color: none; }
-    .hamburger.is-active.-top {
-      -webkit-transform: translateY(200%) rotate(45deg) !important;
-      -ms-transform: translateY(200%) rotate(45deg) !important;
-      transform: translateY(200%) rotate(45deg) !important; }
-    .hamburger.is-active.-mid {
-      opacity: 0; }
-    .hamburger.is-active.-bottom {
-      -webkit-transform: translateY(-200%) rotate(135deg) !important;
-      -ms-transform: translateY(-200%) rotate(135deg) !important;
-      transform: translateY(-200%) rotate(135deg) !important; }
-  .hamburger:hover .-top {
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%); }
-  .hamburger:hover .-bottom {
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%); }
-
-._layer {
-  background: white;
-  margin-bottom: 4px;
-  border-radius: 2px;
-  width: 28px;
-  height: 4px;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-  transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98); }
-
-.menuppal {
-  background-color: rgba(51, 50, 50, 0.95);
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  overflow-y: scroll;
-  position: fixed;
-  top: 0;
-  transform: translate3d(0px, -100%, 0px);
-  transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-  width: 100%;
-  z-index: 1001; }
-  .menuppal.is_active {
-    transform: translate3d(0px, 0px, 0px); }
-  .menuppalul {
-    margin: 0;
-    padding: 0; }
-  .menuppalli {
-    list-style: none;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 3em;
-    height: 3em;
-    color: #369;
-    text-transform: none;
-    font-weight: bold; }
-  .menuppala {
-    text-decoration: none;
-    color: white;
-    font-size: 2rem; }
-  .menuppal:hover {
-    text-decoration: none;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10%; }
+  .menuHamburgesa .hamburger {
+    position: fixed;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    padding: 20px 20px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index: 1002;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .menuHamburgesa .hamburger .is-active {
+      background-color: none; }
+      .menuHamburgesa .hamburger .is-active .-top {
+        -webkit-transform: translateY(200%) rotate(45deg) !important;
+        -ms-transform: translateY(200%) rotate(45deg) !important;
+        transform: translateY(200%) rotate(45deg) !important; }
+      .menuHamburgesa .hamburger .is-active .-mid {
+        opacity: 0; }
+      .menuHamburgesa .hamburger .is-active .-bottom {
+        -webkit-transform: translateY(-200%) rotate(135deg) !important;
+        -ms-transform: translateY(-200%) rotate(135deg) !important;
+        transform: translateY(-200%) rotate(135deg) !important; }
+    .menuHamburgesa .hamburger:hover .-top {
+      -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%); }
+    .menuHamburgesa .hamburger:hover .-bottom {
+      -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      transform: translateY(100%); }
+    .menuHamburgesa .hamburger ._layer {
+      background: white;
+      margin-bottom: 4px;
+      border-radius: 2px;
+      width: 28px;
+      height: 4px;
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+      transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98); }
+  .menuHamburgesa .menuppal {
+    background-color: rgba(51, 50, 50, 0.95);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001; }
+    .menuHamburgesa .menuppal.is_active {
+      transform: translate3d(0px, 0px, 0px); }
+    .menuHamburgesa .menuppal ul {
+      margin: 0;
+      padding: 0; }
+      .menuHamburgesa .menuppal ul li {
+        list-style: none;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 3em;
+        height: 3em;
+        color: white;
+        text-transform: none;
+        font-weight: bold; }
+        .menuHamburgesa .menuppal ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 2rem; }
+          .menuHamburgesa .menuppal ul li a:hover {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10%;
+            padding: 1rem; }
 
 /* ----------------------- FOOTER ----------------------- */
+.navFooter {
+  display: flex;
+  width: 100%;
+  margin: 6rem auto auto 0;
+  background-color: #4d4d4d;
+  align-items: center; }
+  .navFooter .btnPie {
+    color: black;
+    padding: 1rem;
+    margin: 0 auto;
+    align-content: center;
+    font-size: 2rem;
+    text-decoration: none; }
+    .navFooter .btnPie:hover {
+      color: white; }
+    .navFooter .btnPie .fa-home {
+      color: black;
+      padding: 1rem;
+      margin: 0 auto;
+      align-content: center;
+      font-size: 2rem;
+      text-decoration: none; }
+      .navFooter .btnPie .fa-home:hover {
+        color: white; }
+
 .footer {
   max-width: 100%;
   padding: 1rem 3rem;
@@ -242,12 +232,11 @@ header a {
         padding: 0 1rem;
         margin: 0; }
         .footer .conte-footer .redes-sociales a i {
-          font-size: 1rem; }
-  .footer .fab {
-    font-size: 5vw;
-    color: white; }
-    .footer .fab:hover {
-      color: #b3b3b3; }
+          font-size: 1rem;
+          font-size: 3rem;
+          color: white; }
+          .footer .conte-footer .redes-sociales a i:hover {
+            color: #b3b3b3; }
   @media (max-width: 720px) {
     .footer .footerContacto {
       grid-row: 2;
@@ -259,21 +248,6 @@ header a {
       grid-row: 2;
       grid-column: 2 / 3; } }
 
-.btnPie {
-  color: black;
-  padding: 1rem;
-  margin: 0 auto;
-  align-content: center;
-  font-size: 2rem;
-  text-decoration: none; }
-  .btnPie:hover {
-    color: white; }
-
-.color {
-  color: black; }
-  .color:hover {
-    color: white; }
-
 .copy {
   text-align: center;
   color: white;
@@ -281,27 +255,9 @@ header a {
   margin: 0 auto;
   padding: 2rem;
   text-transform: capitalize; }
+  .copy .color-copy {
+    text-transform: uppercase; }
 
-.color-copy {
-  text-transform: uppercase; }
-
-.fa-home {
-  color: black;
-  padding: 1rem;
-  margin: 0 auto;
-  align-content: center;
-  font-size: 2rem;
-  text-decoration: none; }
-
-/* Footer responsivo */
-.navFooter {
-  display: flex;
-  width: 100%;
-  margin: 6rem auto auto 0;
-  background-color: #4d4d4d;
-  align-items: center; }
-
-/* Footer responsivo */
 /*  ----------------------- INDEX ----------------------- */
 /*-------------------------DECORACION DE SALTOS-------------------------------*/
 .estiloTituloDecorado {
@@ -351,6 +307,7 @@ header a {
     bottom: -46rem;
     left: 2rem;
     font-size: 2rem;
+    color: white;
     /*Da la info del flamenco*/ }
     @media (max-width: 720px) {
       .estiloImagenDecorado .infoFlamenco {
@@ -589,22 +546,67 @@ section a h2 {
 /*-------------------------HTML GALERIA------------------------------------*/
 .contenedor {
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  /*-------------------------HTML GALERIA UNA COLUMNAS------------------------------------*/
+  /*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
+  /*-------------------------HTML GALERIA TRES COLUMNAS------------------------------------*/ }
+  .contenedor p {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.582); }
   .contenedor .galeria {
-    display: grid;
-    grid-template-columns: 1000px; }
+    display: grid; }
+    @media (max-width: 720px) {
+      .contenedor .galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); } }
     .contenedor .galeria .imagenGal {
+      padding: 1rem;
+      margin: auto; }
+      .contenedor .galeria .imagenGal img {
+        width: 800px;
+        transition: 1s ease-in-out; }
+        .contenedor .galeria .imagenGal img:hover {
+          transform: scale(1.1); }
+  .contenedor .galeria2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr); }
+    @media (max-width: 720px) {
+      .contenedor .galeria2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); } }
+    .contenedor .galeria2 .imagenGal {
       padding: 1rem;
       width: 100%;
       margin: auto; }
-  .contenedor .galeria2 {
+      .contenedor .galeria2 .imagenGal img {
+        transition: 1s ease-in-out; }
+        .contenedor .galeria2 .imagenGal img:hover {
+          transform: scale(1.1); }
+  .contenedor .galeria3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
+    grid-template-rows: repeat(2, 1fr); }
+    @media (max-width: 968px) {
+      .contenedor .galeria3 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); } }
+    @media (max-width: 720px) {
+      .contenedor .galeria3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); } }
+    .contenedor .galeria3 .imagenGal {
+      padding: 1rem;
+      width: 100%;
+      margin: auto; }
+      .contenedor .galeria3 .imagenGal img {
+        transition: 1s ease-in-out; }
+        .contenedor .galeria3 .imagenGal img:hover {
+          transform: scale(1.1); }
 
-/*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
-/*-------------------------HTML GALERIA TRES COLUMNAS------------------------------------*/
-/*-------------------------HTML GALERIA CUATRO COLUMNAS------------------------------------*/
 /*-------------------------FIN HTML GALERIA------------------------------------*/
 /*-----------------------------INFORMACION--------------------------*/
 .contenedorInformacion {
@@ -762,15 +764,10 @@ li,
 ul {
   text-decoration: none; }
 
-/*----------------------- HEADER ----------------------- */
 /*-------------- PORTADA -------------- */
 header {
   margin: 0;
   padding: 0; }
-
-.fas {
-  color: white;
-  font-size: 4.5vw; }
 
 .estilosCarrusel {
   max-width: 60%;
@@ -783,14 +780,13 @@ header {
       margin: 4rem auto;
       background-size: cover;
       overflow: hidden; } }
-
-.carousel-item img {
-  height: 400px;
-  overflow: hidden; }
-  @media (max-width: 968px) {
-    .carousel-item img {
-      height: 400px;
-      overflow: hidden; } }
+  .estilosCarrusel .carousel-item img {
+    height: 400px;
+    overflow: hidden; }
+    @media (max-width: 968px) {
+      .estilosCarrusel .carousel-item img {
+        height: 400px;
+        overflow: hidden; } }
 
 .imagenPortada {
   position: relative;
@@ -802,15 +798,13 @@ header {
   background-repeat: no-repeat;
   overflow: hidden;
   background-image: url(../IMG/colonia1.jpg); }
-
-@media (max-width: 890px) {
-  .imagenPortada {
-    height: 400px;
-    border-top: 0; } }
-
-@media (max-width: 480px) {
-  .imagenPortada {
-    height: 200px; } }
+  @media (max-width: 890px) {
+    .imagenPortada {
+      height: 400px;
+      border-top: 0; } }
+  @media (max-width: 480px) {
+    .imagenPortada {
+      height: 200px; } }
 
 /*-------------- FIN PORTADA -------------- */
 /*  ----------------------- FIN GENERALES ----------------------- */
