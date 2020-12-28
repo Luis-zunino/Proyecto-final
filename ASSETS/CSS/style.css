@@ -671,7 +671,9 @@ section a h2 {
     .contenedorActividades .actividad a {
       display: flex;
       flex-direction: column;
-      align-items: flex-end; }
+      align-items: flex-end;
+      margin: 0 1rem 1rem 0;
+      text-decoration: none; }
 
 /* -----------------------SECCION DE TURISMO DEL INDEX-----------------------*/
 .contenedorTurismo {
