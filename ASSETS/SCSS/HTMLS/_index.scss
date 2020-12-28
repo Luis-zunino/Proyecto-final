@@ -232,18 +232,6 @@ section a h2 {
     margin: 0 auto;
 }
 
-.titulosDeSecciones {
-    font-size: 3vw;
-    text-align: center;
-    padding: 2rem;
-    margin: 6rem auto;
-
-    @media (max-width: 748px) {
-
-        font-size: 3rem;
-    }
-}
-
 .contenedoExperiencia {
     display: flex;
 
@@ -388,6 +376,7 @@ section a h2 {
     /*boton ver mas para mobile*/
     display: none;
 }
+
 /* ----------------------- FIN BOTON DE VER MAS ----------------------- */
 
 /*  -----------------------FIN INDEX ----------------------- */

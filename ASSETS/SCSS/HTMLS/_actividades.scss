@@ -1,0 +1,38 @@
+.contenedorActividades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media(max-width: 720px) {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .actividad {
+        margin: .5rem;
+        display: grid;
+        grid-template-rows: min-content max-content min-content;
+        background-color: skyblue;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-top: .5rem;
+        }
+
+        p {
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+}

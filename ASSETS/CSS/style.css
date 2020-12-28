@@ -428,15 +428,6 @@ section a h2 {
   align-items: center;
   margin: 0 auto; }
 
-.titulosDeSecciones {
-  font-size: 3vw;
-  text-align: center;
-  padding: 2rem;
-  margin: 6rem auto; }
-  @media (max-width: 748px) {
-    .titulosDeSecciones {
-      font-size: 3rem; } }
-
 .contenedoExperiencia {
   display: flex; }
   @media (max-width: 650px) {
@@ -543,72 +534,6 @@ section a h2 {
 
 /* ----------------------- FIN BOTON DE VER MAS ----------------------- */
 /*  -----------------------FIN INDEX ----------------------- */
-/*-------------------------HTML GALERIA------------------------------------*/
-.contenedor {
-  width: 80%;
-  margin: auto;
-  /*-------------------------HTML GALERIA UNA COLUMNAS------------------------------------*/
-  /*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
-  /*-------------------------HTML GALERIA TRES COLUMNAS------------------------------------*/ }
-  .contenedor p {
-    text-align: center;
-    color: white;
-    padding: 1rem;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.582); }
-  .contenedor .galeria {
-    display: grid; }
-    @media (max-width: 720px) {
-      .contenedor .galeria {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr); } }
-    .contenedor .galeria .imagenGal {
-      padding: 1rem;
-      margin: auto; }
-      .contenedor .galeria .imagenGal img {
-        width: 800px;
-        transition: 1s ease-in-out; }
-        .contenedor .galeria .imagenGal img:hover {
-          transform: scale(1.1); }
-  .contenedor .galeria2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr); }
-    @media (max-width: 720px) {
-      .contenedor .galeria2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr); } }
-    .contenedor .galeria2 .imagenGal {
-      padding: 1rem;
-      width: 100%;
-      margin: auto; }
-      .contenedor .galeria2 .imagenGal img {
-        transition: 1s ease-in-out; }
-        .contenedor .galeria2 .imagenGal img:hover {
-          transform: scale(1.1); }
-  .contenedor .galeria3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr); }
-    @media (max-width: 968px) {
-      .contenedor .galeria3 {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr); } }
-    @media (max-width: 720px) {
-      .contenedor .galeria3 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr); } }
-    .contenedor .galeria3 .imagenGal {
-      padding: 1rem;
-      width: 100%;
-      margin: auto; }
-      .contenedor .galeria3 .imagenGal img {
-        transition: 1s ease-in-out; }
-        .contenedor .galeria3 .imagenGal img:hover {
-          transform: scale(1.1); }
-
-/*-------------------------FIN HTML GALERIA------------------------------------*/
-/*-----------------------------INFORMACION--------------------------*/
 .contenedorInformacion {
   width: 80%;
   margin: auto;
@@ -659,7 +584,95 @@ section a h2 {
         padding: 2rem;
         font-size: 1.8rem; } }
 
-/*-----------------------------FIN INFORMACION--------------------------*/
+/*-------------------------HTML GALERIA------------------------------------*/
+.contenedorGale {
+  /*-------------------------HTML GALERIA UNA COLUMNAS------------------------------------*/
+  /*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
+  /*-------------------------HTML GALERIA TRES COLUMNAS------------------------------------*/ }
+  .contenedorGale p {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.582); }
+  .contenedorGale .galeria {
+    display: grid; }
+    @media (max-width: 720px) {
+      .contenedorGale .galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); } }
+    .contenedorGale .galeria .imagenGal {
+      padding: 1rem;
+      margin: auto; }
+      .contenedorGale .galeria .imagenGal img {
+        width: 800px;
+        transition: 1s ease-in-out; }
+        .contenedorGale .galeria .imagenGal img:hover {
+          transform: scale(1.1); }
+  .contenedorGale .galeria2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr); }
+    @media (max-width: 720px) {
+      .contenedorGale .galeria2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); } }
+    .contenedorGale .galeria2 .imagenGal {
+      padding: 1rem;
+      width: 100%;
+      margin: auto; }
+      .contenedorGale .galeria2 .imagenGal img {
+        transition: 1s ease-in-out; }
+        .contenedorGale .galeria2 .imagenGal img:hover {
+          transform: scale(1.1); }
+  .contenedorGale .galeria3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr); }
+    @media (max-width: 968px) {
+      .contenedorGale .galeria3 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); } }
+    @media (max-width: 720px) {
+      .contenedorGale .galeria3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); } }
+    .contenedorGale .galeria3 .imagenGal {
+      padding: 1rem;
+      width: 100%;
+      margin: auto; }
+      .contenedorGale .galeria3 .imagenGal img {
+        transition: 1s ease-in-out; }
+        .contenedorGale .galeria3 .imagenGal img:hover {
+          transform: scale(1.1); }
+
+/*-------------------------FIN HTML GALERIA------------------------------------*/
+.contenedorActividades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 720px) {
+    .contenedorActividades {
+      grid-template-columns: repeat(2, 1fr); } }
+  .contenedorActividades .actividad {
+    margin: .5rem;
+    display: grid;
+    grid-template-rows: min-content max-content min-content;
+    background-color: skyblue; }
+    .contenedorActividades .actividad img {
+      display: block;
+      width: 100%; }
+    .contenedorActividades .actividad h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-top: .5rem; }
+    .contenedorActividades .actividad p {
+      padding: 1rem;
+      font-size: 1.5rem; }
+    .contenedorActividades .actividad a {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+
 /* -----------------------SECCION DE TURISMO DEL INDEX-----------------------*/
 .contenedorTurismo {
   display: flex;
@@ -768,6 +781,19 @@ ul {
 header {
   margin: 0;
   padding: 0; }
+
+.contenedor {
+  width: 80%;
+  margin: auto; }
+
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
 
 .estilosCarrusel {
   max-width: 60%;

@@ -5,7 +5,7 @@
 @import "HTMLS/_blog";
 @import "HTMLS/contacto";
 @import "HTMLS/galeria";
-@import "HTMLS/informacion";
+@import "HTMLS/actividades";
 @import "HTMLS/turismo";
 
 
@@ -36,7 +36,21 @@ header {
     margin: 0;
     padding: 0;
 }
+.contenedor{
+    width: 80%;
+    margin: auto;
+}
+.titulosDeSecciones {
+    font-size: 3vw;
+    text-align: center;
+    padding: 2rem;
+    margin: 6rem auto;
 
+    @media (max-width: 748px) {
+
+        font-size: 3rem;
+    }
+}
 .estilosCarrusel {
     max-width: 60%;
     margin: 4rem auto;
