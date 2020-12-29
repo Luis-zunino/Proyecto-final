@@ -16,8 +16,7 @@ html {
     font-size: 62.5%;
     /** Reset para REMS - 62.5% = 10px de 16px **/
     margin: 0;
-    font-family: url(../FONTS/blackjack.otf);
-}
+    font-family: 'Nunito', sans-serif;}
 
 *,
 *:before,
@@ -43,17 +42,8 @@ header {
     margin: 8rem auto;
 
 }
-.titulosDeSecciones {
-    font-size: 3vw;
-    text-align: center;
-    padding: 2rem;
-    margin: 6rem auto;
 
-    @media (max-width: 748px) {
 
-        font-size: 3rem;
-    }
-}
 .estilosCarrusel {
     max-width: 60%;
     margin: 4rem auto;
@@ -80,6 +70,7 @@ header {
     }
 
 }
+
 
 .imagenPortada {
     position: relative;

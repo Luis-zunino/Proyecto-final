@@ -81,6 +81,7 @@
     height: 300px;
     color: rgb(42, 14, 202);
     // font-family: 'Homemade Apple', cursive;
+    font-family: 'Nunito', sans-serif;
     font-size: 3vw;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+51,a0d8ef+100 */
     background: #feffff;
@@ -342,11 +343,6 @@ section a h2 {
     }
 }
 
-@media (max-width: 1048px) {
-    .estiloParrafo {
-        max-height: max-content;
-    }
-}
 
 /* -----------------------  BOTON DE VER MAS ----------------------- */
 

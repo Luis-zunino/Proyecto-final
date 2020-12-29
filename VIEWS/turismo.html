@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderHouse: Proyecto Final</title>
-    <!------------------------- FUENTES -->
+    <!--===FUENTES===-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
-    <!-- ICONOS -->
+    <!--===ICONOS===-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <!-- NORMALIZE -->
+    <!--===NORMALIZE===-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <!-- BOOTSTRAP -->
+    <!--===BOOTSTRAP===-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- CSS -->
+    <!--===CSS===-->
     <link rel="stylesheet" href="../ASSETS/CSS/style.css">
 </head>
 
@@ -34,9 +34,9 @@
             </h1>
         </a>
     </section>
-    <!--=======NAVEGACIÓN=======-->
+    <!--===NAVEGACIÓN===-->
     <header id="arriba">
-        <!--=======Menu de navegacion con lista desplegable=======-->
+        <!--===Menu de navegacion con lista desplegable===-->
         <nav class="menuDesktop">
             <ul class="btnCaja">
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="../index.html">Inicio</a>
@@ -73,8 +73,8 @@
                 </li>
             </ul>
         </nav>
-        <!--=======Fin del menu de navegacion con lista desplegable=======-->
-        <!--================MENU HAMBURGESA================-->
+        <!--===Fin del menu de navegacion con lista desplegable===-->
+        <!--===MENU HAMBURGESA===-->
         <nav class="menuHamburgesa">
             <div class="hamburger">
                 <div class="_layer -top"></div>
@@ -92,66 +92,439 @@
             </nav>
 
         </nav>
-        <!--=======FIN DE MENU HAMBURGESA=======-->
+        <!--===FIN DE MENU HAMBURGESA===-->
     </header>
-    <!--=======FIN DE NAVEGACIÓN=======-->
-
-    <section>
-        <h2 class="titulosDeSecciones" id="turismo">Elige tu destino</h2>
-        <div class="contenedorTurismo">
+    <!--===FIN DE NAVEGACIÓN===-->
+    <main>
+        <section class="contenedor">
             <div class="tipoLugar">
-                <a href="turismo.html#playa">
-                    <img src="../ASSETS/IMG/word-image.jpeg" title="Más información sobre las Playas"
-                        alt="Foto de una Playa">
-                </a>
+                <h1 id="playa" class="titulosDeSecciones">Disfruta el verano en la arena</h1>
                 <div>
                     <p class="estiloParrafo">Pequeñas playas solitarias rodeadas de naturaleza o en agitadas costas
                         ideales para la práctica de deportes acuáticos, los paladares más diversos encuentran aquello
-                        que vinieron a buscar y más.</p>
-                </div>
-                <div class="">
-                    <button class="btnTipoLugar"><a href="turismo.html" title="Ver más">Ver más</a>
-                    </button>
-                </div>
-            </div>
-            <div class="tipoLugar">
-                <a href="turismo.html#camping">
-                    <img src="../ASSETS/IMG/Campin.jpg" title="Más información sobre los Campings"
-                        alt="Foto de un Camping">
-                </a>
-                <div class="contLugar">
-
-                    <div>
-                        <p class="estiloParrafo"> Las áreas protegidas son un pilar fundamental para la conservación
-                            y el uso sostenible de la diversidad biológica. </p>
-                    </div>
-                    <div class="btnCajaTipo">
-                        <button class="btnTipoLugar"><a href="turismo.html" title="Ver más">Ver más</a>
-                        </button>
-                    </div>
+                        que vinieron a buscar y más.
+                        De las oceánicas playas del departamento de Rocha a las tranquilas aguas
+                        del Río de la Plata, Uruguay tiene unos 600 kilómetros de costa que invitan organizar un
+                        roadtrip por algunas de sus principales ciudades y balnearios. Aquí te proponemos una guía de
+                        playas en Uruguay a través de una ruta que inicia en Brasil, por la ciudad fronteriza El Chuy, y
+                        termina en Colonia del Sacramento, donde con menos de una hora de barco puedes llegar a Buenos
+                        Aires.
+                    </p>
                 </div>
 
-            </div>
-            <div class="tipoLugar tipoLugar3">
-                <a href="turismo.html#ciudad">
-                    <img class="img" src="../ASSETS/IMG/ciudad-icono.jpg" title="Más información sobre las Ciudades"
-                        alt="Foto de una Ciudad"></a>
-                <div class="contLugar">
-                    <div>
-                        <p class="estiloParrafo">Calmas, seductoras, amenas, auténticas... así son las ciudades
-                            uruguayas. Montevideo, capital del Uruguay, es centro de negocios, eventos y
-                            cultura.
-                        </p>
+
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Santa Teresa Departamento de Rocha, km. 302 de la ruta 9
+
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+
+                                Ideal para los fanáticos del camping y la naturaleza, el Parque Nacional de Santa Teresa
+                                ocupa 3.000 hectáreas sobre el mar y ofrece en su entrada una de las fortalezas
+                                coloniales más bonitas y mejor conservadas del país, que data de mediados del siglo
+                                XVIII. Dos kilómetros hacia adentro están las playas con cabañas de alquiler, un hostel
+                                y un sitio preparado para acampar. La entrada al Parque Nacional es gratuita para todo
+                                visitante que vaya por el día a disfrutar de sus playas y preparar un asado en alguna de
+                                sus barbacoas abiertas al público. Sin embargo, quienes deseen pasar la noche deben
+                                registrarse en la entrada y abonar el precio correspondiente. La Fortaleza abre de 10 a
+                                19 horas en temporada alta y de 10 a 17 en baja; el costo de ingreso es de 40 pesos
+                                uruguayos (un dólar y medio) por persona.
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="">
-                        <button class="btnTipoLugar"><a href="turismo.html" title="Ver más"> Ver más </a>
-                        </button>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Fortaleza Santa Teresa; Departamento de Rocha, km. 298 de la ruta 9
+
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                El balneario nació en la década de 1930 y mantuvo su perfil de pueblo de pescadores
+                                hasta pocas
+                                décadas atrás, que fue descubierto por el turismo y convertido en uno de los destinos
+                                favoritos
+                                de veraneo de los jóvenes uruguayos durante la temporada alta; no obstante, durante el
+                                invierno
+                                viven allí solo unas 800 personas (según el censo de 2011), por lo que el lugar aún
+                                conserva su
+                                espíritu original. En sus 10 kilómetros de costa conviven tres playas: la de Los
+                                Pescadores en
+                                el centro -la más familiar, caracterizada por coloridos botes de pesca artesanal que se
+                                acercan
+                                a la playa para ofrecer a los turistas la pesca del día-, la Playa de la Viuda al
+                                suroeste, y la
+                                del Rivero, al noreste.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Punta del Diablo playas Coloridos botes de pesca artesanal en la playa de Los Pescadores/ Foto:
+                                Carina Fossati
+                                Valizas
+                                Departamento de Rocha, km. 271,5 de la ruta 10                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                            
+                                Pequeño pueblo de pescadores rodeado por dunas de gran altura, Barra de Valizas es el punto más
+                                hippie de la costa uruguaya, favorito de músicos y artesanos. Dentro de sus atractivos están los
+                                restos de varios naufragios, que pueden ser visitados por quienes practican buceo los días que
+                                el agua está clara. Un paseo típico es la caminata por las dunas hasta Cabo Polonio (unos ocho
+                                kilómetros), que se alarga si uno hace el recorrido por la costa, pero el desvío permite
+                                observar restos del Don Guillermo, barco de la marina estadounidense que encalló en la década de
+                                1950.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Cabo Polonio
+                                Departamento de Rocha, km. 264, 5 de la ruta 10                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                            
+                                Sin luz eléctrica ni calles asfaltadas, este balneario tampoco es accesible desde la ruta -se
+                                ingresa solamente desde la Terminal Puerta del Polonio atravesando siete kilómetros de bosque y
+                                dunas en un camión 4x4 hasta llegar al balneario; los únicos con permiso para ingresar en
+                                vehículo propio son quienes tienen casa allí- y la dificultad de su acceso es a la vez el
+                                garante de que se conserve como un lugar de características únicas en el país, solo comparable
+                                al Jericoacoara del nordeste brasileño. Aquí están algunas de las mejores playas del país, pero
+                                su mayor encanto es la noche, momento en que la única competencia de la luna y las estrellas la
+                                proporciona el faro de la punta del Cabo, y las velas o linternas de los habitantes.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <h2 class="titulosDeSecciones" id="turismo">Elige tu destino</h2>
+            <div class="contenedorTurismo">
+                <div class="tipoLugar">
+                    <a href="turismo.html#camping">
+                        <img src="../ASSETS/IMG/Campin.jpg" title="Más información sobre los Campings"
+                            alt="Foto de un Camping">
+                    </a>
+                    <div class="contLugar">
+
+                        <div>
+                            <p class="estiloParrafo"> Las áreas protegidas son un pilar fundamental para la conservación
+                                y el uso sostenible de la diversidad biológica. </p>
+                        </div>
+                        <div class="btnCajaTipo">
+                            <button class="btnTipoLugar"><a href="turismo.html" title="Ver más">Ver más</a>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tipoLugar tipoLugar3">
+                    <a href="turismo.html#ciudad">
+                        <img class="img" src="../ASSETS/IMG/ciudad-icono.jpg" title="Más información sobre las Ciudades"
+                            alt="Foto de una Ciudad"></a>
+                    <div class="contLugar">
+                        <div>
+                            <p class="estiloParrafo">Calmas, seductoras, amenas, auténticas... así son las ciudades
+                                uruguayas. Montevideo, capital del Uruguay, es centro de negocios, eventos y
+                                cultura.
+                            </p>
+                        </div>
+                        <div class="">
+                            <button class="btnTipoLugar"><a href="turismo.html" title="Ver más"> Ver más </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Pie de Página-->
+        </section>
+    </main>
+
     <!-- Pie de Página-->
     <footer>
         <nav>
@@ -199,9 +572,17 @@
         </div>
         <p class="copy"><span class="color-copy"> CoderHouse:</span> Proyecto final</p>
     </footer>
-    <!--Fin del Pie de Página-->
-    <script src="../../ASSETS/JS/index.js"></script>
-
+    <!--===Fin del Pie de Página===-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
+    <script src="ASSETS/JS/index.js"></script>
 </body>
 
 </html>

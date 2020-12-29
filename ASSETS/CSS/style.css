@@ -1,6 +1,24 @@
 @charset "UTF-8";
 /*-------------- MENU Desktop-------------- */
 /*--variables--*/
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
+
+.estiloParrafo {
+  max-height: max-content;
+  font-size: 1.2rem; }
+
+@media (max-width: 1048px) {
+  .estiloParrafo {
+    max-height: max-content;
+    font-size: 3rem; } }
+
 @media (max-width: 599px) {
   .menuDesktop {
     display: none; } }
@@ -80,6 +98,24 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
 
 /*--------------FIN MENU Desktop-------------- */
 /*--variables--*/
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
+
+.estiloParrafo {
+  max-height: max-content;
+  font-size: 1.2rem; }
+
+@media (max-width: 1048px) {
+  .estiloParrafo {
+    max-height: max-content;
+    font-size: 3rem; } }
+
 /*--------------  MENU HAMBURGESA-------------- */
 .menuHamburgesa {
   display: none; }
@@ -174,6 +210,24 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
 
 /* ----------------------- FOOTER ----------------------- */
 /*--variables--*/
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
+
+.estiloParrafo {
+  max-height: max-content;
+  font-size: 1.2rem; }
+
+@media (max-width: 1048px) {
+  .estiloParrafo {
+    max-height: max-content;
+    font-size: 3rem; } }
+
 .navFooter {
   display: flex;
   width: 100%;
@@ -268,6 +322,24 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
 
 /*  ----------------------- INDEX ----------------------- */
 /*--variables--*/
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
+
+.estiloParrafo {
+  max-height: max-content;
+  font-size: 1.2rem; }
+
+@media (max-width: 1048px) {
+  .estiloParrafo {
+    max-height: max-content;
+    font-size: 3rem; } }
+
 /*-------------------------DECORACION DE SALTOS-------------------------------*/
 .estiloTituloDecorado {
   /*Decorado de <--------uruguay natural------->*/
@@ -329,6 +401,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
   /*Decorado de frase con imagen decorada abajo*/
   height: 300px;
   color: #2a0eca;
+  font-family: 'Nunito', sans-serif;
   font-size: 3vw;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+51,a0d8ef+100 */
   background: #feffff;
@@ -514,10 +587,6 @@ section a h2 {
   .indexDesktopOff {
     display: none; } }
 
-@media (max-width: 1048px) {
-  .estiloParrafo {
-    max-height: max-content; } }
-
 /* -----------------------  BOTON DE VER MAS ----------------------- */
 .btnVer {
   display: flex;
@@ -543,6 +612,24 @@ section a h2 {
 /* ----------------------- FIN BOTON DE VER MAS ----------------------- */
 /*  -----------------------FIN INDEX ----------------------- */
 /*--variables--*/
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
+
+.estiloParrafo {
+  max-height: max-content;
+  font-size: 1.2rem; }
+
+@media (max-width: 1048px) {
+  .estiloParrafo {
+    max-height: max-content;
+    font-size: 3rem; } }
+
 .contenedorInformacion {
   width: 80%;
   margin: auto;
@@ -594,8 +681,44 @@ section a h2 {
         font-size: 1.8rem; } }
 
 /*--variables--*/
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
+
+.estiloParrafo {
+  max-height: max-content;
+  font-size: 1.2rem; }
+
+@media (max-width: 1048px) {
+  .estiloParrafo {
+    max-height: max-content;
+    font-size: 3rem; } }
+
 /*-------------------------HTML GALERIA------------------------------------*/
 /*--variables--*/
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
+
+.estiloParrafo {
+  max-height: max-content;
+  font-size: 1.2rem; }
+
+@media (max-width: 1048px) {
+  .estiloParrafo {
+    max-height: max-content;
+    font-size: 3rem; } }
+
 .contenedorGale {
   /*-------------------------HTML GALERIA UNA COLUMNAS------------------------------------*/
   /*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
@@ -659,6 +782,24 @@ section a h2 {
 
 /*-------------------------FIN HTML GALERIA------------------------------------*/
 /*--variables--*/
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
+
+.estiloParrafo {
+  max-height: max-content;
+  font-size: 1.2rem; }
+
+@media (max-width: 1048px) {
+  .estiloParrafo {
+    max-height: max-content;
+    font-size: 3rem; } }
+
 .parrafoActividad {
   font-size: 2rem;
   padding: 1rem;
@@ -705,6 +846,24 @@ section a h2 {
 
 /* -----------------------SECCION DE TURISMO DEL INDEX-----------------------*/
 /*--variables--*/
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
+
+.estiloParrafo {
+  max-height: max-content;
+  font-size: 1.2rem; }
+
+@media (max-width: 1048px) {
+  .estiloParrafo {
+    max-height: max-content;
+    font-size: 3rem; } }
+
 .contenedorTurismo {
   display: flex;
   flex-shrink: 1;
@@ -791,12 +950,30 @@ section a h2 {
 /* -----------------------FIN SECCION DE TURISMO DEL INDEX-----------------------*/
 /* ---------------------- TURISMO HTML-----------------------*/
 /*--variables--*/
+.titulosDeSecciones {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2rem;
+  margin: 6rem auto; }
+  @media (max-width: 748px) {
+    .titulosDeSecciones {
+      font-size: 3rem; } }
+
+.estiloParrafo {
+  max-height: max-content;
+  font-size: 1.2rem; }
+
+@media (max-width: 1048px) {
+  .estiloParrafo {
+    max-height: max-content;
+    font-size: 3rem; } }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
   /** Reset para REMS - 62.5% = 10px de 16px **/
   margin: 0;
-  font-family: url(../FONTS/blackjack.otf); }
+  font-family: 'Nunito', sans-serif; }
 
 *,
 *:before,
@@ -818,15 +995,6 @@ header {
 .contenedor {
   width: 80%;
   margin: 8rem auto; }
-
-.titulosDeSecciones {
-  font-size: 3vw;
-  text-align: center;
-  padding: 2rem;
-  margin: 6rem auto; }
-  @media (max-width: 748px) {
-    .titulosDeSecciones {
-      font-size: 3rem; } }
 
 .estilosCarrusel {
   max-width: 60%;
