@@ -1,11 +1,12 @@
 /*  ----------------------- INDEX ----------------------- */
+@import "../PARTES/variables";
 /*-------------------------DECORACION DE SALTOS-------------------------------*/
 .estiloTituloDecorado {
     /*Decorado de <--------uruguay natural------->*/
     width: 100%;
     padding: 3rem 3rem 0 3rem;
     margin: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: $colorPrimario;
     color: rgba(241, 237, 237, 0.9);
     ;
     font-size: 4vw;
@@ -16,7 +17,7 @@
     z-index: 1;
 
     &:hover {
-        background-color: black;
+        background-color: $colorPrimario;
         color: white;
 
     }
@@ -79,7 +80,7 @@
     /*Decorado de frase con imagen decorada abajo*/
     height: 300px;
     color: rgb(42, 14, 202);
-    font-family: 'Homemade Apple', cursive;
+    // font-family: 'Homemade Apple', cursive;
     font-size: 3vw;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+51,a0d8ef+100 */
     background: #feffff;
@@ -254,7 +255,7 @@ section a h2 {
     border: solid 1px black;
     margin: 1rem;
     flex-basis: Calc(calc(33.3%) - calc(1rem));
-    background-color: thistle;
+    background-color: $colorQuinto;
 
     img {
         width: 100%;
@@ -356,7 +357,7 @@ section a h2 {
 }
 
 .btnVerMas {
-    background-color: rgba(251, 175, 34, 0.794);
+    background-color: $colorQuinto;
     padding: 1rem;
     border-radius: 25%;
 

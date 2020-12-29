@@ -7,6 +7,7 @@
 @import "HTMLS/galeria";
 @import "HTMLS/actividades";
 @import "HTMLS/turismo";
+@import "partes/variables";
 
 
 
@@ -15,6 +16,7 @@ html {
     font-size: 62.5%;
     /** Reset para REMS - 62.5% = 10px de 16px **/
     margin: 0;
+    font-family: url(../FONTS/blackjack.otf);
 }
 
 *,

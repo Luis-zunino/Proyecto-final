@@ -1,4 +1,6 @@
 /*-------------- MENU Desktop-------------- */
+@import "variables";
+
 .menuDesktop {
     @media (max-width: 599px) {
         display: none;
@@ -11,7 +13,7 @@
         margin: 0 auto;
         width: 70%;
         height: max-content;
-        background-color: rgba(0, 0, 0, 0.746);
+        background-color: $colorSecundario;
         list-style: none;
         top: 7vw;
         position: relative;
@@ -68,7 +70,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */
                 top: 100%;
                 padding: 0 1rem;
                 width: 100%;
-                background-color: rgba(0, 0, 0, 0.753);
+                background-color: $colorSecundario;
                 margin: 0 auto;
 
                 .listaInterna {
@@ -102,4 +104,5 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */
         }
     }
 }
+
 /*--------------FIN MENU Desktop-------------- */

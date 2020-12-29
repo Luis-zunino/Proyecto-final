@@ -1,3 +1,5 @@
+@import "variables";
+
 /*--------------  MENU HAMBURGESA-------------- */
 .menuHamburgesa {
     display: none;
@@ -77,7 +79,7 @@
     }
 
     .menuppal {
-        background-color: rgba(51, 50, 50, 0.95);
+        background-color: $colorSecundario;
         bottom: 0;
         height: 100%;
         left: 0;
@@ -115,7 +117,7 @@
                     &:hover {
                         text-decoration: none;
                         color: white;
-                        background-color: rgba(0, 0, 0, 0.5);
+                        background-color: $colorSecundario;
                         border-radius: 10%;
                         padding: 1rem;
 
