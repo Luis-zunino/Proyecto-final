@@ -81,6 +81,7 @@
     display: flex;
     flex-direction: column-reverse;
     flex-shrink: 0;
+
     a {
         align-items: center;
         padding: 2rem;
@@ -107,5 +108,32 @@
 }
 
 /* -----------------------FIN SECCION DE TURISMO DEL INDEX-----------------------*/
+.playa {
+    .contPlaya {
+        margin-bottom: 4rem;
+
+        h2 {
+            font-size: 1.9rem;
+            text-align: justify;
+            text-indent: 1em;
+            text-align: left;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.accordion-item {
+    .accordion-button:focus {
+        z-index: 0;
+
+    }
+
+    .accordion-body {
+        width: 80%;
+        margin: 2rem auto;
+        font-size: 1.5rem;
+    }
+}
 
 /* ---------------------- TURISMO HTML-----------------------*/

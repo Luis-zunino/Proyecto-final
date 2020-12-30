@@ -11,8 +11,8 @@
       font-size: 3rem; } }
 
 .estiloParrafo {
-  max-height: max-content;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 @media (max-width: 1048px) {
   .estiloParrafo {
@@ -108,8 +108,8 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
       font-size: 3rem; } }
 
 .estiloParrafo {
-  max-height: max-content;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 @media (max-width: 1048px) {
   .estiloParrafo {
@@ -220,8 +220,8 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
       font-size: 3rem; } }
 
 .estiloParrafo {
-  max-height: max-content;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 @media (max-width: 1048px) {
   .estiloParrafo {
@@ -332,8 +332,8 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
       font-size: 3rem; } }
 
 .estiloParrafo {
-  max-height: max-content;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 @media (max-width: 1048px) {
   .estiloParrafo {
@@ -622,8 +622,8 @@ section a h2 {
       font-size: 3rem; } }
 
 .estiloParrafo {
-  max-height: max-content;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 @media (max-width: 1048px) {
   .estiloParrafo {
@@ -691,8 +691,8 @@ section a h2 {
       font-size: 3rem; } }
 
 .estiloParrafo {
-  max-height: max-content;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 @media (max-width: 1048px) {
   .estiloParrafo {
@@ -711,8 +711,8 @@ section a h2 {
       font-size: 3rem; } }
 
 .estiloParrafo {
-  max-height: max-content;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 @media (max-width: 1048px) {
   .estiloParrafo {
@@ -792,8 +792,8 @@ section a h2 {
       font-size: 3rem; } }
 
 .estiloParrafo {
-  max-height: max-content;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 @media (max-width: 1048px) {
   .estiloParrafo {
@@ -856,8 +856,8 @@ section a h2 {
       font-size: 3rem; } }
 
 .estiloParrafo {
-  max-height: max-content;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 @media (max-width: 1048px) {
   .estiloParrafo {
@@ -948,6 +948,24 @@ section a h2 {
     grid-column: 1/1; } }
 
 /* -----------------------FIN SECCION DE TURISMO DEL INDEX-----------------------*/
+.playa .contPlaya {
+  margin-bottom: 4rem; }
+  .playa .contPlaya h2 {
+    font-size: 1.9rem;
+    text-align: justify;
+    text-indent: 1em;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 1rem; }
+
+.accordion-item .accordion-button:focus {
+  z-index: 0; }
+
+.accordion-item .accordion-body {
+  width: 80%;
+  margin: 2rem auto;
+  font-size: 1.5rem; }
+
 /* ---------------------- TURISMO HTML-----------------------*/
 /*--variables--*/
 .titulosDeSecciones {
@@ -960,8 +978,8 @@ section a h2 {
       font-size: 3rem; } }
 
 .estiloParrafo {
-  max-height: max-content;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 @media (max-width: 1048px) {
   .estiloParrafo {

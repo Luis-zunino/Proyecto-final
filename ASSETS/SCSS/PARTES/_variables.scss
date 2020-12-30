@@ -16,8 +16,9 @@ $colorQuinto:rgb(252,242,198);
     }
 }
 .estiloParrafo {
-    max-height: max-content;
+    // max-height: max-content;
     font-size: 1.2rem;
+    text-align: justify;
 }
 @media (max-width: 1048px) {
     .estiloParrafo {
