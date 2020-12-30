@@ -126,13 +126,31 @@
 .accordion-item {
     .accordion-button:focus {
         z-index: 0;
-
     }
 
     .accordion-body {
         width: 80%;
         margin: 2rem auto;
         font-size: 1.5rem;
+    }
+}
+
+.cajaMapaInteractivo {
+    display: flex;
+    background-color: $colorTerciario;
+    height: 700px;
+
+    .accordion {
+        width: 30%;
+    }
+    .contenedorMapa{
+        width: 70%;
+        .mapaInteractivo{
+            margin: auto;
+            iframe{
+                width: 100%;
+            }
+        }
     }
 }
 

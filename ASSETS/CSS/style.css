@@ -966,6 +966,19 @@ section a h2 {
   margin: 2rem auto;
   font-size: 1.5rem; }
 
+.cajaMapaInteractivo {
+  display: flex;
+  background-color: #608e93;
+  height: 700px; }
+  .cajaMapaInteractivo .accordion {
+    width: 30%; }
+  .cajaMapaInteractivo .contenedorMapa {
+    width: 70%; }
+    .cajaMapaInteractivo .contenedorMapa .mapaInteractivo {
+      margin: auto; }
+      .cajaMapaInteractivo .contenedorMapa .mapaInteractivo iframe {
+        width: 100%; }
+
 /* ---------------------- TURISMO HTML-----------------------*/
 /*--variables--*/
 .titulosDeSecciones {
