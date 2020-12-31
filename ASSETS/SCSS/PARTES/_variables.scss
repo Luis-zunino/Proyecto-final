@@ -1,28 +1,9 @@
-/*--variables--*/
+// Variables Varias
+
+// Colores
 $colorPrimario:rgb(47, 45, 62);
-$colorSecundario: rgb(80,89,108);
-$colorTerciario: rgb(96,142,147);
-$colorCuaternario:rgb(153,186,164);
-$colorQuinto:rgb(252,242,198);
+$colorSecundario: rgb(80, 89, 108);
+$colorTerciario: rgb(96, 142, 147);
+$colorCuaternario:rgb(153, 186, 164);
+$colorQuinto:rgb(252, 242, 198);
 
-.titulosDeSecciones {
-    font-size: 3vw;
-    text-align: center;
-    padding: 2rem;
-    margin: 6rem auto;
-
-    @media (max-width: 748px) {
-        font-size: 3rem;
-    }
-}
-.estiloParrafo {
-    // max-height: max-content;
-    font-size: 1.2rem;
-    text-align: justify;
-}
-@media (max-width: 1048px) {
-    .estiloParrafo {
-        max-height: max-content;
-        font-size: 3rem;
-    }
-}
