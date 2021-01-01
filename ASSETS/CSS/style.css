@@ -601,6 +601,10 @@ section a h2 {
       text-indent: 1rem;
       padding: 1rem;
       font-size: 1.5rem; }
+    .contenedorActividades .actividad a {
+      position: relative; }
+      .contenedorActividades .actividad a button {
+        margin-bottom: 1rem; }
     @media (max-width: 650px) {
       .contenedorActividades .actividad {
         grid-column: 1/3; } }
@@ -620,7 +624,8 @@ section a h2 {
     .contenedorActividadIndividual .actividad h2 {
       text-align: center;
       margin: 3rem auto;
-      font-size: 2rem; }
+      font-size: 2.5rem;
+      font-weight: bold; }
     .contenedorActividadIndividual .actividad h4 {
       margin-bottom: 2rem;
       padding: 2rem;
@@ -634,27 +639,41 @@ section a h2 {
         grid-template-columns: repeat(3, 1fr);
         margin: auto;
         align-content: center; }
-        .contenedorActividadIndividual .actividad .contenidoActividad .opciones i {
-          position: relative;
-          left: 25%;
-          font-size: 4rem;
-          margin: 1.4rem auto;
-          padding: 1rem;
-          background-color: white;
-          border-radius: 50%;
-          text-align: center; }
-        .contenedorActividadIndividual .actividad .contenidoActividad .opciones p {
-          padding: 1.5rem;
-          font-size: 1.5rem;
-          text-align: center; }
-        @media (max-width: 1048px) {
+        .contenedorActividadIndividual .actividad .contenidoActividad .opciones div {
+          border: 1px solid black;
+          margin: .5rem;
+          background-color: white; }
+          .contenedorActividadIndividual .actividad .contenidoActividad .opciones div i {
+            display: table;
+            font-size: 4rem;
+            margin: 1.4rem auto;
+            padding: 1rem;
+            background-color: #fcf2c6;
+            border-radius: 50%; }
+          .contenedorActividadIndividual .actividad .contenidoActividad .opciones div p {
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            text-align: center; }
+        @media (max-width: 1063px) {
           .contenedorActividadIndividual .actividad .contenidoActividad .opciones {
-            grid-template-columns: repeat(1, 1fr); }
-            .contenedorActividadIndividual .actividad .contenidoActividad .opciones i {
-              left: 50%; } }
-        @media (max-width: 650px) {
-          .contenedorActividadIndividual .actividad .contenidoActividad .opciones .actividad img {
-            display: block; } }
+            grid-template-columns: repeat(1, 1fr); } }
+    .contenedorActividadIndividual .actividad p {
+      padding: 1rem;
+      font-size: 1.5rem;
+      text-indent: 2rem;
+      text-align: center; }
+    @media (max-width: 1048px) {
+      .contenedorActividadIndividual .actividad {
+        display: block; }
+        .contenedorActividadIndividual .actividad img {
+          width: 100%; } }
+
+.textoSobrante {
+  background-color: #fcf2c6;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-indent: 2rem;
+  text-align: center; }
 
 /* -----------------------SECCION DE TURISMO DEL INDEX-----------------------*/
 .contenedorTurismo {
@@ -801,7 +820,7 @@ header {
 
 .contenedor {
   width: 80%;
-  margin: 12rem auto; }
+  margin: 10rem auto; }
 
 .titulosDeSecciones {
   font-size: 3rem;

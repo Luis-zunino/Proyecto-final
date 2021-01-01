@@ -6,13 +6,10 @@
     margin: 3rem auto;
 }
 
+//General del Index
 .contenedorActividades {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-    // @media(max-width: 796px) {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
 
     @media (max-width: 720px) {
         display: grid;
@@ -44,6 +41,14 @@
             font-size: 1.5rem;
         }
 
+        a {
+            position: relative;
+
+            button {
+                margin-bottom: 1rem;
+            }
+        }
+
         @media (max-width:650px) {
             grid-column: 1/3;
         }
@@ -60,13 +65,12 @@
     }
 }
 
-//Actividades individuales
+//HTML Actividades 
 .contenedorActividadIndividual {
     margin: 4rem auto;
 
     .actividad {
         display: flex;
-        // height: max-content;
 
         img {
             width: 50%;
@@ -75,7 +79,9 @@
         h2 {
             text-align: center;
             margin: 3rem auto;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+
         }
 
         h4 {
@@ -89,46 +95,66 @@
             padding: 1rem;
             background-color: $colorQuinto;
 
-
+            //Al Fin Carnaval
             .opciones {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 margin: auto;
                 align-content: center;
 
-                i {
-                    position: relative;
-                    left: 25%;
-                    font-size: 4rem;
-                    margin: 1.4rem auto;
-                    padding: 1rem;
+                div {
+                    border: 1px solid black;
+                    margin: .5rem;
                     background-color: white;
-                    border-radius: 50%;
-                    text-align: center;
-                }
-
-                p {
-                    padding: 1.5rem;
-                    font-size: 1.5rem;
-                    text-align: center;
-                }
-
-                @media (max-width: 1048px) {
-                    grid-template-columns: repeat(1, 1fr);
 
                     i {
-                        left: 50%;
+                        display: table;
+                        font-size: 4rem;
+                        margin: 1.4rem auto;
+                        padding: 1rem;
+                        background-color: $colorQuinto;
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        padding: 1.5rem;
+                        font-size: 1.5rem;
+                        text-align: center;
                     }
                 }
 
-                @media (max-width: 650px) {
-                    .actividad {
-                        img {
-                            display: block;
-                        }
-                    }
+                @media (max-width: 1063px) {
+                    grid-template-columns: repeat(1, 1fr);
                 }
+
+
+            }
+        }
+
+        //general para todas las actividades
+        p {
+            padding: 1rem;
+            font-size: 1.5rem;
+            text-indent: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 1048px) {
+            display: block;
+
+            img {
+                width: 100%;
             }
         }
     }
+}
+
+//Cultura y Patrimonio parrafos que sobran porque sino alarga demasiado la imagen
+.textoSobrante {
+    background-color: $colorQuinto;
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-indent: 2rem;
+    text-align: center;
+
 }
