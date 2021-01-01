@@ -508,6 +508,67 @@ section a h2 {
     bottom: 8rem;
     right: 0; }
 
+.cajaForm {
+  color: black;
+  background-color: #99baa4;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem; }
+  .cajaForm .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 80%;
+    padding: 50px;
+    margin: 4rem auto; }
+    .cajaForm .formulario .contFormulario {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .cajaForm .formulario .contFormulario label {
+        margin-bottom: 15px; }
+      .cajaForm .formulario .contFormulario textarea {
+        font-size: 2rem;
+        border: 1px solid #D6D9DC;
+        border-radius: 3px;
+        min-height: 200px;
+        margin-bottom: 10px;
+        padding: 7px; }
+      .cajaForm .formulario .contFormulario .descripcionTextArea {
+        color: #999999;
+        font-size: 1.5rem;
+        margin-bottom: 30px; }
+      .cajaForm .formulario .contFormulario input[type="text"],
+      .cajaForm .formulario .contFormulario input[type="email"] {
+        background-color: #FFFFFF;
+        border: 1px solid #D6D9DC;
+        border-radius: 3px;
+        width: 100%;
+        padding: 7px;
+        font-size: 1.5rem;
+        margin-bottom: 20px; }
+        .cajaForm .formulario .contFormulario input[type="text"]:invalid, .cajaForm .formulario .contFormulario input[type="text"]:invalid,
+        .cajaForm .formulario .contFormulario input[type="email"]:invalid,
+        .cajaForm .formulario .contFormulario input[type="email"]:invalid {
+          border: 1px solid #D55C5F;
+          color: #D55C5F;
+          box-shadow: none; }
+      .cajaForm .formulario .contFormulario button {
+        background-color: #5995DA;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 40px;
+        cursor: pointer; }
+        .cajaForm .formulario .contFormulario button:hover {
+          background-color: #76AEED; }
+        .cajaForm .formulario .contFormulario button:active {
+          background-color: #407FC7; }
+
 /*-------------------------HTML GALERIA------------------------------------*/
 .contenedorGale {
   /*-------------------------HTML GALERIA UNA COLUMNAS------------------------------------*/

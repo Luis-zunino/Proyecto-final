@@ -1,1 +1,82 @@
 @import "../PARTES/variables";
+
+.cajaForm {
+    color: black;
+    background-color: $colorCuaternario;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+
+    .formulario {
+        background-color: #f6f7f8;
+        border: 1px solid #D6D9DC;
+        border-radius: 3px;
+        width: 80%;
+        padding: 50px;
+        margin: 4rem auto;
+
+        .contFormulario {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            label {
+                margin-bottom: 15px;
+            }
+
+            textarea {
+                font-size: 2rem;
+                border: 1px solid #D6D9DC;
+                border-radius: 3px;
+                min-height: 200px;
+                margin-bottom: 10px;
+                padding: 7px;
+            }
+
+            .descripcionTextArea {
+                color: #999999;
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+            }
+
+            input[type="text"],
+            input[type="email"] {
+                background-color: #FFFFFF;
+                border: 1px solid #D6D9DC;
+                border-radius: 3px;
+                width: 100%;
+                padding: 7px;
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+
+                &:invalid,
+                &:invalid {
+                    border: 1px solid #D55C5F;
+                    color: #D55C5F;
+                    box-shadow: none;
+                }
+            }
+
+            button {
+                background-color: #5995DA;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 3px;
+                padding: 10px 40px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #76AEED;
+                }
+
+                &:active {
+                    background-color: #407FC7;
+                }
+            }
+        }
+    }
+}

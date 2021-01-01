@@ -43,12 +43,12 @@
                 </li>
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="turismo.html">Destinos</a>
                     <ul class="cajaListaInterna">
-                        <li class="listaInterna"><a class="botones enlaceLista"
-                                href="turismo.html#playas">Playas</a></li>
-                        <li class="listaInterna"><a class="botones enlaceLista"
-                                href="turismo.html#camping">Camping</a></li>
-                        <li class="listaInterna"><a class="botones enlaceLista"
-                                href="turismo.html#ciudad">Ciudad</a></li>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="turismo.html#playas">Playas</a>
+                        </li>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="turismo.html#camping">Camping</a>
+                        </li>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="turismo.html#ciudad">Ciudad</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista">Galeria</a>
@@ -69,8 +69,7 @@
                                 interes</a></li>
                     </ul>
                 </li>
-                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista"
-                        href="actividades.html">Actividades</a>
+                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="actividades.html">Actividades</a>
                 </li>
             </ul>
         </nav>
@@ -96,44 +95,47 @@
         <!-------------------------FIN DE MENU HAMBURGESA------------------------------>
     </header>
     <!--=======FIN DE NAVEGACIÓN=======-->
-      
-<body>
-    <main>
-        <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
 
-            <label for="email" />Email</label>
-            <input type="email" name="email" id="email" placeholder="email" required />
+    <body>
+        <main class="contenedor">
+            <section class="cajaForm">
+                <h1 class="titulosDeSecciones">Contáctanos</h1>
 
-            <label for="asunto">Asunto</label>
-            <input type="text" name="asunto" id="asunto" placeholder="titular de la consulta" />
+                <form class="formulario">
+                    <div class="contFormulario">
 
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres"
-                maxlength="300"></textarea>
+                        <label for="name">Nombre</label>
+                        <input id="name" type="text" name="nombre" placeholder="Ingrese su Nombre Completo">
 
-            <input type="submit" name="enviar" value="enviar datos" />
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese un email valido">
 
-        </form>
-    </main>
-</body>
-<!-- Pie de Página-->
-<footer>
-    <nav>
-        <div class="navFooter">
-            <a class="btnPie" href="galeria.html" title="Ir a Galería">Galería</a>
-            <a class="btnPie" href="turismo.html" title="Ir a Destinos">Destinos </a>
-            <a class="btnPie" href="../index.html" title="Ir a Inicio"><i class="fas fa-home"></i></a>
-            <a class="btnPie" href="blog.html" title="Ir a Blog">Blog</a>
-            <a class="btnPie" href="actividades.html" title="Ir a Actividades">Actividades</a>
-        </div>
-    </nav>
+                        <label for="comments">Comentarios</label>
+                        <textarea name="" id="comments" cols="30" rows="10"></textarea>
 
-    <p class="copy"><span class="color-copy"> CoderHouse:</span> Proyecto final</p>
-</footer>
-<!--Fin del Pie de Página-->
-<script src="../ASSETS/JS/index.js"></script>
+                        <p class="descripcionTextArea">Escribe tu mensaje</p>
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+    <!-- Pie de Página-->
+    <footer>
+        <nav>
+            <div class="navFooter">
+                <a class="btnPie" href="galeria.html" title="Ir a Galería">Galería</a>
+                <a class="btnPie" href="turismo.html" title="Ir a Destinos">Destinos </a>
+                <a class="btnPie" href="../index.html" title="Ir a Inicio"><i class="fas fa-home"></i></a>
+                <a class="btnPie" href="blog.html" title="Ir a Blog">Blog</a>
+                <a class="btnPie" href="actividades.html" title="Ir a Actividades">Actividades</a>
+            </div>
+        </nav>
+
+        <p class="copy"><span class="color-copy"> CoderHouse:</span> Proyecto final</p>
+    </footer>
+    <!--Fin del Pie de Página-->
+    <script src="../ASSETS/JS/index.js"></script>
 
 </body>
 
