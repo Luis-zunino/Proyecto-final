@@ -53,7 +53,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
       transform-origin: left top;
       top: 100%;
       padding: 0 1rem;
-      width: 100%;
+      width: max-content;
       background-color: #50596c;
       margin: 0 auto; }
       .menuDesktop .btnCaja .listaBtnExpan .cajaListaInterna .listaInterna {
@@ -73,7 +73,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
       padding: .6rem;
       height: 100%;
       display: inline-flex;
-      font-size: .8vw;
+      font-size: 1.5rem;
       width: 100%;
       display: block; }
 
@@ -85,7 +85,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
     .menuHamburgesa {
       display: block; } }
   .menuHamburgesa .hamburger {
-    position: fixed;
+    position: relative;
     background-color: transparent;
     left: 0;
     top: 0;
@@ -277,7 +277,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
   display: block;
   text-align: center;
   position: fixed;
-  z-index: 1; }
+  z-index: 4; }
   .estiloTituloDecorado:hover {
     background-color: #2f2d3e;
     color: white; }
@@ -400,18 +400,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
 
 .contenedorTitulo {
   width: 80%;
-  margin: 3rem auto;
-  display: flex;
-  background-color: #608e93;
-  border-radius: 50%; }
-  .contenedorTitulo .contenedorImgTitulo {
-    width: 0%;
-    position: relative; }
-    .contenedorTitulo .contenedorImgTitulo img {
-      width: 100%;
-      margin: 0;
-      position: absolute;
-      top: -25%; }
+  margin: 3rem auto; }
   .contenedorTitulo h1 {
     margin: 0;
     text-align: center; }
@@ -467,7 +456,8 @@ section a h2 {
       font-size: 2rem;
       text-decoration: coral;
       margin-bottom: 2rem;
-      text-align: center; }
+      text-align: center;
+      font-weight: bold; }
       @media (max-width: 720px) {
         .contenedorBlog .contenidoBlog .estiloTituloTransporte {
           font-size: 2.2rem; } }
@@ -503,10 +493,6 @@ section a h2 {
             width: 100%;
             margin: auto;
             max-height: 400px; } }
-  .contenedorBlog .btnVer {
-    position: absolute;
-    bottom: 8rem;
-    right: 0; }
 
 .cajaForm {
   color: black;
@@ -570,65 +556,58 @@ section a h2 {
           background-color: #407FC7; }
 
 /*-------------------------HTML GALERIA------------------------------------*/
-.contenedorGale {
+.contenedor {
   /*-------------------------HTML GALERIA UNA COLUMNAS------------------------------------*/
   /*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
   /*-------------------------HTML GALERIA TRES COLUMNAS------------------------------------*/ }
-  .contenedorGale p {
-    text-align: center;
-    color: white;
-    padding: 1rem;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.582); }
-  .contenedorGale .galeria {
+  .contenedor .galeria {
     display: grid; }
     @media (max-width: 720px) {
-      .contenedorGale .galeria {
+      .contenedor .galeria {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr); } }
-    .contenedorGale .galeria .imagenGal {
+    .contenedor .galeria .imagenGal {
       padding: 1rem;
       margin: auto; }
-      .contenedorGale .galeria .imagenGal img {
+      .contenedor .galeria .imagenGal img {
         width: 800px;
         transition: 1s ease-in-out; }
-        .contenedorGale .galeria .imagenGal img:hover {
+        .contenedor .galeria .imagenGal img:hover {
           transform: scale(1.1); }
-  .contenedorGale .galeria2 {
+  .contenedor .galeria2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
     @media (max-width: 720px) {
-      .contenedorGale .galeria2 {
+      .contenedor .galeria2 {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr); } }
-    .contenedorGale .galeria2 .imagenGal {
+    .contenedor .galeria2 .imagenGal {
       padding: 1rem;
       width: 100%;
       margin: auto; }
-      .contenedorGale .galeria2 .imagenGal img {
+      .contenedor .galeria2 .imagenGal img {
         transition: 1s ease-in-out; }
-        .contenedorGale .galeria2 .imagenGal img:hover {
+        .contenedor .galeria2 .imagenGal img:hover {
           transform: scale(1.1); }
-  .contenedorGale .galeria3 {
+  .contenedor .galeria3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr); }
     @media (max-width: 968px) {
-      .contenedorGale .galeria3 {
+      .contenedor .galeria3 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr); } }
     @media (max-width: 720px) {
-      .contenedorGale .galeria3 {
+      .contenedor .galeria3 {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr); } }
-    .contenedorGale .galeria3 .imagenGal {
+    .contenedor .galeria3 .imagenGal {
       padding: 1rem;
       width: 100%;
       margin: auto; }
-      .contenedorGale .galeria3 .imagenGal img {
+      .contenedor .galeria3 .imagenGal img {
         transition: 1s ease-in-out; }
-        .contenedorGale .galeria3 .imagenGal img:hover {
+        .contenedor .galeria3 .imagenGal img:hover {
           transform: scale(1.1); }
 
 /*-------------------------FIN HTML GALERIA------------------------------------*/
@@ -747,13 +726,12 @@ section a h2 {
     .contenedorTurismo {
       width: 80%;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr; } }
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); } }
   @media (max-width: 580px) {
     .contenedorTurismo {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
       margin: auto; } }
   .contenedorTurismo .tipoLugar {
     width: 249px;
@@ -763,6 +741,7 @@ section a h2 {
     margin: 0 1rem;
     flex-grow: 1; }
     .contenedorTurismo .tipoLugar:hover {
+      z-index: 3;
       transform: scale(1.1);
       transition: 0.5s ease-in-out;
       position: relative;
@@ -776,39 +755,38 @@ section a h2 {
         .contenedorTurismo .tipoLugar img {
           width: 100%;
           padding: .5rem; } }
-      @media (max-width: 580px) {
-        .contenedorTurismo .tipoLugar img {
-          width: 100%;
-          padding: .5rem; } }
-    .contenedorTurismo .tipoLugar p {
-      margin: 4rem auto;
-      padding: 2rem;
-      font-size: 1.5vw; }
-      @media (max-width: 650px) {
-        .contenedorTurismo .tipoLugar p {
-          font-size: 1.2rem;
-          margin-top: 1rem;
-          padding: 1rem; } }
-
-.btnTipoLugar {
-  background-color: white;
-  position: absolute;
-  width: max-content;
-  height: max-content;
-  bottom: 1rem;
-  left: 33%;
-  margin: 0 auto; }
-  .btnTipoLugar a {
-    width: max-content;
-    height: max-content;
-    align-items: center;
-    padding: 2rem;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: rgba(255, 68, 0, 0.89); }
+    .contenedorTurismo .tipoLugar div {
+      display: grid;
+      grid-template-rows: max-content min-content; }
+      .contenedorTurismo .tipoLugar div p {
+        margin: 4rem auto;
+        padding: 2rem;
+        font-size: 1.5vw;
+        height: 200px; }
+        @media (max-width: 720px) {
+          .contenedorTurismo .tipoLugar div p {
+            height: 150px; } }
+        @media (max-width: 650px) {
+          .contenedorTurismo .tipoLugar div p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            padding: 1rem; } }
+      .contenedorTurismo .tipoLugar div .btnTipoLugar {
+        background-color: white;
+        width: max-content;
+        height: max-content;
+        margin: 1rem auto; }
+        .contenedorTurismo .tipoLugar div .btnTipoLugar a {
+          width: max-content;
+          height: max-content;
+          align-items: center;
+          padding: 2rem;
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: rgba(255, 68, 0, 0.89); }
 
 .contLugar {
-  max-height: max-content; }
+  min-height: 200px; }
 
 @media (max-width: 650px) {
   .tipoLugar3 {
@@ -829,28 +807,46 @@ section a h2 {
     padding: 1rem;
     margin-bottom: 1rem; }
 
-.accordion-item .accordion-button:focus {
-  z-index: 0; }
+.contenedorBuscador {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr;
+  height: 550px;
+  background-color: #99baa4;
+  border: 1px solid #608e93;
+  border-radius: 10%; }
+  .contenedorBuscador h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    text-transform: uppercase; }
+  .contenedorBuscador .listaMenu {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow-y: scroll; }
+    .contenedorBuscador .listaMenu .estiloDesplegables {
+      background-color: #99baa4; }
+    .contenedorBuscador .listaMenu .panel-body ul {
+      background-color: #99baa4; }
+      .contenedorBuscador .listaMenu .panel-body ul li {
+        text-decoration: none; }
+  .contenedorBuscador .cajaMapaInteractivo {
+    background-color: #608e93;
+    grid-column: 2/3;
+    grid-row: 1/3; }
+    .contenedorBuscador .cajaMapaInteractivo .accordion {
+      width: 30%; }
+    .contenedorBuscador .cajaMapaInteractivo .contenedorMapa {
+      width: 70%; }
+      .contenedorBuscador .cajaMapaInteractivo .contenedorMapa .mapaInteractivo {
+        margin: auto; }
+        .contenedorBuscador .cajaMapaInteractivo .contenedorMapa .mapaInteractivo iframe {
+          width: 100%;
+          height: 100%; }
 
-.accordion-item .accordion-body {
-  width: 80%;
-  margin: 2rem auto;
-  font-size: 1.5rem; }
-
-.cajaMapaInteractivo {
-  display: flex;
-  background-color: #608e93;
-  height: 700px; }
-  .cajaMapaInteractivo .accordion {
-    width: 30%; }
-  .cajaMapaInteractivo .contenedorMapa {
-    width: 70%; }
-    .cajaMapaInteractivo .contenedorMapa .mapaInteractivo {
-      margin: auto; }
-      .cajaMapaInteractivo .contenedorMapa .mapaInteractivo iframe {
-        width: 100%; }
-
-/* ---------------------- TURISMO HTML-----------------------*/
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -931,11 +927,8 @@ header {
         overflow: hidden; } }
 
 .imagenPortada {
-  position: relative;
-  top: 0;
   z-index: -1;
   height: 600px;
-  background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
   overflow: hidden;

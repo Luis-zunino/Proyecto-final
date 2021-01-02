@@ -69,7 +69,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */
                 transform-origin: left top;
                 top: 100%;
                 padding: 0 1rem;
-                width: 100%;
+                width: max-content;
                 background-color: $colorSecundario;
                 margin: 0 auto;
 
@@ -97,7 +97,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */
                 padding: .6rem;
                 height: 100%;
                 display: inline-flex;
-                font-size: .8vw;
+                font-size: 1.5rem;
                 width: 100%;
                 display: block;
             }

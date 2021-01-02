@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderHouse: Proyecto Final</title>
-    <!--===FUENTES===-->
+    <!--FUENTES-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
-    <!--===ICONOS===-->
+    <!--ICONOS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <!--===NORMALIZE===-->
+    <!--NORMALIZE-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <!--===BOOTSTRAP===-->
+    <!--BOOTSTRA-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!--===CSS===-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--CSS-->
     <link rel="stylesheet" href="../ASSETS/CSS/style.css">
 </head>
 
 <body>
-    <!-------------------------PORTADA------------------------------>
+    <!--PORTADA-->
     <section>
         <a href="#arriba">
             <h1 class="estiloTituloDecorado estitloTituloDecoradoDesktop">
@@ -34,9 +36,9 @@
             </h1>
         </a>
     </section>
-    <!--===NAVEGACIÓN===-->
+    <!--NAVEGACIÓN-->
     <header id="arriba">
-        <!--===Menu de navegacion con lista desplegable===-->
+        <!--Menu de navegacion con lista desplegable-->
         <nav class="menuDesktop">
             <ul class="btnCaja">
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="../index.html">Inicio</a>
@@ -73,8 +75,8 @@
                 </li>
             </ul>
         </nav>
-        <!--===Fin del menu de navegacion con lista desplegable===-->
-        <!--===MENU HAMBURGESA===-->
+        <!--Fin del menu de navegacion con lista desplegable-->
+        <!--MENU HAMBURGESA-->
         <nav class="menuHamburgesa">
             <div class="hamburger">
                 <div class="_layer -top"></div>
@@ -92,11 +94,12 @@
             </nav>
 
         </nav>
-        <!--===FIN DE MENU HAMBURGESA===-->
+        <!--FIN DE MENU HAMBURGESA-->
     </header>
-    <!--===FIN DE NAVEGACIÓN===-->
+    <!--FIN DE NAVEGACIÓN-->
     <main>
         <section class="contenedor">
+            <!-- Info de las distintas playas -->
             <div class="playa">
                 <h1 id="playa" class="titulosDeSecciones">¡Disfruta el verano en la arena!</h1>
                 <div class="contPlaya">
@@ -113,9 +116,6 @@
                         Aires.
                     </h2>
                 </div>
-
-
-
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
@@ -146,16 +146,16 @@
                     </div>
 
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
+                        <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
                                 Fortaleza Santa Teresa; Departamento de Rocha, km. 298 de la ruta 9
 
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 El balneario nació en la década de 1930 y mantuvo su perfil de pueblo de pescadores
                                 hasta pocas
@@ -395,101 +395,108 @@
 
 
 
+
+
+
+            
+<!-- EN CONSTRUCCION -->
+            <!-- Mapa intereactivo con los diferentes puntos de montevideo y etc -->
             <h2 class="titulosDeSecciones" id="turismo">Elige tu destino</h2>
-
-            <div class="contenedor cajaMapaInteractivo">
-                <div class="opciones">
-                    <h2>Áreas temáticas</h2>
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
+            <div class="contenedorBuscador">
+                <h1>Áreas temáticas</h1>
+                <div class="listaMenu">
+                    <div class="estiloDesplegables panel-group" id="accordion" role="tablist"
+                        aria-multiselectable="true">
+                        <!--Primer acordion-->
+                        <div class="panel">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
                                     Atractivos
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in " role="tabpanel"
+                                aria-labelledby="headingOne">
+                                <div class="panel-body">
                                     <ul>
-                                        <li>>Zonas Verdes</li>
-                                        <li>>Teatros</li>
-                                        <li>>Bancos</li>
-                                        <li>>Cines</li>
-                                        <li>>Recorridos de Interes</li>
-                                        <li>>Hospedaje</li>
-                                        <li>>Transporte</li>
-                                        <li>>Actividades aventura</li>
-                                        <li>>Actividades productivas </li>
-                                        <li>>Acuarios </li>
-                                        <li>>Aguas Termales</li>
-                                        <li>>Atractivo Turístico</li>
-                                        <li>>Avistamiento de aves</li>
-                                        <li>>Bomberos </li>
-                                        <li>>Cabalgatas </li>
-                                        <li>>Campings </li>
-                                        <li>>Casino </li>
-                                        <li>>Centro de Informes </li>
-                                        <li>>Centros culturales </li>
-                                        <li>>Centros de salud </li>
-                                        <li>>Centros MEC </li>
-                                        <li>>Cerro </li>
-                                        <li>>Ciclovías </li>
-                                        <li>>Circuito </li>
-                                        <li>>Club / Gimnasio / Plaza de deportes</li>
-                                        <li>>Comisarías </li>
-                                        <li>>Construcción </li>
-                                        <li>>Cuevas / Grutas </li>
-                                        <li>>Estación de servicio</li>
-                                        <li>>Estación de tren</li>
-                                        <li>>Estadio </li>
-                                        <li>>Eventos deportivos </li>
-                                        <li>>Faro </li>
-                                        <li>>Fiestas </li>
-                                        <li>>Gastronomía / Comida característica /</li>
-                                        <li>>Iglesias / Catedrales / Templos</li>
-                                        <li>>Juegos infantiles </li>
-                                        <li>>Lago </li>
-                                        <li>>Laguna </li>
-                                        <li>>Librerías </li>
-                                        <li>>Locutorios </li>
-                                        <li>>Mercado </li>
-                                        <li>>Minas </li>
-                                        <li>>Monumento </li>
-                                        <li>>Museo / Sitio paleontológico / arqueológico </li>
-                                        <li>>Paradores </li>
-                                        <li>>Parque </li>
-                                        <li>>Parque de diversiones / temático</li>
-                                        <li>>Playa </li>
-                                        <li>>Reserva Animal / Zoológico Reserva Animal </li>
-                                        <li>>Ruinas </li>
-                                        <li>>Ruta </li>
-                                        <li>>Salto de agua / cascada</li>
-                                        <li>>Senderos peatonales </li>
-                                        <li>>Shopping / Hipermercado </li>
-                                        <li>>Sitio histórico / Edificio emblemático </li>
-                                        <li>>Teatro </li>
-                                        <li>>Terminales </li>
-                                        <li>>Vistas panorámicas </li>
-                                        <li>>Zonas de pesca</li>
+                                        <li>Zonas Verdes</li>
+                                        <li>Teatros</li>
+                                        <li>Bancos</li>
+                                        <li>Cines</li>
+                                        <li>Recorridos de Interes</li>
+                                        <li>Hospedaje</li>
+                                        <li>Transporte</li>
+                                        <li>Actividades aventura</li>
+                                        <li>Actividades productivas </li>
+                                        <li>Acuarios </li>
+                                        <li>Aguas Termales</li>
+                                        <li>Atractivo Turístico</li>
+                                        <li>Avistamiento de aves</li>
+                                        <li>Bomberos </li>
+                                        <li>Cabalgatas </li>
+                                        <li>Campings </li>
+                                        <li>Casino </li>
+                                        <li>Centro de Informes </li>
+                                        <li>Centros culturales </li>
+                                        <li>Centros de salud </li>
+                                        <li>Centros MEC </li>
+                                        <li>Cerro </li>
+                                        <li>Ciclovías </li>
+                                        <li>Circuito </li>
+                                        <li>Club / Gimnasio / Plaza de deportes</li>
+                                        <li>Comisarías </li>
+                                        <li>Construcción </li>
+                                        <li>Cuevas / Grutas </li>
+                                        <li>Estación de servicio</li>
+                                        <li>Estación de tren</li>
+                                        <li>Estadio </li>
+                                        <li>Eventos deportivos </li>
+                                        <li>Faro </li>
+                                        <li>Fiestas </li>
+                                        <li>Gastronomía / Comida característica /</li>
+                                        <li>Iglesias / Catedrales / Templos</li>
+                                        <li>Juegos infantiles </li>
+                                        <li>Lago </li>
+                                        <li>Laguna </li>
+                                        <li>Librerías </li>
+                                        <li>Locutorios </li>
+                                        <li>Mercado </li>
+                                        <li>Minas </li>
+                                        <li>Monumento </li>
+                                        <li>Museo / Sitio paleontológico / arqueológico </li>
+                                        <li>Paradores </li>
+                                        <li>Parque </li>
+                                        <li>Parque de diversiones / temático</li>
+                                        <li>Playa </li>
+                                        <li>Reserva Animal / Zoológico Reserva Animal </li>
+                                        <li>Ruinas </li>
+                                        <li>Ruta </li>
+                                        <li>Salto de agua / cascada</li>
+                                        <li>Senderos peatonales </li>
+                                        <li>Shopping / Hipermercado </li>
+                                        <li>Sitio histórico / Edificio emblemático </li>
+                                        <li>Teatro </li>
+                                        <li>Terminales </li>
+                                        <li>Vistas panorámicas </li>
+                                        <li>Zonas de pesca</li>
                                     </ul>
-
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
-                                    Operadores
 
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
+                        <!--Fin Primer acordion-->
+
+                        <!--Segundo  acordion-->
+                        <div class="panel ">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Operadores
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingTwo">
+                                <div class="panel-body">
                                     <ul>
                                         <li>Actividad Deportiva Remunerada</li>
                                         <li> Agencias de Transporte Turístico</li>
@@ -505,105 +512,77 @@
                                         <li> Salas de Convenciones</li>
                                         <li> Turismo Aventura</li>
                                     </ul>
-
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                    aria-controls="flush-collapseFour">
-                                    Otros
-                                </button>
-                            </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingFive">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
-                                                aria-expanded="false" aria-controls="flush-collapseFive">
+                        <!--Segundo  acordion-->
+                        <!--Tercer acordion-->
+                        <div id="sub-accordion" role="tablist" aria-multiselectable="true">
 
-                                                Intendencia Montevideo
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseFive" class="accordion-collapse collapse"
-                                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li> Paradas de omnibus </li>
-                                                    <li> Recorrido Bus Turistico</li>
-                                                    <li> Espejos de agua de Montevideo</li>
-                                                    <li> Espacios libres de Montevideo</li>
-                                                </ul>
+                            <!--Primer sub acordion-->
+                            <div class="panel ">
+                                <div class="panel-heading" role="tab" id="subHeadingOne">
+
+                                    <a role="button" data-toggle="collapse" data-parent="#sub-accordion"
+                                        href="#collapseSubOne" aria-expanded="true" aria-controls="collapseSubOne">
+                                        Otros
+                                    </a>
+
+                                </div>
+                                <div id="collapseSubOne" class="estiloDesplegables panel-collapse collapse in"
+                                    role="tabpanel" aria-labelledby="subHeadingOne">
+                                    <div class="panel-body">
+                                        <!--Segundo sub acordion-->
+                                        <div class="panel ">
+                                            <div class="panel-heading" role="tab" id="subHeadingTwo">
+
+                                                <a class="collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#sub-accordion" href="#collapseSubTwo"
+                                                    aria-expanded="false" aria-controls="collapseSubTwo">
+                                                    Intendencia Montevideo
+                                                </a>
+
+                                            </div>
+                                            <div id="collapseSubTwo" class="panel-collapse collapse" role="tabpanel"
+                                                aria-labelledby="headingSubTwo">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li> Paradas de omnibus </li>
+                                                        <li> Recorrido Bus Turistico</li>
+                                                        <li> Espejos de agua de Montevideo</li>
+                                                        <li> Espacios libres de Montevideo</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
+                                        <!--Segundo sub acordion-->
                                     </div>
                                 </div>
                             </div>
+                            <!--Fin Primer sub acordion-->
+
                         </div>
+
                     </div>
+                    <!--Fin Tercer acordion-->
                 </div>
-                <div class="contenedorMapa">
-
-                    <div class="mapaInteractivo">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209655.65907018815!2d-56.340845026953545!3d-34.80922056803718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1609293836927!5m2!1ses-419!2suy"
-                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                        </iframe>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-
-
-
-            <div class="contenedorTurismo">
-                <div class="tipoLugar">
-                    <a href="turismo.html#camping">
-                        <img src="../ASSETS/IMG/Campin.jpg" title="Más información sobre los Campings"
-                            alt="Foto de un Camping">
-                    </a>
-                    <div class="contLugar">
-
-                        <div>
-                            <p class="estiloParrafo"> Las áreas protegidas son un pilar fundamental para la
-                                conservación
-                                y el uso sostenible de la diversidad biológica. </p>
-                        </div>
-                        <div class="btnCajaTipo">
-                            <button class="btnTipoLugar"><a href="turismo.html" title="Ver más">Ver más</a>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="tipoLugar tipoLugar3">
-                    <a href="turismo.html#ciudad">
-                        <img class="img" src="../ASSETS/IMG/ciudad-icono.jpg" title="Más información sobre las Ciudades"
-                            alt="Foto de una Ciudad"></a>
-                    <div class="contLugar">
-                        <div>
-                            <p class="estiloParrafo">Calmas, seductoras, amenas, auténticas... así son las ciudades
-                                uruguayas. Montevideo, capital del Uruguay, es centro de negocios, eventos y
-                                cultura.
-                            </p>
-                        </div>
-                        <div class="">
-                            <button class="btnTipoLugar"><a href="turismo.html" title="Ver más"> Ver más </a>
-                            </button>
-                        </div>
-                    </div>
+                <div class="cajaMapaInteractivo">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209655.65907018815!2d-56.340845026953545!3d-34.80922056803718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1609293836927!5m2!1ses-419!2suy"
+                        frameborder="0" style="border:0; width: 100%; height: 100%" allowfullscreen=""
+                        aria-hidden="false" tabindex="0">
+                    </iframe>
                 </div>
             </div>
+            <!-- <div class="contenedorMapa"> -->
+
+
         </section>
     </main>
+
+
+
+
 
     <!-- Pie de Página-->
     <footer>
@@ -652,7 +631,12 @@
         </div>
         <p class="copy"><span class="color-copy"> CoderHouse:</span> Proyecto final</p>
     </footer>
-    <!--===Fin del Pie de Página===-->
+    <!--Fin del Pie de Página-->
+    <!-- script para los acordiones -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- fin de script para los acordiones -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
