@@ -3932,3 +3932,4 @@ node_modules/.bin/mkdirp.cmd
 node_modules/.bin/mkdirp
 node_modules/.bin/is-ci.ps1
 node_modules/.bin/is-ci.cmd
+node_modules

@@ -211,7 +211,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
   @media (max-width: 430px) {
     .footer {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr); } }
+      grid-template-rows: repeat(3, min-content); } }
   .footer h3 {
     text-align: center;
     font-size: 2rem; }
@@ -241,7 +241,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
           font-size: 3rem;
           color: white; }
           .footer .conte-footer .redes-sociales a i:hover {
-            color: #608e93; }
+            color: #4dc7d4; }
   @media (max-width: 720px) {
     .footer .footerContacto {
       grid-row: 2;
@@ -324,7 +324,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
 .estiloFraseDecorado {
   /*Decorado de frase con imagen decorada abajo*/
   height: 300px;
-  color: #608e93;
+  color: #4dc7d4;
   font-family: 'Homemade Apple', cursive;
   font-size: 3vw;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+51,a0d8ef+100 */
@@ -442,61 +442,51 @@ section a h2 {
     content: '¡Bienvenido!'; } }
 
 /*  -----------------------FIN INDEX ----------------------- */
-.contenedorBlog {
-  position: relative; }
-  .contenedorBlog .contenidoBlog {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
+.contenedorBlog p {
+  font-size: 1.8rem; }
+
+.contenedorBlog .estiloTituloTransporte {
+  font-size: 2rem;
+  text-decoration: coral;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold; }
+  @media (max-width: 720px) {
+    .contenedorBlog .estiloTituloTransporte {
+      font-size: 2.2rem; } }
+
+.contenedorBlog .contenidoBlog {
+  display: flex; }
+  @media (max-width: 720px) {
+    .contenedorBlog .contenidoBlog {
+      display: block; } }
+  .contenedorBlog .contenidoBlog .avion {
+    padding: 2rem;
+    font-size: 1.8vw;
+    flex-basis: calc(50%); }
     @media (max-width: 720px) {
-      .contenedorBlog .contenidoBlog {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr; } }
-    .contenedorBlog .contenidoBlog .estiloTituloTransporte {
-      font-size: 2rem;
-      text-decoration: coral;
-      margin-bottom: 2rem;
-      text-align: center;
-      font-weight: bold; }
-      @media (max-width: 720px) {
-        .contenedorBlog .contenidoBlog .estiloTituloTransporte {
-          font-size: 2.2rem; } }
-    .contenedorBlog .contenidoBlog .avion {
-      padding: 2rem;
-      font-size: 1.8vw; }
-      @media (max-width: 720px) {
-        .contenedorBlog .contenidoBlog .avion {
-          padding: 2rem;
-          font-size: 1.8rem; } }
-    .contenedorBlog .contenidoBlog .barco {
-      padding: 2rem;
-      font-size: 1.8vw; }
-      @media (max-width: 720px) {
-        .contenedorBlog .contenidoBlog .barco {
-          padding: 2rem;
-          font-size: 1.8rem; } }
-    .contenedorBlog .contenidoBlog .omnibus {
-      padding: 2rem;
-      font-size: 1.8vw;
-      grid-column: 1/3;
-      margin-bottom: 0; }
-      .contenedorBlog .contenidoBlog .omnibus iframe {
-        width: 100%;
-        margin: auto;
-        min-height: 400px; }
-      @media (max-width: 720px) {
-        .contenedorBlog .contenidoBlog .omnibus {
-          padding: 2rem;
-          font-size: 1.8rem;
-          grid-column: 1/1; }
-          .contenedorBlog .contenidoBlog .omnibus iframe {
-            width: 100%;
-            margin: auto;
-            max-height: 400px; } }
+      .contenedorBlog .contenidoBlog .avion {
+        padding: 2rem;
+        font-size: 1.8rem; } }
+  .contenedorBlog .contenidoBlog .barco {
+    padding: 2rem;
+    flex-basis: calc(50%); }
+    @media (max-width: 720px) {
+      .contenedorBlog .contenidoBlog .barco {
+        padding: 2rem;
+        font-size: 1.8rem; } }
+  .contenedorBlog .contenidoBlog .omnibus {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8vw;
+    margin-bottom: 0;
+    width: 100%; }
+    .contenedorBlog .contenidoBlog .omnibus iframe {
+      width: 100%; }
 
 .cajaForm {
   color: black;
-  background-color: #99baa4;
+  background-color: #72d192;
   flex-direction: column;
   align-items: center;
   padding: 3rem; }
@@ -614,51 +604,63 @@ section a h2 {
 .parrafoActividad {
   font-size: 2rem;
   padding: 1rem;
-  margin: 3rem auto; }
+  margin: 3rem auto;
+  text-indent: 2rem; }
 
 .contenedorActividades {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
-  @media (max-width: 720px) {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, min-content); }
+  @media (max-width: 896px) {
     .contenedorActividades {
       display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      margin: auto; } }
+  @media (max-width: 720px) {
+    .contenedorActividades {
       grid-template-columns: repeat(1, 1fr);
       width: 60%;
       margin: auto; } }
-  .contenedorActividades .actividad {
-    text-align: center;
-    background-color: #fcf2c6;
-    margin: .5rem; }
-    .contenedorActividades .actividad img {
-      display: block;
-      width: 100%; }
-    .contenedorActividades .actividad h2 {
-      font-size: 1.8rem;
+  .contenedorActividades a {
+    text-decoration: none;
+    margin: 1rem; }
+    .contenedorActividades a .actividad {
       text-align: center;
-      margin: 1.5rem 0;
-      font-weight: bold; }
-    .contenedorActividades .actividad p {
-      text-indent: 1rem;
-      padding: 1rem;
-      font-size: 1.5rem; }
-    .contenedorActividades .actividad a {
-      position: relative; }
-      .contenedorActividades .actividad a button {
-        margin-bottom: 1rem; }
-    @media (max-width: 650px) {
-      .contenedorActividades .actividad {
-        grid-column: 1/3; } }
-    @media (max-width: 450px) {
-      .contenedorActividades .actividad {
-        grid-column: 1/1; } }
-  .contenedorActividades .contenidoActividad {
-    font-size: 1.5vw;
-    padding: 1rem 0; }
+      background-color: #fcf2c6;
+      height: 100%; }
+      .contenedorActividades a .actividad img {
+        display: block;
+        width: 100%; }
+      .contenedorActividades a .actividad h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 1.5rem 0;
+        font-weight: bold; }
+      .contenedorActividades a .actividad p {
+        text-indent: 1rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: black; }
+      .contenedorActividades a .actividad a {
+        position: relative; }
+        .contenedorActividades a .actividad a button {
+          margin-bottom: 1rem; }
+      @media (max-width: 650px) {
+        .contenedorActividades a .actividad {
+          grid-column: 1/3; } }
+      @media (max-width: 450px) {
+        .contenedorActividades a .actividad {
+          grid-column: 1/1; } }
+    .contenedorActividades a .contenidoActividad {
+      font-size: 1.5vw;
+      padding: 1rem 0; }
 
 .contenedorActividadIndividual {
   margin: 4rem auto; }
   .contenedorActividadIndividual .actividad {
-    display: flex; }
+    display: flex;
+    flex-shrink: 0; }
     .contenedorActividadIndividual .actividad img {
       width: 50%; }
     .contenedorActividadIndividual .actividad h2 {
@@ -736,7 +738,7 @@ section a h2 {
   .contenedorTurismo .tipoLugar {
     width: 249px;
     position: relative;
-    background-color: #99baa4;
+    background-color: #72d192;
     border: 1px solid #fcf2c6;
     margin: 0 1rem;
     flex-grow: 1; }
@@ -746,7 +748,7 @@ section a h2 {
       transition: 0.5s ease-in-out;
       position: relative;
       border: 1px solid black;
-      background-color: #608e93; }
+      background-color: #4dc7d4; }
     .contenedorTurismo .tipoLugar img {
       width: 100%;
       height: 165px;
@@ -799,23 +801,42 @@ section a h2 {
 /* -----------------------FIN SECCION DE TURISMO DEL INDEX-----------------------*/
 .playa .contPlaya {
   margin-bottom: 4rem; }
-  .playa .contPlaya h2 {
+  .playa .contPlaya p {
     font-size: 1.9rem;
     text-align: justify;
-    text-indent: 1em;
+    text-indent: 2rem;
     text-align: left;
     padding: 1rem;
     margin-bottom: 1rem; }
+  .playa .contPlaya .panel-default {
+    padding: 1rem;
+    background-color: #4dc7d4;
+    margin-bottom: 2rem;
+    border-radius: 10%; }
+    .playa .contPlaya .panel-default a {
+      color: black;
+      text-decoration: none; }
+      .playa .contPlaya .panel-default a h3 {
+        font-size: 3rem;
+        text-align: center;
+        width: 100%; }
+        .playa .contPlaya .panel-default a h3 span {
+          margin-top: 1rem;
+          font-size: 1rem;
+          display: block; }
+    .playa .contPlaya .panel-default .panel-body {
+      color: white;
+      padding: 2rem; }
 
 .contenedorBuscador {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 3fr;
   height: 550px;
-  background-color: #99baa4;
-  border: 1px solid #608e93;
-  border-radius: 10%; }
+  background-color: #72d192;
+  border: 1px solid #4dc7d4; }
   .contenedorBuscador h1 {
+    /*titulo*/
     grid-column: 1/2;
     grid-row: 1/2;
     text-align: center;
@@ -825,27 +846,29 @@ section a h2 {
     grid-row: 2/3;
     width: 100%;
     height: 100%;
-    background-color: white;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    background-color: #fcf2c6; }
+    .contenedorBuscador .listaMenu a {
+      text-decoration: none; }
+      .contenedorBuscador .listaMenu a h4 {
+        /*subtitulo*/
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+        padding: 1rem; }
+        .contenedorBuscador .listaMenu a h4:hover {
+          background-color: #4dc7d4;
+          color: black; }
     .contenedorBuscador .listaMenu .estiloDesplegables {
-      background-color: #99baa4; }
-    .contenedorBuscador .listaMenu .panel-body ul {
-      background-color: #99baa4; }
-      .contenedorBuscador .listaMenu .panel-body ul li {
-        text-decoration: none; }
+      background-color: #72d192; }
   .contenedorBuscador .cajaMapaInteractivo {
-    background-color: #608e93;
+    background-color: #4dc7d4;
     grid-column: 2/3;
     grid-row: 1/3; }
-    .contenedorBuscador .cajaMapaInteractivo .accordion {
-      width: 30%; }
-    .contenedorBuscador .cajaMapaInteractivo .contenedorMapa {
-      width: 70%; }
-      .contenedorBuscador .cajaMapaInteractivo .contenedorMapa .mapaInteractivo {
-        margin: auto; }
-        .contenedorBuscador .cajaMapaInteractivo .contenedorMapa .mapaInteractivo iframe {
-          width: 100%;
-          height: 100%; }
+    .contenedorBuscador .cajaMapaInteractivo iframe {
+      width: 100%;
+      height: 100%;
+      padding: 1rem; }
 
 html {
   box-sizing: border-box;
@@ -900,11 +923,10 @@ header {
   background-color: #fcf2c6;
   padding: 1rem;
   border-radius: 25%;
-  margin-bottom: 0;
-  font-size: 1rem; }
+  margin-bottom: 0; }
   .btnVerMas a {
     color: black;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     text-decoration: none; }
 
 .estilosCarrusel {

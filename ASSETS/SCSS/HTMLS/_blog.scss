@@ -1,37 +1,37 @@
 @import "../PARTES/variables";
 
 .contenedorBlog {
-    position: relative;
+    p {
+        font-size: 1.8rem;
 
-    .contenidoBlog {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    }
+
+    .estiloTituloTransporte {
+        font-size: 2rem;
+        text-decoration: coral;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: bold;
 
         @media (max-width: 720px) {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            font-size: 2.2rem;
         }
 
-        .estiloTituloTransporte {
-            font-size: 2rem;
-            text-decoration: coral;
-            margin-bottom: 2rem;
-            text-align: center;
-            font-weight: bold;
+    }
 
-            @media (max-width: 720px) {
-                font-size: 2.2rem;
-            }
+    .contenidoBlog {
+        display: flex;
 
+        @media (max-width: 720px) {
+            display: block;
         }
 
         .avion {
             padding: 2rem;
             font-size: 1.8vw;
+            flex-basis: calc(50%);
 
             @media (max-width: 720px) {
-
                 padding: 2rem;
                 font-size: 1.8rem;
             }
@@ -39,7 +39,8 @@
 
         .barco {
             padding: 2rem;
-            font-size: 1.8vw;
+            flex-basis: calc(50%);
+
 
             @media (max-width: 720px) {
                 padding: 2rem;
@@ -48,27 +49,15 @@
         }
 
         .omnibus {
+            display: block;
             padding: 2rem;
             font-size: 1.8vw;
-            grid-column: 1/3;
             margin-bottom: 0;
+            width: 100%;
+
 
             iframe {
-                width: 100%;
-                margin: auto;
-                min-height: 400px;
-            }
-
-            @media (max-width: 720px) {
-                padding: 2rem;
-                font-size: 1.8rem;
-                grid-column: 1/1;
-
-                iframe {
-                    width: 100%;
-                    margin: auto;
-                    max-height: 400px;
-                }
+                width: 100%; //me lo modifica directamente desde el iframe
             }
         }
     }

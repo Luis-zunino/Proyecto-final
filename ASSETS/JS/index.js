@@ -42,4 +42,3 @@ $(function () {
 });
 // cierre los acordiones
 
-// $(document).on("click", ".accordion-toggle", function () { if ($(this).attr('class').indexOf('open') == -1) $(this).toggleClass("open").next().slideToggle('fast'); //Hide the other panels $(".accordion-toggle").not($(this)).removeClass("open"); $(".accordion-content").not($(this).next()).slideUp('fast'); }); 
