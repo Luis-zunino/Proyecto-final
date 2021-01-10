@@ -17,8 +17,6 @@ html {
     /** Reset para REMS - 62.5% = 10px de 16px **/
     margin: 0;
 }
-
-
 *,
 *:before,
 *:after {
@@ -39,7 +37,9 @@ li,
 ul {
     text-decoration: none;
 }
-
+p{
+    text-indent: 3rem;
+}
 /*-------------- PORTADA -------------- */
 header {
     margin: 0;
@@ -50,6 +50,11 @@ header {
 .contenedor {
     width: 80%;
     margin: 10rem auto;
+
+    @media(max-width: 600px) {
+        width: 95%;
+        margin: 5rem auto;
+    }
 
 }
 
@@ -120,6 +125,8 @@ header {
 
 
 .imagenPortada {
+    position: relative;
+    bottom: 14px;
     z-index: -1;
     height: 600px;
     background-size: 100%;

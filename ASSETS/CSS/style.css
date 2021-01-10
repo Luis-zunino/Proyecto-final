@@ -13,7 +13,7 @@
   height: max-content;
   background-color: #50596c;
   list-style: none;
-  top: 7vw;
+  top: 3vw;
   position: relative;
   padding: 1.5rem 0 0 0; }
   .menuDesktop .btnCaja .navBtn {
@@ -85,7 +85,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
     .menuHamburgesa {
       display: block; } }
   .menuHamburgesa .hamburger {
-    position: relative;
+    position: fixed;
     background-color: transparent;
     left: 0;
     top: 0;
@@ -268,11 +268,11 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
 .estiloTituloDecorado {
   /*Decorado de <--------uruguay natural------->*/
   width: 100%;
-  padding: 3rem 3rem 0 3rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
   margin: 0;
   background-color: #2f2d3e;
   color: rgba(241, 237, 237, 0.9);
-  font-size: 4vw;
+  font-size: 2.5rem;
   font-family: 'Homemade Apple', cursive;
   display: block;
   text-align: center;
@@ -280,7 +280,8 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
   z-index: 4; }
   .estiloTituloDecorado:hover {
     background-color: #2f2d3e;
-    color: white; }
+    color: white;
+    transform: scale(1.4); }
 
 .estitloTituloDecoradoMobil {
   display: none; }
@@ -810,7 +811,7 @@ section a h2 {
     margin-bottom: 1rem; }
   .playa .contPlaya .panel-default {
     padding: 1rem;
-    background-color: #4dc7d4;
+    background-color: #fcf2c6;
     margin-bottom: 2rem;
     border-radius: 10%; }
     .playa .contPlaya .panel-default a {
@@ -833,8 +834,13 @@ section a h2 {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 3fr;
   height: 550px;
-  background-color: #72d192;
+  background-color: #fcf2c6;
   border: 1px solid #4dc7d4; }
+  @media (max-width: 720px) {
+    .contenedorBuscador {
+      display: block;
+      height: 600px;
+      margin-bottom: 5rem; } }
   .contenedorBuscador h1 {
     /*titulo*/
     grid-column: 1/2;
@@ -848,26 +854,47 @@ section a h2 {
     height: 100%;
     overflow-y: scroll;
     background-color: #fcf2c6; }
+    @media (max-width: 720px) {
+      .contenedorBuscador .listaMenu {
+        display: block;
+        height: 250px; } }
     .contenedorBuscador .listaMenu a {
       text-decoration: none; }
       .contenedorBuscador .listaMenu a h4 {
         /*subtitulo*/
+        margin: auto 1rem;
         text-align: center;
-        color: white;
+        color: black;
         font-size: 3rem;
         padding: 1rem; }
         .contenedorBuscador .listaMenu a h4:hover {
           background-color: #4dc7d4;
           color: black; }
-    .contenedorBuscador .listaMenu .estiloDesplegables {
-      background-color: #72d192; }
+      .contenedorBuscador .listaMenu a h5 {
+        /*subtitulo*/
+        text-align: center;
+        color: black;
+        font-size: 2rem;
+        padding: 1rem; }
+        .contenedorBuscador .listaMenu a h5:hover {
+          background-color: #4dc7d4;
+          color: black; }
+    .contenedorBuscador .listaMenu .lista div {
+      padding: 1rem; }
+      .contenedorBuscador .listaMenu .lista div:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer; }
   .contenedorBuscador .cajaMapaInteractivo {
-    background-color: #4dc7d4;
+    background-color: #fcf2c6;
     grid-column: 2/3;
     grid-row: 1/3; }
+    @media (max-width: 720px) {
+      .contenedorBuscador .cajaMapaInteractivo {
+        display: block; } }
     .contenedorBuscador .cajaMapaInteractivo iframe {
       width: 100%;
-      height: 100%;
+      height: 550px;
       padding: 1rem; }
 
 html {
@@ -893,6 +920,9 @@ li,
 ul {
   text-decoration: none; }
 
+p {
+  text-indent: 3rem; }
+
 /*-------------- PORTADA -------------- */
 header {
   margin: 0;
@@ -901,6 +931,10 @@ header {
 .contenedor {
   width: 80%;
   margin: 10rem auto; }
+  @media (max-width: 600px) {
+    .contenedor {
+      width: 95%;
+      margin: 5rem auto; } }
 
 .titulosDeSecciones {
   font-size: 3rem;
@@ -949,6 +983,8 @@ header {
         overflow: hidden; } }
 
 .imagenPortada {
+  position: relative;
+  bottom: 14px;
   z-index: -1;
   height: 600px;
   background-size: 100%;

@@ -5,12 +5,11 @@
 .estiloTituloDecorado {
     /*Decorado de <--------uruguay natural------->*/
     width: 100%;
-    padding: 3rem 3rem 0 3rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     margin: 0;
     background-color: $colorPrimario;
     color: rgba(241, 237, 237, 0.9);
-    ;
-    font-size: 4vw;
+    font-size: 2.5rem;
     font-family: 'Homemade Apple', cursive;
     display: block;
     text-align: center;
@@ -20,6 +19,7 @@
     &:hover {
         background-color: $colorPrimario;
         color: white;
+        transform: scale(1.4);
 
     }
 }

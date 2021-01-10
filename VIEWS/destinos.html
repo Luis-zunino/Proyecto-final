@@ -43,13 +43,14 @@
             <ul class="btnCaja">
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="../index.html">Inicio</a>
                 </li>
-                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="turismo.html">Destinos</a>
+                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="destinos.html">Destinos</a>
                     <ul class="cajaListaInterna">
-                        <li class="listaInterna"><a class="botones enlaceLista" href="turismo.html#playas">Playas</a>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="destinos.html#playas">Playas</a>
                         </li>
-                        <li class="listaInterna"><a class="botones enlaceLista" href="turismo.html#buscador">Camping</a>
+                        <li class="listaInterna"><a class="botones enlaceLista"
+                                href="destinos.html#buscador">Camping</a>
                         </li>
-                        <li class="listaInterna"><a class="botones enlaceLista" href="turismo.html#buscador">Ciudad</a>
+                        <li class="listaInterna"><a class="botones enlaceLista" href="destinos.html#buscador">Ciudad</a>
                         </li>
                     </ul>
                 </li>
@@ -63,14 +64,8 @@
                         </li>
                     </ul>
                 </li>
-                <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="blog.html">Blog</a>
-                    <ul class="cajaListaInterna">
-                        <li class="listaInterna"><a class="botones enlaceLista" href="blog.html">Noticias</a>
-                        </li>
-                        <li class="listaInterna"><a class="botones enlaceLista" href="blog.html">Datos de
-                                interes</a></li>
-                    </ul>
-                </li>
+               
+            
                 <li class="navBtn listaBtnExpan"><a class="botones enlaceLista" href="actividades.html">Actividades</a>
                 </li>
             </ul>
@@ -87,8 +82,7 @@
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="turismo.html">Destinos</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
                     <li><a href="actividades.html">Información</a></li>
                 </ul>
             </nav>
@@ -99,9 +93,65 @@
     <!--FIN DE NAVEGACIÓN-->
     <main>
         <section class="contenedor">
-            
-            
-            
+
+            <section>
+                <h1 id="informacion" class="titulosDeSecciones" title="informacion"> ¿Cómo llegar a Uruguay?</h1>
+                <div class="contenedorInformacion">
+                    <div class="avion">
+                        <h2 class="estiloTituloTransporte">Vía aérea</h2>
+                        <p>
+                            A los aeropuertos internacionales del país llegan las principales líneas aéreas del mundo,
+                            con
+                            vuelos regionales desde Buenos Aires, Porto Alegre, San Pablo, Río de Janeiro, Asunción,
+                            Panamá,
+                            Santiago de Chile y Lima. Además arriban vuelos internacionales de Estados Unidos y Europa.
+                            Los
+                            principales aeropuertos son el Aeropuerto Internacional de Carrasco (a 18 kilómetros del
+                            centro de
+                            Montevideo), el Aeropuerto Internacional Laguna del Sauce, en Punta del Este (Maldonado) y
+                            el de
+                            Colonia de Sacramento (Aeropuerto Internacional Laguna de los Patos). El nuevo Aeropuerto
+                            Internacional de Carrasco fue inaugurado en 2009 y es considerado uno de los más modernos y
+                            atractivos del mundo. Desde allí se tiene fácil acceso al centro Montevideo y los destinos
+                            de la
+                            costa este, con buses directos hacia ambos puntos. También es posible contratar un transfer,
+                            tomar
+                            un taxi o alquilar un auto en algunas de las rentadoras localizadas en el aeropuerto.
+                        </p>
+                    </div>
+                    <div class="barco">
+                        <h2 class="estiloTituloTransporte">Vía Fluvial</h2>
+                        <p>
+                            Numerosas frecuencias de buques y ferrys unen a Buenos Aires con Colonia, Carmelo y
+                            Montevideo e
+                            incluyen la posibilidad de traslado de automóviles. Numerosos puertos deportivos también
+                            permiten el
+                            acceso a las embarcaciones privadas. Las empresas Buquebus y Colonia Express llegan al
+                            puerto de
+                            Colonia y ofrecen paquetes con traslado en bus hasta Montevideo o Punta del Este. la primera
+                            también
+                            llega a Montevideo en forma directa. La empresa Cacciola hace el trayecto entre Tigre y
+                            Carmelo, con
+                            paquetes que completan el tramo Buenos Aires-Montevideo por tierra.
+                        </p>
+                    </div>
+                    <div class="omnibus">
+                        <h2 class="estiloTituloTransporte">Transporte Interno </h2>
+                        <p>Cientos de lineas de multiples empresas recorren y conectan todo el pais acaparando grandes
+                            franjas
+                            horarias. Averigua mas sobre la empresa o el destino que tu prefieras: </p>
+                        <iframe src="https://www.trescruces.com.uy/terminal/"></iframe>
+                    </div>
+                </div>
+                <div class="btnVer">
+                    <button class="btnVerMas"><a href="VIEWS/actividades.html" title="Ver más"> Ver más </a></button>
+                </div>
+
+                </div>
+            </section>
+
+
+
             <!-- Info de las distintas playas -->
             <div class="playa">
                 <h1 id="playa" class="titulosDeSecciones">¡Disfruta el verano en la arena!</h1>
@@ -433,176 +483,8 @@
             </div>
 
             <!-- Mapa intereactivo con los diferentes puntos de montevideo y etc -->
-            <h2 class="titulosDeSecciones" id="buscador">Elige tu destino</h2>
-            <div class="contenedorBuscador">
-                <h1>Áreas temáticas</h1>
-                <div class="listaMenu estiloDesplegables" id="accordion" role="tablist" aria-multiselectable="true">
-                    <!--Primer acordion-->
-                    <div>
-                        <div role="tab" id="headingOne">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                <h4>Atractivos</h4>
-                            </a>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
-                            aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                <div>
-                                    <div>Zonas Verdes</div>
-                                    <div>Teatros</div>
-                                    <div>Bancos</div>
-                                    <div>Cines</div>
-                                    <div>Recorridos de Interes</div>
-                                    <div>Hospedaje</div>
-                                    <div>Transporte</div>
-                                    <div>Actividades aventura</div>
-                                    <div>Actividades productivas </div>
-                                    <div>Acuarios </div>
-                                    <div>Aguas Termales</div>
-                                    <div>Atractivo Turístico</div>
-                                    <div>Avistamiento de aves</div>
-                                    <div>Bomberos </div>
-                                    <div>Cabalgatas </div>
-                                    <div>Campings </div>
-                                    <div>Casino </div>
-                                    <div>Centro de Informes </div>
-                                    <div>Centros culturales </div>
-                                    <div>Centros de salud </div>
-                                    <div>Centros MEC </div>
-                                    <div>Cerro </div>
-                                    <div>Ciclovías </div>
-                                    <div>Circuito </div>
-                                    <div>Club / Gimnasio / Plaza de deportes</div>
-                                    <div>Comisarías </div>
-                                    <div>Construcción </div>
-                                    <div>Cuevas / Grutas </div>
-                                    <div>Estación de servicio</div>
-                                    <div>Estación de tren</div>
-                                    <div>Estadio </div>
-                                    <div>Eventos deportivos </div>
-                                    <div>Faro </div>
-                                    <div>Fiestas </div>
-                                    <div>Gastronomía / Comida característica /</div>
-                                    <div>Iglesias / Catedrales / Templos</div>
-                                    <div>Juegos infantiles </div>
-                                    <div>Lago </div>
-                                    <div>Laguna </div>
-                                    <div>Librerías </div>
-                                    <div>Locutorios </div>
-                                    <div>Mercado </div>
-                                    <div>Minas </div>
-                                    <div>Monumento </div>
-                                    <div>Museo / Sitio paleontológico / arqueológico </div>
-                                    <div>Paradores </div>
-                                    <div>Parque </div>
-                                    <div>Parque de diversiones / temático</div>
-                                    <div>Playa </div>
-                                    <div>Reserva Animal / Zoológico Reserva Animal </div>
-                                    <div>Ruinas </div>
-                                    <div>Ruta </div>
-                                    <div>Salto de agua / cascada</div>
-                                    <div>Senderos peatonales </div>
-                                    <div>Shopping / Hipermercado </div>
-                                    <div>Sitio histórico / Edificio emblemático </div>
-                                    <div>Teatro </div>
-                                    <div>Terminales </div>
-                                    <div>Vistas panorámicas </div>
-                                    <div>Zonas de pesca</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Fin Primer acordion-->
-
-                    <!--Segundo  acordion-->
-                    <div>
-                        <div role="tab" id="headingTwo">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <h4>Operadores</h4>
-                            </a>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                            aria-labelledby="headingTwo">
-                            <div class="panel-body">
-                                <div>
-                                    <div>Actividad Deportiva Remunerada</div>
-                                    <div> Agencias de Transporte Turístico</div>
-                                    <div> Agencias de Viaje</div>
-                                    <div> Alojamientos Turísticos</div>
-                                    <div> Avistamieto de Cetáceos</div>
-                                    <div> Bodegas</div>
-                                    <div> Establecimientos Turísticos Rurales</div>
-                                    <div> Guías Turísticos</div>
-                                    <div> Inmobiliarias </div>
-                                    <div> Organizadores Profesionales de Congresos </div>
-                                    <div> Rentadoras de Autos</div>
-                                    <div> Salas de Convenciones</div>
-                                    <div> Turismo Aventura</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Segundo  acordion-->
-                    <!--Tercer acordion-->
-                    <div id="sub-accordion" role="tablist" aria-multiselectable="true">
-
-                        <!--Primer sub acordion-->
-                        <div>
-                            <div role="tab" id="subHeadingOne">
-                                <a role="button" data-toggle="collapse" data-parent="#sub-accordion"
-                                    href="#collapseSubOne" aria-expanded="true" aria-controls="collapseSubOne">
-                                    <h4>Otros</h4>
-                                </a>
-
-                            </div>
-                            <div id="collapseSubOne" class="estiloDesplegables panel-collapse collapse"
-                                role="tabpanel" aria-labelledby="subHeadingOne">
-                                <div class="panel-body">
-                                    <!--Segundo sub acordion-->
-                                    <div>
-                                        <div role="tab" id="subHeadingTwo">
-
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                                data-parent="#sub-accordion" href="#collapseSubTwo"
-                                                aria-expanded="false" aria-controls="collapseSubTwo">
-                                                <h5>Intendencia Montevideo</h5>
-                                            </a>
-
-                                        </div>
-                                        <div id="collapseSubTwo" class="panel-collapse collapse" role="tabpanel"
-                                            aria-labelledby="headingSubTwo">
-                                            <div class="panel-body">
-                                                <div>
-                                                    <div> Paradas de omnibus </div>
-                                                    <div> Recorrido Bus Turistico</div>
-                                                    <div> Espejos de agua de Montevideo</div>
-                                                    <div> Espacios libres de Montevideo</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--Segundo sub acordion-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Primer sub acordion-->
-
-                    </div>
-
-                </div>
-                <!--Fin Tercer acordion-->
-
-                <div class="cajaMapaInteractivo">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209655.65907018815!2d-56.340845026953545!3d-34.80922056803718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1609293836927!5m2!1ses-419!2suy"
-                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                    </iframe>
-                </div>
-            </div>
-            <!-- <div class="contenedorMapa"> -->
+            <h2 class="titulosDeSecciones" id="buscador">Elige tu destino y nosotros por ti el camino</h2>
+            
         </section>
     </main>
 
@@ -615,9 +497,8 @@
         <nav class="menuDesktop">
             <div class="navFooter">
                 <a class="btnPie" href="galeria.html" title="Ir a Galería">Galería</a>
-                <a class="btnPie" href="turismo.html" title="Ir a Destinos">Destinos </a>
+                <a class="btnPie" href="destinos.html" title="Ir a Destinos">Destinos </a>
                 <a class="btnPie" href="../index.html" title="Ir a Inicio"><i class="fas fa-home"></i></a>
-                <a class="btnPie" href="blog.html" title="Ir a Blog">Blog</a>
                 <a class="btnPie" href="actividades.html" title="Ir a Actividades">Actividades</a>
             </div>
         </nav>
