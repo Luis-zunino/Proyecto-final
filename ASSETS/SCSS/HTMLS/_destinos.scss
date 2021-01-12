@@ -1,7 +1,7 @@
 /* -----------------------SECCION DE TURISMO DEL INDEX-----------------------*/
 @import "../PARTES/variables";
 
-.contenedorTurismo {
+.contenedorDestinos {
     display: flex;
     flex-shrink: 1;
     flex-basis: Calc(calc(33.3%) - calc(1rem));
@@ -12,7 +12,6 @@
         width: 80%;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
     }
 
     @media (max-width: 580px) {
@@ -22,26 +21,43 @@
     }
 
     .tipoLugar {
+        text-decoration: none;
         width: 249px;
-        position: relative;
-        background-color: $colorCuaternario;
-        border: 1px solid $colorQuinto;
+        background-color: $grupoVerde2;
+        border: 1px solid $grupoVerde;
         margin: 0 1rem;
         flex-grow: 1;
+        flex-shrink: 0;
 
         &:hover {
             z-index: 3;
             transform: scale(1.1);
             transition: 0.5s ease-in-out;
             position: relative;
-            border: 1px solid black;
-            background-color: $colorTerciario;
+            border: 1px solid $grupoVerde;
+            background-color: $grupoVerde3;
+
+            span {
+                div {
+
+                    .fas {
+                        color: white;
+                        transition: 0.5s ease-in-out;
+                    }
+
+                    p {
+                        color: white;
+                        transition: 0.5s ease-in-out;
+                    }
+                }
+            }
         }
 
         img {
             width: 100%;
             height: 165px;
             overflow: hidden;
+            display: block;
 
             @media (max-width:650px) {
                 width: 100%;
@@ -49,53 +65,43 @@
             }
         }
 
-        div {
-            display: grid;
-            grid-template-rows: max-content min-content;
+        p {
+            margin: 3rem auto;
+            padding: 2rem;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
 
-            p {
-                margin: 4rem auto;
-                padding: 2rem;
-                font-size: 1.5vw;
-                height: 200px;
+        span {
+            display: flex;
+            margin: 3rem auto 2rem auto;
+            text-align: center;
+            justify-content: space-evenly;
 
-                @media (max-width:720px) {
-                    height: 150px;
+
+            div {
+                text-align: center;
+                margin: 0 1rem;
+
+                .fas {
+                    margin: 0 auto;
+                    color: rgb(158, 158, 158);
+                    font-size: 4rem;
 
                 }
 
-                @media (max-width:650px) {
-                    font-size: 1.2rem;
-                    margin-top: 1rem;
-                    padding: 1rem;
+                p {
+                    color: rgb(158, 158, 158);
 
+                    text-indent: 0;
+                    margin: 0;
+                    padding: 0;
                 }
-            }
-
-            .btnTipoLugar {
-                background-color: white;
-                width: max-content;
-                height: max-content;
-                margin: 1rem auto;
-
-                a {
-                    width: max-content;
-                    height: max-content;
-                    align-items: center;
-                    padding: 2rem;
-                    font-size: 1.5rem;
-                    text-decoration: none;
-                    color: rgba(255, 68, 0, 0.89);
-                }
-
             }
         }
 
     }
-}
-
-.contLugar {
-    min-height: 200px;
 }
 
 .tipoLugar3 {
@@ -105,6 +111,69 @@
 
     @media (max-width: 580px) {
         grid-column: 1/1;
+    }
+}
+
+.contenedorTransportes {
+    p {
+        font-size: 1.8rem;
+
+    }
+
+    .estiloTituloTransporte {
+        font-size: 2rem;
+        text-decoration: coral;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: bold;
+
+        @media (max-width: 720px) {
+            font-size: 2.2rem;
+        }
+
+    }
+
+    .contenidoTransportes {
+        display: flex;
+
+        @media (max-width: 720px) {
+            display: block;
+        }
+
+        .avion {
+            padding: 2rem;
+            font-size: 1.8vw;
+            flex-basis: calc(50%);
+
+            @media (max-width: 720px) {
+                padding: 2rem;
+                font-size: 1.8rem;
+            }
+        }
+
+        .barco {
+            padding: 2rem;
+            flex-basis: calc(50%);
+
+
+            @media (max-width: 720px) {
+                padding: 2rem;
+                font-size: 1.8rem;
+            }
+        }
+
+        .omnibus {
+            display: block;
+            padding: 2rem;
+            font-size: 1.8vw;
+            margin-bottom: 0;
+            width: 100%;
+
+
+            iframe {
+                width: 100%; //me lo modifica directamente desde el iframe
+            }
+        }
     }
 }
 
