@@ -23,13 +23,17 @@
             /*Ancho de los botones  */
             display: inline-block;
             width: 15%;
-            padding: .5rem;
+            padding: 0.5rem;
             height: 100%;
             text-align: center;
 
             .botones {
                 position: relative;
                 color: white;
+                &:hover {
+                    background-color: #3a404e;
+                    border-radius: 13%;
+                }
             }
         }
 
@@ -42,7 +46,7 @@
                 z-index: 10000;
             }
 
-            &:hover>.enlaceLista {
+            &:hover > .enlaceLista {
                 color: white;
                 z-index: 10000;
             }
@@ -62,7 +66,6 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */
             }
 
             .cajaListaInterna {
-                /*Para que aparezca solo cuando se le hace hover*/
                 display: none;
                 position: absolute;
                 /* Esto adyudará a dar el efecto de despliegue del submenú */
@@ -83,7 +86,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */
                         z-index: 10000;
                     }
 
-                    &:hover>.enlaceLista {
+                    &:hover > .enlaceLista {
                         color: white;
                         z-index: 10000;
                     }
@@ -94,7 +97,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */
                 text-decoration: none;
                 position: relative;
                 display: block;
-                padding: .6rem;
+                padding: 0.6rem;
                 height: 100%;
                 display: inline-flex;
                 font-size: 1.5rem;
