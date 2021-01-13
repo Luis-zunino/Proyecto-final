@@ -663,7 +663,33 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
       padding: .5rem; }
 
 .resultados {
-  display: flex; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .resultados .resultado {
+    background-color: whitesmoke;
+    margin: .5rem;
+    text-align: center; }
+    .resultados .resultado img {
+      width: 100%; }
+    .resultados .resultado span {
+      display: flex;
+      margin: 3rem auto 2rem auto;
+      text-align: center;
+      justify-content: space-around; }
+      .resultados .resultado span div {
+        text-align: center;
+        margin: 0 1rem; }
+        .resultados .resultado span div .fas {
+          margin: 0 auto;
+          color: rgba(15, 15, 15, 0.712);
+          font-size: 4rem;
+          transition: 0.5s ease-in-out; }
+        .resultados .resultado span div p {
+          color: rgba(15, 15, 15, 0.712);
+          text-indent: 0;
+          margin: 0;
+          padding: 0;
+          transition: 0.5s ease-in-out; }
 
 /*-------------------------HTML GALERIA------------------------------------*/
 .contenedor {
