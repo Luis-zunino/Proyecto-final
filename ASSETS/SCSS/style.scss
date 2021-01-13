@@ -2,12 +2,11 @@
 @import "PARTES/navDesktop";
 @import "PARTES/navMobile";
 @import "PARTES/footer";
-@import "HTMLS/index";
-@import "HTMLS/contacto";
-@import "HTMLS/galeria";
 @import "HTMLS/actividades";
+@import "HTMLS/contacto";
 @import "HTMLS/destinos";
-
+@import "HTMLS/galeria";
+@import "HTMLS/index";
 
 
 html {
@@ -16,6 +15,7 @@ html {
     /** Reset para REMS - 62.5% = 10px de 16px **/
     margin: 0;
 }
+
 *,
 *:before,
 *:after {
@@ -36,8 +36,12 @@ li,
 ul {
     text-decoration: none;
 }
-p{
+
+p {
     text-indent: 3rem;
+}
+a{
+    text-decoration: none;
 }
 /*-------------- PORTADA -------------- */
 header {

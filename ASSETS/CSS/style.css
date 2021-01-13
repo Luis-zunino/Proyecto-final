@@ -87,7 +87,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
     .menuHamburgesa {
       display: block; } }
   .menuHamburgesa .hamburger {
-    position: fixed;
+    position: relative;
     background-color: transparent;
     left: 0;
     top: 0;
@@ -265,6 +265,462 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
   .copy .color-copy {
     text-transform: uppercase; }
 
+.parrafoActividad {
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 3rem auto;
+  text-indent: 2rem; }
+
+.contenedorActividades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, min-content); }
+  @media (max-width: 896px) {
+    .contenedorActividades {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      margin: auto; } }
+  @media (max-width: 720px) {
+    .contenedorActividades {
+      grid-template-columns: repeat(1, 1fr);
+      width: 60%;
+      margin: auto; } }
+  .contenedorActividades a {
+    text-decoration: none;
+    margin: 1rem; }
+    .contenedorActividades a .actividad {
+      text-align: center;
+      background-color: #fcf2c6;
+      height: 100%; }
+      .contenedorActividades a .actividad img {
+        display: block;
+        width: 100%; }
+      .contenedorActividades a .actividad h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 1.5rem 0;
+        font-weight: bold; }
+      .contenedorActividades a .actividad p {
+        text-indent: 1rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: black; }
+      .contenedorActividades a .actividad a {
+        position: relative; }
+        .contenedorActividades a .actividad a button {
+          margin-bottom: 1rem; }
+      @media (max-width: 650px) {
+        .contenedorActividades a .actividad {
+          grid-column: 1/3; } }
+      @media (max-width: 450px) {
+        .contenedorActividades a .actividad {
+          grid-column: 1/1; } }
+    .contenedorActividades a .contenidoActividad {
+      font-size: 1.5vw;
+      padding: 1rem 0; }
+
+.contenedorActividadIndividual {
+  margin: 4rem auto; }
+  .contenedorActividadIndividual .actividad {
+    display: flex;
+    flex-shrink: 0; }
+    .contenedorActividadIndividual .actividad img {
+      width: 50%; }
+    .contenedorActividadIndividual .actividad h2 {
+      text-align: center;
+      margin: 3rem auto;
+      font-size: 2.5rem;
+      font-weight: bold; }
+    .contenedorActividadIndividual .actividad h4 {
+      margin-bottom: 2rem;
+      padding: 2rem;
+      text-indent: 2rem;
+      font-weight: bold; }
+    .contenedorActividadIndividual .actividad .contenidoActividad {
+      padding: 1rem;
+      background-color: #fcf2c6; }
+      .contenedorActividadIndividual .actividad .contenidoActividad .opciones {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        align-content: center; }
+        .contenedorActividadIndividual .actividad .contenidoActividad .opciones div {
+          border: 1px solid black;
+          margin: .5rem;
+          background-color: white; }
+          .contenedorActividadIndividual .actividad .contenidoActividad .opciones div i {
+            display: table;
+            font-size: 4rem;
+            margin: 1.4rem auto;
+            padding: 1rem;
+            background-color: #fcf2c6;
+            border-radius: 50%; }
+          .contenedorActividadIndividual .actividad .contenidoActividad .opciones div p {
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            text-align: center; }
+        @media (max-width: 1063px) {
+          .contenedorActividadIndividual .actividad .contenidoActividad .opciones {
+            grid-template-columns: repeat(1, 1fr); } }
+    .contenedorActividadIndividual .actividad p {
+      padding: 1rem;
+      font-size: 1.5rem;
+      text-indent: 2rem;
+      text-align: center; }
+    @media (max-width: 1048px) {
+      .contenedorActividadIndividual .actividad {
+        display: block; }
+        .contenedorActividadIndividual .actividad img {
+          width: 100%; } }
+
+.textoSobrante {
+  background-color: #fcf2c6;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-indent: 2rem;
+  text-align: center; }
+
+.contenedorBuscador {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr;
+  height: 550px;
+  background-color: #fcf2c6;
+  border: 1px solid #4dc7d4; }
+  @media (max-width: 720px) {
+    .contenedorBuscador {
+      display: block;
+      height: 600px;
+      margin-bottom: 5rem; } }
+  .contenedorBuscador h1 {
+    /*titulo*/
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    text-transform: uppercase; }
+  .contenedorBuscador .listaMenu {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fcf2c6; }
+    @media (max-width: 720px) {
+      .contenedorBuscador .listaMenu {
+        display: block;
+        height: 250px; } }
+    .contenedorBuscador .listaMenu a {
+      text-decoration: none; }
+      .contenedorBuscador .listaMenu a h4 {
+        /*subtitulo*/
+        margin: auto 1rem;
+        text-align: center;
+        color: black;
+        font-size: 3rem;
+        padding: 1rem; }
+        .contenedorBuscador .listaMenu a h4:hover {
+          background-color: #4dc7d4;
+          color: black; }
+      .contenedorBuscador .listaMenu a h5 {
+        /*subtitulo*/
+        text-align: center;
+        color: black;
+        font-size: 2rem;
+        padding: 1rem; }
+        .contenedorBuscador .listaMenu a h5:hover {
+          background-color: #4dc7d4;
+          color: black; }
+    .contenedorBuscador .listaMenu .lista div {
+      padding: 1rem; }
+      .contenedorBuscador .listaMenu .lista div:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer; }
+  .contenedorBuscador .cajaMapaInteractivo {
+    background-color: #fcf2c6;
+    grid-column: 2/3;
+    grid-row: 1/3; }
+    @media (max-width: 720px) {
+      .contenedorBuscador .cajaMapaInteractivo {
+        display: block; } }
+    .contenedorBuscador .cajaMapaInteractivo iframe {
+      width: 100%;
+      height: 550px;
+      padding: 1rem; }
+
+.cajaForm {
+  color: black;
+  background-color: #72d192;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem; }
+  .cajaForm .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 80%;
+    padding: 50px;
+    margin: 4rem auto; }
+    .cajaForm .formulario .contFormulario {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .cajaForm .formulario .contFormulario label {
+        margin-bottom: 15px; }
+      .cajaForm .formulario .contFormulario textarea {
+        font-size: 2rem;
+        border: 1px solid #D6D9DC;
+        border-radius: 3px;
+        min-height: 200px;
+        margin-bottom: 10px;
+        padding: 7px; }
+      .cajaForm .formulario .contFormulario .descripcionTextArea {
+        color: #999999;
+        font-size: 1.5rem;
+        margin-bottom: 30px; }
+      .cajaForm .formulario .contFormulario input[type="text"],
+      .cajaForm .formulario .contFormulario input[type="email"] {
+        background-color: #FFFFFF;
+        border: 1px solid #D6D9DC;
+        border-radius: 3px;
+        width: 100%;
+        padding: 7px;
+        font-size: 1.5rem;
+        margin-bottom: 20px; }
+        .cajaForm .formulario .contFormulario input[type="text"]:invalid, .cajaForm .formulario .contFormulario input[type="text"]:invalid,
+        .cajaForm .formulario .contFormulario input[type="email"]:invalid,
+        .cajaForm .formulario .contFormulario input[type="email"]:invalid {
+          border: 1px solid #D55C5F;
+          color: #D55C5F;
+          box-shadow: none; }
+      .cajaForm .formulario .contFormulario button {
+        background-color: #5995DA;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 40px;
+        cursor: pointer; }
+        .cajaForm .formulario .contFormulario button:hover {
+          background-color: #76AEED; }
+        .cajaForm .formulario .contFormulario button:active {
+          background-color: #407FC7; }
+
+/*SECCION DE TURISMO DEL INDEX*/
+.contenedorDestinos {
+  display: flex;
+  flex-shrink: 1;
+  flex-basis: Calc(calc(33.3%)-calc(1rem));
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-evenly; }
+  @media (max-width: 820px) {
+    .contenedorDestinos {
+      flex-wrap: wrap; } }
+  .contenedorDestinos .tipoLugar {
+    width: 249px;
+    background-color: rgba(27, 155, 36, 0.438);
+    border: 1px solid #01ff56;
+    margin: 1rem;
+    flex-shrink: 0; }
+    .contenedorDestinos .tipoLugar:hover {
+      z-index: 3;
+      transform: scale(1.1);
+      transition: 0.5s ease-in-out;
+      position: relative;
+      border: 1px solid #01ff56;
+      background-color: #68b04a; }
+      .contenedorDestinos .tipoLugar:hover a .fas {
+        color: white;
+        transition: 0.5s ease-in-out; }
+      .contenedorDestinos .tipoLugar:hover a p {
+        color: white;
+        transition: 0.5s ease-in-out; }
+    .contenedorDestinos .tipoLugar a img {
+      width: 100%;
+      height: 165px;
+      overflow: hidden;
+      display: block; }
+      @media (max-width: 650px) {
+        .contenedorDestinos .tipoLugar a img {
+          width: 100%;
+          padding: 0.5rem; } }
+    .contenedorDestinos .tipoLugar a span {
+      display: flex;
+      margin: 3rem auto 2rem auto;
+      text-align: center;
+      justify-content: space-around; }
+      .contenedorDestinos .tipoLugar a span div {
+        text-align: center;
+        margin: 0 1rem; }
+        .contenedorDestinos .tipoLugar a span div .fas {
+          margin: 0 auto;
+          color: rgba(15, 15, 15, 0.712);
+          font-size: 4rem;
+          transition: 0.5s ease-in-out; }
+        .contenedorDestinos .tipoLugar a span div p {
+          color: rgba(15, 15, 15, 0.712);
+          text-indent: 0;
+          margin: 0;
+          padding: 0;
+          transition: 0.5s ease-in-out; }
+    .contenedorDestinos .tipoLugar a p {
+      margin: 0 auto;
+      padding: 2rem;
+      color: rgba(15, 15, 15, 0.712);
+      font-size: 1.2rem;
+      font-weight: bold; }
+
+@media (max-width: 650px) {
+  .tipoLugar3 {
+    grid-column: 1/3; } }
+
+@media (max-width: 580px) {
+  .tipoLugar3 {
+    grid-column: 1/1; } }
+
+.contenedorTransportes p {
+  font-size: 1.8rem; }
+
+.contenedorTransportes .estiloTituloTransporte {
+  font-size: 2rem;
+  text-decoration: coral;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold; }
+  @media (max-width: 720px) {
+    .contenedorTransportes .estiloTituloTransporte {
+      font-size: 2.2rem; } }
+
+.contenedorTransportes .contenidoTransportes {
+  display: flex; }
+  @media (max-width: 720px) {
+    .contenedorTransportes .contenidoTransportes {
+      display: block; } }
+  .contenedorTransportes .contenidoTransportes .avion {
+    padding: 2rem;
+    font-size: 1.8vw;
+    flex-basis: calc(50%); }
+    @media (max-width: 720px) {
+      .contenedorTransportes .contenidoTransportes .avion {
+        padding: 2rem;
+        font-size: 1.8rem; } }
+  .contenedorTransportes .contenidoTransportes .barco {
+    padding: 2rem;
+    flex-basis: calc(50%); }
+    @media (max-width: 720px) {
+      .contenedorTransportes .contenidoTransportes .barco {
+        padding: 2rem;
+        font-size: 1.8rem; } }
+  .contenedorTransportes .contenidoTransportes .omnibus {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8vw;
+    margin-bottom: 0;
+    width: 100%; }
+    .contenedorTransportes .contenidoTransportes .omnibus iframe {
+      width: 100%; }
+
+/* -----------------------FIN SECCION DE TURISMO DEL INDEX-----------------------*/
+.playa .contPlaya {
+  margin-bottom: 4rem; }
+  .playa .contPlaya p {
+    font-size: 1.9rem;
+    text-align: justify;
+    text-indent: 2rem;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 1rem; }
+  .playa .contPlaya .panel-default {
+    padding: 1rem;
+    background-color: #fcf2c6;
+    margin-bottom: 2rem;
+    border-radius: 10%; }
+    .playa .contPlaya .panel-default a {
+      color: black;
+      text-decoration: none; }
+      .playa .contPlaya .panel-default a h3 {
+        font-size: 3rem;
+        text-align: center;
+        width: 100%; }
+        .playa .contPlaya .panel-default a h3 span {
+          margin-top: 1rem;
+          font-size: 1rem;
+          display: block; }
+    .playa .contPlaya .panel-default .panel-body {
+      color: black;
+      padding: 2rem; }
+
+.cajaOpciones {
+  background-color: whitesmoke; }
+  .cajaOpciones select {
+    margin: 1rem; }
+    .cajaOpciones select option {
+      padding: .5rem; }
+
+.resultados {
+  display: flex; }
+
+/*-------------------------HTML GALERIA------------------------------------*/
+.contenedor {
+  /*-------------------------HTML GALERIA UNA COLUMNAS------------------------------------*/
+  /*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
+  /*-------------------------HTML GALERIA TRES COLUMNAS------------------------------------*/ }
+  .contenedor .galeria {
+    display: grid; }
+    @media (max-width: 720px) {
+      .contenedor .galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); } }
+    .contenedor .galeria .imagenGal {
+      padding: 1rem;
+      margin: auto; }
+      .contenedor .galeria .imagenGal img {
+        width: 800px;
+        transition: 1s ease-in-out; }
+        .contenedor .galeria .imagenGal img:hover {
+          transform: scale(1.1); }
+  .contenedor .galeria2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 720px) {
+      .contenedor .galeria2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); } }
+    .contenedor .galeria2 .imagenGal {
+      padding: 1rem;
+      width: 100%;
+      margin: auto; }
+      .contenedor .galeria2 .imagenGal img {
+        transition: 1s ease-in-out; }
+        .contenedor .galeria2 .imagenGal img:hover {
+          transform: scale(1.1); }
+  .contenedor .galeria3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr); }
+    @media (max-width: 968px) {
+      .contenedor .galeria3 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); } }
+    @media (max-width: 720px) {
+      .contenedor .galeria3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); } }
+    .contenedor .galeria3 .imagenGal {
+      padding: 1rem;
+      width: 100%;
+      margin: auto; }
+      .contenedor .galeria3 .imagenGal img {
+        transition: 1s ease-in-out; }
+        .contenedor .galeria3 .imagenGal img:hover {
+          transform: scale(1.1); }
+
+/*-------------------------FIN HTML GALERIA------------------------------------*/
 /*  ----------------------- INDEX ----------------------- */
 /*-------------------------DECORACION DE SALTOS-------------------------------*/
 .estiloTituloDecorado {
@@ -445,451 +901,6 @@ section a h2 {
     content: '¡Bienvenido!'; } }
 
 /*  -----------------------FIN INDEX ----------------------- */
-.cajaForm {
-  color: black;
-  background-color: #72d192;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem; }
-  .cajaForm .formulario {
-    background-color: #f6f7f8;
-    border: 1px solid #D6D9DC;
-    border-radius: 3px;
-    width: 80%;
-    padding: 50px;
-    margin: 4rem auto; }
-    .cajaForm .formulario .contFormulario {
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      flex-wrap: wrap; }
-      .cajaForm .formulario .contFormulario label {
-        margin-bottom: 15px; }
-      .cajaForm .formulario .contFormulario textarea {
-        font-size: 2rem;
-        border: 1px solid #D6D9DC;
-        border-radius: 3px;
-        min-height: 200px;
-        margin-bottom: 10px;
-        padding: 7px; }
-      .cajaForm .formulario .contFormulario .descripcionTextArea {
-        color: #999999;
-        font-size: 1.5rem;
-        margin-bottom: 30px; }
-      .cajaForm .formulario .contFormulario input[type="text"],
-      .cajaForm .formulario .contFormulario input[type="email"] {
-        background-color: #FFFFFF;
-        border: 1px solid #D6D9DC;
-        border-radius: 3px;
-        width: 100%;
-        padding: 7px;
-        font-size: 1.5rem;
-        margin-bottom: 20px; }
-        .cajaForm .formulario .contFormulario input[type="text"]:invalid, .cajaForm .formulario .contFormulario input[type="text"]:invalid,
-        .cajaForm .formulario .contFormulario input[type="email"]:invalid,
-        .cajaForm .formulario .contFormulario input[type="email"]:invalid {
-          border: 1px solid #D55C5F;
-          color: #D55C5F;
-          box-shadow: none; }
-      .cajaForm .formulario .contFormulario button {
-        background-color: #5995DA;
-        font-size: 2rem;
-        font-weight: bold;
-        color: #FFFFFF;
-        border: none;
-        border-radius: 3px;
-        padding: 10px 40px;
-        cursor: pointer; }
-        .cajaForm .formulario .contFormulario button:hover {
-          background-color: #76AEED; }
-        .cajaForm .formulario .contFormulario button:active {
-          background-color: #407FC7; }
-
-/*-------------------------HTML GALERIA------------------------------------*/
-.contenedor {
-  /*-------------------------HTML GALERIA UNA COLUMNAS------------------------------------*/
-  /*-------------------------HTML GALERIA DOS COLUMNAS------------------------------------*/
-  /*-------------------------HTML GALERIA TRES COLUMNAS------------------------------------*/ }
-  .contenedor .galeria {
-    display: grid; }
-    @media (max-width: 720px) {
-      .contenedor .galeria {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr); } }
-    .contenedor .galeria .imagenGal {
-      padding: 1rem;
-      margin: auto; }
-      .contenedor .galeria .imagenGal img {
-        width: 800px;
-        transition: 1s ease-in-out; }
-        .contenedor .galeria .imagenGal img:hover {
-          transform: scale(1.1); }
-  .contenedor .galeria2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-    @media (max-width: 720px) {
-      .contenedor .galeria2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr); } }
-    .contenedor .galeria2 .imagenGal {
-      padding: 1rem;
-      width: 100%;
-      margin: auto; }
-      .contenedor .galeria2 .imagenGal img {
-        transition: 1s ease-in-out; }
-        .contenedor .galeria2 .imagenGal img:hover {
-          transform: scale(1.1); }
-  .contenedor .galeria3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr); }
-    @media (max-width: 968px) {
-      .contenedor .galeria3 {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr); } }
-    @media (max-width: 720px) {
-      .contenedor .galeria3 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr); } }
-    .contenedor .galeria3 .imagenGal {
-      padding: 1rem;
-      width: 100%;
-      margin: auto; }
-      .contenedor .galeria3 .imagenGal img {
-        transition: 1s ease-in-out; }
-        .contenedor .galeria3 .imagenGal img:hover {
-          transform: scale(1.1); }
-
-/*-------------------------FIN HTML GALERIA------------------------------------*/
-.parrafoActividad {
-  font-size: 2rem;
-  padding: 1rem;
-  margin: 3rem auto;
-  text-indent: 2rem; }
-
-.contenedorActividades {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, min-content); }
-  @media (max-width: 896px) {
-    .contenedorActividades {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      width: 80%;
-      margin: auto; } }
-  @media (max-width: 720px) {
-    .contenedorActividades {
-      grid-template-columns: repeat(1, 1fr);
-      width: 60%;
-      margin: auto; } }
-  .contenedorActividades a {
-    text-decoration: none;
-    margin: 1rem; }
-    .contenedorActividades a .actividad {
-      text-align: center;
-      background-color: #fcf2c6;
-      height: 100%; }
-      .contenedorActividades a .actividad img {
-        display: block;
-        width: 100%; }
-      .contenedorActividades a .actividad h2 {
-        font-size: 1.8rem;
-        text-align: center;
-        margin: 1.5rem 0;
-        font-weight: bold; }
-      .contenedorActividades a .actividad p {
-        text-indent: 1rem;
-        padding: 1rem;
-        font-size: 1.5rem;
-        color: black; }
-      .contenedorActividades a .actividad a {
-        position: relative; }
-        .contenedorActividades a .actividad a button {
-          margin-bottom: 1rem; }
-      @media (max-width: 650px) {
-        .contenedorActividades a .actividad {
-          grid-column: 1/3; } }
-      @media (max-width: 450px) {
-        .contenedorActividades a .actividad {
-          grid-column: 1/1; } }
-    .contenedorActividades a .contenidoActividad {
-      font-size: 1.5vw;
-      padding: 1rem 0; }
-
-.contenedorActividadIndividual {
-  margin: 4rem auto; }
-  .contenedorActividadIndividual .actividad {
-    display: flex;
-    flex-shrink: 0; }
-    .contenedorActividadIndividual .actividad img {
-      width: 50%; }
-    .contenedorActividadIndividual .actividad h2 {
-      text-align: center;
-      margin: 3rem auto;
-      font-size: 2.5rem;
-      font-weight: bold; }
-    .contenedorActividadIndividual .actividad h4 {
-      margin-bottom: 2rem;
-      padding: 2rem;
-      text-indent: 2rem;
-      font-weight: bold; }
-    .contenedorActividadIndividual .actividad .contenidoActividad {
-      padding: 1rem;
-      background-color: #fcf2c6; }
-      .contenedorActividadIndividual .actividad .contenidoActividad .opciones {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin: auto;
-        align-content: center; }
-        .contenedorActividadIndividual .actividad .contenidoActividad .opciones div {
-          border: 1px solid black;
-          margin: .5rem;
-          background-color: white; }
-          .contenedorActividadIndividual .actividad .contenidoActividad .opciones div i {
-            display: table;
-            font-size: 4rem;
-            margin: 1.4rem auto;
-            padding: 1rem;
-            background-color: #fcf2c6;
-            border-radius: 50%; }
-          .contenedorActividadIndividual .actividad .contenidoActividad .opciones div p {
-            padding: 1.5rem;
-            font-size: 1.5rem;
-            text-align: center; }
-        @media (max-width: 1063px) {
-          .contenedorActividadIndividual .actividad .contenidoActividad .opciones {
-            grid-template-columns: repeat(1, 1fr); } }
-    .contenedorActividadIndividual .actividad p {
-      padding: 1rem;
-      font-size: 1.5rem;
-      text-indent: 2rem;
-      text-align: center; }
-    @media (max-width: 1048px) {
-      .contenedorActividadIndividual .actividad {
-        display: block; }
-        .contenedorActividadIndividual .actividad img {
-          width: 100%; } }
-
-.textoSobrante {
-  background-color: #fcf2c6;
-  padding: 2rem;
-  font-size: 1.5rem;
-  text-indent: 2rem;
-  text-align: center; }
-
-/* -----------------------SECCION DE TURISMO DEL INDEX-----------------------*/
-.contenedorDestinos {
-  display: flex;
-  flex-shrink: 1;
-  flex-basis: Calc(calc(33.3%)-calc(1rem));
-  margin: 0 auto;
-  width: 80%;
-  justify-content: space-between; }
-  @media (max-width: 720px) {
-    .contenedorDestinos {
-      flex-wrap: wrap; } }
-  .contenedorDestinos .tipoLugar {
-    text-decoration: none;
-    width: 249px;
-    background-color: rgba(27, 155, 36, 0.438);
-    border: 1px solid #01ff56;
-    margin: 1rem;
-    flex-shrink: 0; }
-    .contenedorDestinos .tipoLugar:hover {
-      z-index: 3;
-      transform: scale(1.1);
-      transition: 0.5s ease-in-out;
-      position: relative;
-      border: 1px solid #01ff56;
-      background-color: #68b04a; }
-      .contenedorDestinos .tipoLugar:hover span div .fas {
-        color: white;
-        transition: 0.5s ease-in-out; }
-      .contenedorDestinos .tipoLugar:hover span div p {
-        color: white;
-        transition: 0.5s ease-in-out; }
-    .contenedorDestinos .tipoLugar img {
-      width: 100%;
-      height: 165px;
-      overflow: hidden;
-      display: block; }
-      @media (max-width: 650px) {
-        .contenedorDestinos .tipoLugar img {
-          width: 100%;
-          padding: 0.5rem; } }
-    .contenedorDestinos .tipoLugar p {
-      margin: 0 auto;
-      padding: 2rem;
-      color: white;
-      font-size: 2rem;
-      font-weight: bold; }
-    .contenedorDestinos .tipoLugar span {
-      display: flex;
-      margin: 3rem auto 2rem auto;
-      text-align: center;
-      justify-content: space-evenly; }
-      .contenedorDestinos .tipoLugar span div {
-        text-align: center;
-        margin: 0 1rem; }
-        .contenedorDestinos .tipoLugar span div .fas {
-          margin: 0 auto;
-          color: rgba(0, 0, 0, 0.712);
-          font-size: 4rem; }
-        .contenedorDestinos .tipoLugar span div p {
-          color: rgba(0, 0, 0, 0.712);
-          text-indent: 0;
-          margin: 0;
-          padding: 0; }
-
-@media (max-width: 650px) {
-  .tipoLugar3 {
-    grid-column: 1/3; } }
-
-@media (max-width: 580px) {
-  .tipoLugar3 {
-    grid-column: 1/1; } }
-
-.contenedorTransportes p {
-  font-size: 1.8rem; }
-
-.contenedorTransportes .estiloTituloTransporte {
-  font-size: 2rem;
-  text-decoration: coral;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-weight: bold; }
-  @media (max-width: 720px) {
-    .contenedorTransportes .estiloTituloTransporte {
-      font-size: 2.2rem; } }
-
-.contenedorTransportes .contenidoTransportes {
-  display: flex; }
-  @media (max-width: 720px) {
-    .contenedorTransportes .contenidoTransportes {
-      display: block; } }
-  .contenedorTransportes .contenidoTransportes .avion {
-    padding: 2rem;
-    font-size: 1.8vw;
-    flex-basis: calc(50%); }
-    @media (max-width: 720px) {
-      .contenedorTransportes .contenidoTransportes .avion {
-        padding: 2rem;
-        font-size: 1.8rem; } }
-  .contenedorTransportes .contenidoTransportes .barco {
-    padding: 2rem;
-    flex-basis: calc(50%); }
-    @media (max-width: 720px) {
-      .contenedorTransportes .contenidoTransportes .barco {
-        padding: 2rem;
-        font-size: 1.8rem; } }
-  .contenedorTransportes .contenidoTransportes .omnibus {
-    display: block;
-    padding: 2rem;
-    font-size: 1.8vw;
-    margin-bottom: 0;
-    width: 100%; }
-    .contenedorTransportes .contenidoTransportes .omnibus iframe {
-      width: 100%; }
-
-/* -----------------------FIN SECCION DE TURISMO DEL INDEX-----------------------*/
-.playa .contPlaya {
-  margin-bottom: 4rem; }
-  .playa .contPlaya p {
-    font-size: 1.9rem;
-    text-align: justify;
-    text-indent: 2rem;
-    text-align: left;
-    padding: 1rem;
-    margin-bottom: 1rem; }
-  .playa .contPlaya .panel-default {
-    padding: 1rem;
-    background-color: #fcf2c6;
-    margin-bottom: 2rem;
-    border-radius: 10%; }
-    .playa .contPlaya .panel-default a {
-      color: black;
-      text-decoration: none; }
-      .playa .contPlaya .panel-default a h3 {
-        font-size: 3rem;
-        text-align: center;
-        width: 100%; }
-        .playa .contPlaya .panel-default a h3 span {
-          margin-top: 1rem;
-          font-size: 1rem;
-          display: block; }
-    .playa .contPlaya .panel-default .panel-body {
-      color: black;
-      padding: 2rem; }
-
-.contenedorBuscador {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 3fr;
-  height: 550px;
-  background-color: #fcf2c6;
-  border: 1px solid #4dc7d4; }
-  @media (max-width: 720px) {
-    .contenedorBuscador {
-      display: block;
-      height: 600px;
-      margin-bottom: 5rem; } }
-  .contenedorBuscador h1 {
-    /*titulo*/
-    grid-column: 1/2;
-    grid-row: 1/2;
-    text-align: center;
-    text-transform: uppercase; }
-  .contenedorBuscador .listaMenu {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    background-color: #fcf2c6; }
-    @media (max-width: 720px) {
-      .contenedorBuscador .listaMenu {
-        display: block;
-        height: 250px; } }
-    .contenedorBuscador .listaMenu a {
-      text-decoration: none; }
-      .contenedorBuscador .listaMenu a h4 {
-        /*subtitulo*/
-        margin: auto 1rem;
-        text-align: center;
-        color: black;
-        font-size: 3rem;
-        padding: 1rem; }
-        .contenedorBuscador .listaMenu a h4:hover {
-          background-color: #4dc7d4;
-          color: black; }
-      .contenedorBuscador .listaMenu a h5 {
-        /*subtitulo*/
-        text-align: center;
-        color: black;
-        font-size: 2rem;
-        padding: 1rem; }
-        .contenedorBuscador .listaMenu a h5:hover {
-          background-color: #4dc7d4;
-          color: black; }
-    .contenedorBuscador .listaMenu .lista div {
-      padding: 1rem; }
-      .contenedorBuscador .listaMenu .lista div:hover {
-        background-color: black;
-        color: white;
-        cursor: pointer; }
-  .contenedorBuscador .cajaMapaInteractivo {
-    background-color: #fcf2c6;
-    grid-column: 2/3;
-    grid-row: 1/3; }
-    @media (max-width: 720px) {
-      .contenedorBuscador .cajaMapaInteractivo {
-        display: block; } }
-    .contenedorBuscador .cajaMapaInteractivo iframe {
-      width: 100%;
-      height: 550px;
-      padding: 1rem; }
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -915,6 +926,9 @@ ul {
 
 p {
   text-indent: 3rem; }
+
+a {
+  text-decoration: none; }
 
 /*-------------- PORTADA -------------- */
 header {
