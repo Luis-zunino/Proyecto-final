@@ -560,7 +560,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
         .contenedorDestinos .tipoLugar a span div .fas {
           margin: 0 auto;
           color: rgba(15, 15, 15, 0.712);
-          font-size: 4rem;
+          font-size: 2rem;
           transition: 0.5s ease-in-out; }
         .contenedorDestinos .tipoLugar a span div p {
           color: rgba(15, 15, 15, 0.712);
@@ -663,6 +663,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
       padding: .5rem; }
 
 .resultados {
+  padding: .4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
   .resultados .resultado {
@@ -682,7 +683,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
         .resultados .resultado span div .fas {
           margin: 0 auto;
           color: rgba(15, 15, 15, 0.712);
-          font-size: 4rem;
+          font-size: 2rem;
           transition: 0.5s ease-in-out; }
         .resultados .resultado span div p {
           color: rgba(15, 15, 15, 0.712);
@@ -690,6 +691,8 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
           margin: 0;
           padding: 0;
           transition: 0.5s ease-in-out; }
+    .resultados .resultado p {
+      text-indent: 0; }
 
 /*-------------------------HTML GALERIA------------------------------------*/
 .contenedor {
