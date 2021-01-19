@@ -180,7 +180,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
   background-color: #50596c;
   align-items: center; }
   .navFooter .btnPie {
-    color: #2f2d3e;
+    color: black;
     padding: 1rem;
     margin: 0 auto;
     align-content: center;
@@ -215,13 +215,16 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
     .footer .contacto p {
       text-align: center;
       padding: .5rem; }
+    @media (max-width: 825px) {
+      .footer .contacto {
+        display: block; } }
   .footer .conteFooter {
     color: white;
     flex-basis: calc(50% - 1rem);
     text-align: center;
     margin: 0 auto; }
     .footer .conteFooter .contactos {
-      font-size: 1rem;
+      font-size: 1.5rem;
       display: block;
       text-indent: 0; }
     .footer .conteFooter button {
@@ -236,7 +239,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
         color: #2f2d3e; }
     .footer .conteFooter .redeSociales {
       text-align: center;
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin: 2rem auto 0 auto; }
       .footer .conteFooter .redeSociales a {
         padding: 1rem;

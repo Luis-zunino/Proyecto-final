@@ -9,7 +9,7 @@
     align-items: center;
 
     .btnPie {
-        color: $colorPrimario;
+        color: black;
         padding: 1rem;
         margin: 0 auto;
         align-content: center;
@@ -59,6 +59,9 @@
             text-align: center;
             padding: .5rem;
         }
+        @media (max-width:825px) {
+            display: block;
+        }
     }
 
     .conteFooter {
@@ -68,7 +71,7 @@
         margin: 0 auto;
 
         .contactos {
-            font-size: 1rem;
+            font-size: 1.5rem;
             display: block;
             text-indent: 0;
         }
@@ -91,7 +94,7 @@
 
         .redeSociales {
             text-align: center;
-            font-size: 1rem;
+            font-size: 1.5rem;
             margin: 2rem auto 0 auto;
 
             a {
