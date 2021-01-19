@@ -185,6 +185,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
     margin: 0 auto;
     align-content: center;
     font-size: 2rem;
+    font-weight: bold;
     text-decoration: none; }
     .navFooter .btnPie:hover {
       color: white; }
