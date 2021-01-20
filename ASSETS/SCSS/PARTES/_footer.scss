@@ -1,6 +1,18 @@
 /* ----------------------- FOOTER ----------------------- */
 @import "variables";
 
+a {
+    color: black;
+    text-decoration: none;
+
+    .fa-arrow-alt-circle-up {
+        position: fixed;
+        bottom: 3rem;
+        right: 3rem;
+        font-size: 3rem;
+    }
+}
+
 .navFooter {
     display: flex;
     width: 100%;
@@ -60,6 +72,7 @@
             text-align: center;
             padding: .5rem;
         }
+
         @media (max-width:825px) {
             display: block;
         }

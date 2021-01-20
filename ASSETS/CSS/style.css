@@ -173,6 +173,15 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */ } }
             padding: 1rem; }
 
 /* ----------------------- FOOTER ----------------------- */
+a {
+  color: black;
+  text-decoration: none; }
+  a .fa-arrow-alt-circle-up {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 3rem; }
+
 .navFooter {
   display: flex;
   width: 100%;
