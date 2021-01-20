@@ -726,7 +726,8 @@ a {
       .resultados .resultado h2 {
         font-size: 2rem; } }
     .resultados .resultado p {
-      text-indent: 0; }
+      text-indent: 0;
+      padding: .5rem; }
 
 /*-------------------------HTML GALERIA------------------------------------*/
 .contenedor {
