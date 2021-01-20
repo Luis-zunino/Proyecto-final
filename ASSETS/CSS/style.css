@@ -647,9 +647,8 @@ a {
     margin-bottom: 1rem; }
   .playa .contPlaya .panel-default {
     padding: 1rem;
-    background-color: #fcf2c6;
-    margin-bottom: 2rem;
-    border-radius: 10%; }
+    background-color: rgba(209, 204, 204, 0.418);
+    margin-bottom: 2rem; }
     .playa .contPlaya .panel-default a {
       color: black;
       text-decoration: none; }
@@ -664,6 +663,8 @@ a {
     .playa .contPlaya .panel-default .panel-body {
       color: black;
       padding: 2rem; }
+      .playa .contPlaya .panel-default .panel-body p {
+        font-size: 1.4rem; }
 
 .cajaOpciones {
   background-color: whitesmoke;

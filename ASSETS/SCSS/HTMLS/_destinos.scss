@@ -178,9 +178,9 @@
 
         .panel-default {
             padding: 1rem;
-            background-color: $colorQuinto;
+            background-color: rgba(209, 204, 204, 0.418);
             margin-bottom: 2rem;
-            border-radius: 10%;
+            // border-radius: 10%;
 
             a {
                 color: black;
@@ -202,6 +202,10 @@
             .panel-body {
                 color: black;
                 padding: 2rem;
+
+                p {
+                    font-size: 1.4rem;
+                }
             }
         }
     }
