@@ -181,6 +181,11 @@ a {
     bottom: 3rem;
     right: 3rem;
     font-size: 3rem; }
+    @media (max-width: 500px) {
+      a .fa-arrow-alt-circle-up {
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 2rem; } }
 
 .navFooter {
   display: flex;

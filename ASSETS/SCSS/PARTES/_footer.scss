@@ -10,6 +10,12 @@ a {
         bottom: 3rem;
         right: 3rem;
         font-size: 3rem;
+
+        @media(max-width: 500px) {
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+        }
     }
 }
 
