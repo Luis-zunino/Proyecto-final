@@ -26,9 +26,6 @@
     .menuDesktop .btnCaja .navBtn .botones {
       position: relative;
       color: white; }
-      .menuDesktop .btnCaja .navBtn .botones:hover {
-        background-color: #3a404e;
-        border-radius: 13%; }
   .menuDesktop .btnCaja .listaBtnExpan {
     display: inline-block;
     position: relative;
@@ -384,19 +381,12 @@ a {
         .contenedorActividadIndividual .actividad img {
           width: 100%; } }
 
-.textoSobrante {
-  background-color: #fcf2c6;
-  padding: 2rem;
-  font-size: 1.5rem;
-  text-indent: 2rem;
-  text-align: center; }
-
 .contenedorBuscador {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 3fr;
   height: 550px;
-  background-color: #fcf2c6;
+  background-color: rgba(209, 204, 204, 0.418);
   border: 1px solid #4dc7d4; }
   @media (max-width: 720px) {
     .contenedorBuscador {
@@ -408,14 +398,15 @@ a {
     grid-column: 1/2;
     grid-row: 1/2;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: auto; }
   .contenedorBuscador .listaMenu {
     grid-column: 1/2;
     grid-row: 2/3;
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    background-color: #fcf2c6; }
+    background-color: rgba(209, 204, 204, 0.418); }
     @media (max-width: 720px) {
       .contenedorBuscador .listaMenu {
         display: block;
@@ -424,14 +415,15 @@ a {
       text-decoration: none; }
       .contenedorBuscador .listaMenu a h4 {
         /*subtitulo*/
-        margin: auto 1rem;
+        margin: auto;
         text-align: center;
         color: black;
         font-size: 3rem;
-        padding: 1rem; }
+        padding: 1rem;
+        width: 100%; }
         .contenedorBuscador .listaMenu a h4:hover {
-          background-color: #4dc7d4;
-          color: black; }
+          background-color: black;
+          color: white; }
       .contenedorBuscador .listaMenu a h5 {
         /*subtitulo*/
         text-align: center;
@@ -439,16 +431,22 @@ a {
         font-size: 2rem;
         padding: 1rem; }
         .contenedorBuscador .listaMenu a h5:hover {
-          background-color: #4dc7d4;
-          color: black; }
-    .contenedorBuscador .listaMenu .lista div {
-      padding: 1rem; }
-      .contenedorBuscador .listaMenu .lista div:hover {
-        background-color: black;
-        color: white;
-        cursor: pointer; }
+          background-color: black;
+          color: white; }
+    .contenedorBuscador .listaMenu .lista {
+      margin: auto; }
+      .contenedorBuscador .listaMenu .lista div {
+        padding: 1rem;
+        font-size: 1.5rem; }
+        .contenedorBuscador .listaMenu .lista div:hover {
+          background-color: black;
+          color: white;
+          cursor: pointer; }
+        .contenedorBuscador .listaMenu .lista div i {
+          font-size: 2rem;
+          margin-right: .6rem; }
   .contenedorBuscador .cajaMapaInteractivo {
-    background-color: #fcf2c6;
+    background-color: rgba(209, 204, 204, 0.418);
     grid-column: 2/3;
     grid-row: 1/3; }
     @media (max-width: 720px) {
@@ -458,6 +456,16 @@ a {
       width: 100%;
       height: 550px;
       padding: 1rem; }
+
+a .fa-arrow-alt-circle-left {
+  font-size: 2rem; }
+
+.textoSobrante {
+  background-color: #fcf2c6;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-indent: 2rem;
+  text-align: center; }
 
 .cajaForm {
   color: black;

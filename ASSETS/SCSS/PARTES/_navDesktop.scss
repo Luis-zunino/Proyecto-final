@@ -30,10 +30,6 @@
             .botones {
                 position: relative;
                 color: white;
-                &:hover {
-                    background-color: #3a404e;
-                    border-radius: 13%;
-                }
             }
         }
 
@@ -46,7 +42,7 @@
                 z-index: 10000;
             }
 
-            &:hover > .enlaceLista {
+            &:hover>.enlaceLista {
                 color: white;
                 z-index: 10000;
             }
@@ -86,7 +82,7 @@ permitirá crear un efecto visual de un submenú que se desenrrolla. */
                         z-index: 10000;
                     }
 
-                    &:hover > .enlaceLista {
+                    &:hover>.enlaceLista {
                         color: white;
                         z-index: 10000;
                     }
